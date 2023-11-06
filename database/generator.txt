@@ -1,0 +1,129 @@
+# Any spellIDs added below will be parsed and added to the database
+# duplicate entries are ignored
+
+# Monk Spells
+
+137025 # Windwalker Monk
+137024 # Mistweaver Monk
+137023 # Brewmaster Monk
+107270 # Spinning Crane Kick (tick)
+393057 # Chi Energy
+393039 # The Emperor's Capacitor (buff)
+196741 # Hit Combo (buff)
+220358 # Cyclone Strikes
+344021 # Keefer's Skyreach
+337482 # Pressure Point
+228563 # Blackout Combo
+123725 # Breath of Fire DoT
+383800 # Counterstrike 
+383696 # Hit Scheme (buff)
+418361 # Press the Advantage
+393515 # Pretense of Instability (buff)
+325092 # Purified Chi (buff)
+216519 # Celestial Fortune
+158221 # Whirling Dragon Punch (tick)
+395519 # Strike of the Windlord MH
+395521 # Strike of the Windlord OH
+148187 # Rushing Jade Windd (tick)
+395414 # Fae Exposure (damage)
+148135 # Chi Burst
+132467 # Chi Wave
+123586 # Flying Serpent Kick (landing)
+393056 # Chi Explosion
+393566 # Thunderfist
+392959 # Glory of the Dawn proc
+410139 # Shadowflame Nova proc
+391400 # Resonant Fists proc
+389541 # Claw of the White Tiger
+388201 # Faeline Stomp (WW Hit)
+124507 # Gift of the Ox
+393786 # Chi Surge DoT
+196733 # Special Delivery
+387621 # Dragonfire
+418360 # Press the Advantage Melee Swing
+
+# Monk Class Tree
+
+388809 # Fast Feet
+388811 # Grace of the Crane
+231602 # Improved Vivify
+392910 # Profound Rebuttal
+387276 # Strength of Spirit
+389579 # Save them All
+392900 # Vigorous Expulsion
+388674 # Ferocity of Xuen
+
+# Windwalker Talents
+
+386941 # Attenuation
+386276 # Bonedust Brew
+388848 # Crane Vortex
+325201 # Dance of Chi-Ji
+323999 # Empowered Tiger Lightning
+388854 # Flashing Fists
+393098 # Forbidden Technique
+288634 # Glory of the Dawn
+391383 # Hardened Soles
+397768 # Inner Peace
+391330 # Meridian Strikes
+392970 # Open Palm Strikes
+121817 # Power Strikes
+388849 # Rising Star
+392982 # Shadowboxing Treads
+116645 # Teachings of the Monastery
+388856 # Touch of the Tiger
+195300 # Transfer the Power
+392994 # Way of the Fae
+392993 # Xuen's Battlegear
+122470 # Touch of Karma
+
+# Windwalker PvP Talents
+
+342928 # Reverse Harm
+
+# Windwalker Abilities
+
+113656 # Fists of Fury
+185099 # Rising Sun Kick
+101546 # Spinning Crane Kick
+100784 # Blackout Kick
+116847 # Rushing Jade Wind
+388207 # Faeline Stomp
+100780 # Tiger Palm
+322101 # Expel Harm
+117952 # Crackling Jade Lightning
+322109 # Touch of Death
+
+# Brewmaster Talents
+
+387638 # Shadowboxing Treads
+196736 # Blackout Combo
+325177 # Celestial Flames
+386965 # Charred Passions
+383785 # Counterstrike
+383994 # Dragonfire Brew
+387046 # Elusive Footwork
+325153 # Exploding Keg
+389942 # Face Palm
+387230 # Fluidity of Motion
+383700 # Gai Plin's Imperial Brew
+122281 # Healing Elixir
+383707 # Stormstout's Last Keg
+418359 # Press the Advantage
+388505 # Quick Sip
+383698 # Scalding Brew
+387625 # Staggering Strikes
+393357 # Tranquil Spirit
+
+# Brewmaster Abilities
+
+121253 # Keg Smash
+185099 # Rising Sun Kick
+101546 # Spinning Crane Kick
+100784 # Blackout Kick
+116847 # Rushing Jade Wind
+100780 # Tiger Palm
+322101 # Expel Harm
+117952 # Crackling Jade Lightning
+322109 # Touch of Death
+

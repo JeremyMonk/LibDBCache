@@ -1,0 +1,10 @@
+## Interface: 40000
+## Title: LibDBCache
+## Author: Jeremy
+## Version: 1.0
+## Notes: Provides DBCache as a Lua database for JeremyUI and facilitates use
+## DefaultState: Enabled
+## LoadOnDemand: 0
+main.lua
+database/db_live.lua
+database/db_ptr.lua
