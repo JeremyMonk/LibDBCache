@@ -39,6 +39,10 @@ function validVersion( dbc_version, dbc_build )
     game_build = tonumber( game_build )
     
     if game_int < dbc_int then
+        if not DBC then 
+            print("[LibDBCache] Warning: ".. dbc_version .. "("..dbc_build..") is newer than your client version. Some values may be inaccurate." )
+            return true
+        end
         return false
     elseif game_int == dbc_int then
         return game_build >= dbc_build
