@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-11-06 - World of Warcraft 10.1.7.51886
+-- Database generated from DBCache on 2023-11-07 - World of Warcraft 10.2.0.52068
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.1.7", 51886 ) then 
+if not validVersion( "10.2.0", 52068 ) then 
   return
 end
 
@@ -140,10 +140,10 @@ DBC = {
     },
     [6] = { -- (id=480070) 
       label = "Dummy (3)",
-      base_value = 59,
-      scaled_value = 59,
+      base_value = 54,
+      scaled_value = 54,
       pvp_coefficient = 1.00000,
-      pct = 0.590,
+      pct = 0.540,
     },
   },
   -- Teachings of the Monastery  
@@ -789,40 +789,40 @@ DBC = {
     },
     [11] = { -- (id=260832) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 49,
-      scaled_value = 49,
-      pvp_coefficient = 1.00000,
-      pct = 0.490,
+      base_value = 79,
+      scaled_value = 79,
+      pvp_coefficient = 0.62000,
+      pct = 0.790,
       affected_spells = {
         107428,        185099,
       },
     },
     [12] = { -- (id=260833) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -10,
-      scaled_value = -10,
-      pvp_coefficient = 1.00000,
-      pct = -0.100,
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 0.86700,
+      pct = 0.040,
       affected_spells = {
         100784,        205523,        228649,
       },
     },
     [13] = { -- (id=260834) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 130,
-      scaled_value = 130,
-      pvp_coefficient = 1.00000,
-      pct = 1.300,
+      base_value = 245,
+      scaled_value = 245,
+      pvp_coefficient = 0.53200,
+      pct = 2.450,
       affected_spells = {
         100780,
       },
     },
     [14] = { -- (id=260835) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 170,
-      scaled_value = 170,
+      base_value = 184,
+      scaled_value = 184,
       pvp_coefficient = 1.00000,
-      pct = 1.700,
+      pct = 1.840,
       affected_spells = {
         107270,
       },
@@ -889,10 +889,10 @@ DBC = {
     },
     [22] = { -- (id=1041505) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -21,
-      scaled_value = -21,
+      base_value = -12,
+      scaled_value = -12,
       pvp_coefficient = 1.00000,
-      pct = -0.210,
+      pct = -0.120,
       affected_spells = {
         116670,
       },
@@ -960,15 +960,32 @@ DBC = {
       pct = 0.050,
       misc_value = 12,
     },
+    [31] = { -- (id=1103899) 
+      label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Direct Amount (0)",
+      base_value = -12,
+      scaled_value = -12,
+      pvp_coefficient = 1.00000,
+      pct = -0.120,
+    },
+    [32] = { -- (id=1108334) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 550,
+      scaled_value = 550,
+      pvp_coefficient = 0.52800,
+      pct = 5.500,
+      affected_spells = {
+        322101,
+      },
+    },
   },
   -- Windwalker Monk  
   [137025] = {
     [1] = { -- (id=179709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -5,
-      scaled_value = -5,
+      base_value = -3,
+      scaled_value = -3,
       pvp_coefficient = 1.57143,
-      pct = -0.050,
+      pct = -0.030,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
@@ -983,10 +1000,10 @@ DBC = {
     },
     [2] = { -- (id=191100) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
-      base_value = -5,
-      scaled_value = -5,
+      base_value = -3,
+      scaled_value = -3,
       pvp_coefficient = 1.57143,
-      pct = -0.050,
+      pct = -0.030,
       misc_value = 22,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
@@ -1002,10 +1019,10 @@ DBC = {
     },
     [3] = { -- (id=191101) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = -5,
-      scaled_value = -5,
+      base_value = -3,
+      scaled_value = -3,
       pvp_coefficient = 1.57143,
-      pct = -0.050,
+      pct = -0.030,
     },
     [4] = { -- (id=191102) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)",
@@ -1131,10 +1148,10 @@ DBC = {
     },
     [16] = { -- (id=984572) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 26,
-      scaled_value = 26,
+      base_value = 36,
+      scaled_value = 36,
       pvp_coefficient = 1.00000,
-      pct = 0.260,
+      pct = 0.360,
       affected_spells = {
         107428,        185099,
       },
@@ -1278,7 +1295,7 @@ DBC = {
       label = "School Damage (2): physical",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.74639,
+      ap_coefficient = 0.82103,
       pvp_coefficient = 2.20000,
       pct = 0.000,
     },
@@ -1533,6 +1550,13 @@ DBC = {
       affected_spells = {
         116670,
       },
+    },
+    [2] = { -- (id=1103902) 
+      label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Direct Amount (0)",
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 1.00000,
+      pct = 0.400,
     },
   },
   -- Glory of the Dawn  
@@ -2622,12 +2646,22 @@ DBC = {
   -- Fae Exposure  
   [395414] = {
     [1] = { -- (id=1035870) 
-      label = "Apply Aura (6) | Modify Damage Taken% from Caster (270)",
+      label = "Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)",
       base_value = 12,
       scaled_value = 12,
       pvp_coefficient = 1.00000,
       pct = 0.120,
-      misc_value = 0,
+      affected_spells = {
+        100780,        100784,        107270,        113656,        115181,
+        117418,        117952,        121253,        123586,        124081,
+        132467,        148135,        148187,        158221,        185099,
+        196608,        196733,        205523,        228649,        261947,
+        261977,        275673,        325153,        327264,        330901,
+        330903,        330907,        330911,        337342,        345714,
+        345727,        388201,        388207,        388609,        388867,
+        391400,        392959,        393056,        393400,        393566,
+        393786,        395519,        395521,        405426,        418360,
+      },
     },
     [2] = { -- (id=1035871) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster Pet (381)",
@@ -2772,7 +2806,7 @@ DBC = {
 }
 
 -- ------------------------------------------------------------------------------
-DBC_VERSION = "10.1.7"
-DBC_BUILD = 51886
+DBC_VERSION = "10.2.0"
+DBC_BUILD = 52068
 -- ------------------------------------------------------------------------------
 
