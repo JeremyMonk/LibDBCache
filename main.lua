@@ -11,13 +11,22 @@ if not LibDBCache then
     return
 end
 
-LibDBCache.Version = 1.0
+-- Storing as local reduces instructions by 30%
+local _DBC = DBC
+
+-- Versioning
+LibDBCache.Version = 1.1
+
+-- ------------------------------------------------------------------------------
+
+local GetBuildInfo = GetBuildInfo
+local gmatch = string.gmatch
 
 function validVersion( dbc_version, dbc_build )
     local versionAsInteger = function ( version )
         local mul = 1
         local ret = 0
-        for d in string.gmatch( version:reverse(), "([^.]+)") do
+        for d in gmatch( version:reverse(), "([^.]+)") do
             ret = ret + tonumber(d:reverse())*mul
             mul = mul * 10
         end
@@ -38,9 +47,13 @@ function validVersion( dbc_version, dbc_build )
     return true
 end
 
-function playerIsPvP()
-    if UnitIsPlayer( "target" ) then
-        if UnitExists( "target" ) and UnitCanAttack( "player", "target" ) then
+local UnitExists = UnitExists
+local UnitIsPlayer = UnitIsPlayer
+local UnitCanAttack = UnitCanAttack
+
+local function playerIsPvP()
+    if UnitExists( "target" ) and UnitIsPlayer( "target" ) then
+        if UnitCanAttack( "player", "target" ) then
             return true
         end
     end
@@ -65,13 +78,19 @@ local spell_not_found = {
     end,
 }
 
+local find = string.find
+
 function LibDBCache:find_spell( spellID, rank )
 
     if not DBC then
         return nil
     end
+    
+    if not _DBC then
+        _DBC = DBC
+    end
 
-    local spell = DBC[ spellID ]
+    local spell = _DBC[ spellID ]
     
     if not spell then
         return spell_not_found
@@ -100,31 +119,38 @@ function LibDBCache:find_spell( spellID, rank )
                 end
             end
             
+            local base_value = effect.base_value
+            local pvp_coefficient = effect.pvp_coefficient
+            
             if playerIsPvP() then
-                if effect.pvp_coefficient ~= 1 then
-                    effect.base_value = effect.base_value * effect.pvp_coefficient
-                    effect.scaled_value = effect.scaled_value * effect.pvp_coefficient
+                if pvp_coefficient ~= 1 then
+                    effect.base_value = base_value * pvp_coefficient
+                    effect.scaled_value = scaled_value * pvp_coefficient
                     
                     if effect.ap_coefficient then
-                        effect.ap_coefficient = effect.ap_coefficient * effect.pvp_coefficient
+                        effect.ap_coefficient = effect.ap_coefficient * pvp_coefficient
                     end
                     
                     if effect.sp_coefficient then
-                        effect.sp_coefficient = effect.sp_coefficient * effect.pvp_coefficient
+                        effect.sp_coefficient = effect.sp_coefficient * pvp_coefficient
                     end
                 end
             end
             
-            effect.pct = effect.base_value / 100
-            effect.roll = effect.pct
-            effect.mod = 1 + effect.pct
-            effect.seconds = effect.base_value / 1000
+            local pct = base_value / 100
+            
+            effect.pct = pct
+            effect.roll = pct
+            effect.mod = 1 + pct
+            effect.seconds = base_value / 1000
             
             -- parse label
+            local label = effect.label
+            
             effect.properties = effect.properties or {
-                add_percent_modifier    = string.find( effect.label, "Add Percent Modifier"),
-                spell_direct_amount     = string.find( effect.label, "Spell Direct Amount"),
-                spell_periodic_amount   = string.find( effect.label, "Spell Periodic Amount"),
+                add_percent_modifier    = find( label, "Add Percent Modifier"),
+                spell_direct_amount     = find( label, "Spell Direct Amount"),
+                spell_periodic_amount   = find( label, "Spell Periodic Amount"),
             }
         end
         
