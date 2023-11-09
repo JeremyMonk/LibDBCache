@@ -129,7 +129,7 @@ function LibDBCache:find_spell( spellID, rank )
             if playerIsPvP() then
                 if pvp_coefficient ~= 1 then
                     effect.base_value = base_value * pvp_coefficient
-                    effect.scaled_value = scaled_value * pvp_coefficient
+                    effect.scaled_value = effect.scaled_value * pvp_coefficient
                     
                     if effect.ap_coefficient then
                         effect.ap_coefficient = effect.ap_coefficient * pvp_coefficient
