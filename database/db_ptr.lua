@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-11-07 - World of Warcraft 10.2.0.52068
+-- Database generated from DBCache on 2023-11-11 - World of Warcraft 10.2.0.52068
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.0", 52068 ) then 
@@ -2801,6 +2801,84 @@ DBC = {
       scaled_value = 100,
       pvp_coefficient = 1.00000,
       pct = 1.000,
+    },
+  },
+  -- Monk Brewmaster 10.2 Class Set 2pc  
+  [422886] = {
+    [1] = { -- (id=1098484) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 0.50000,
+      pct = 0.200,
+    },
+    [2] = { -- (id=1103007) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 50,
+      scaled_value = 50,
+      pvp_coefficient = 0.50000,
+      pct = 0.500,
+    },
+  },
+  -- Monk Brewmaster 10.2 Class Set 4pc  
+  [422887] = {
+    [1] = { -- (id=1098485) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 0.50000,
+      pct = 0.100,
+    },
+    [2] = { -- (id=1103027) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 0.50000,
+      pct = 1.000,
+    },
+  },
+  -- Monk Windwalker 10.2 Class Set 2pc  
+  [422891] = {
+    [1] = { -- (id=1098489) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Blackout Reinforcement",
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 0.50000,
+      pct = 1.500,
+    },
+  },
+  -- Monk Windwalker 10.2 Class Set 4pc  
+  [422892] = {
+    [1] = { -- (id=1098490) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 0.50000,
+      pct = 0.030,
+    },
+    [2] = { -- (id=1113776) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 0.50000,
+      pct = 0.040,
+      affected_spells = {
+        107428,        117418,        152175,        158221,        185099,
+        392983,        395519,        395521,
+      },
+    },
+  },
+  -- Blackout Reinforcement  
+  [424454] = {
+    [1] = { -- (id=1101241) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 0.50000,
+      pct = 1.500,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
     },
   },
 }
