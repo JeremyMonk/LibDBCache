@@ -1,6 +1,12 @@
 # Any spellIDs added below will be parsed and added to the database
 # duplicate entries are ignored
 
+# Monk Set Bonuses
+422886 # T31 Brewmaster Class Set 2pc
+422887 # T31 Brewmaster Class Set 4pc
+422891 # T31 Windwalker Class Set 2pc
+422892 # T31 Windwalker Class Set 4pc
+
 # Monk Spells
 
 137025 # Windwalker Monk
@@ -41,6 +47,7 @@
 196733 # Special Delivery
 387621 # Dragonfire
 418360 # Press the Advantage Melee Swing
+424454 # Blackout Reinforcement
 
 # Monk Class Tree
 
