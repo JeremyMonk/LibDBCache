@@ -64,24 +64,6 @@ local function playerIsPvP()
     return false
 end
 
-local spell_not_found = {
-    id = 0,
-    effectN = function( n )
-        return {
-            label = "Spell not found!",
-            base_value = 0,
-            scaled_value = 0,
-            pvp_coefficient = 1,
-            ap_coefficient = 0,
-            sp_coefficient = 0,
-            pct = 0,
-            roll = 0,
-            mod = 1,
-            seconds = 0,
-        }
-    end,
-}
-
 local find = string.find
 
 function LibDBCache:find_spell( spellID, rank )
@@ -97,7 +79,23 @@ function LibDBCache:find_spell( spellID, rank )
     local spell = _DBC[ spellID ]
     
     if not spell then
-        return spell_not_found
+        return  {
+            id = 0,
+            effectN = function( n )
+                return {
+                    label = "Spell not found!",
+                    base_value = 0,
+                    scaled_value = 0,
+                    pvp_coefficient = 1,
+                    ap_coefficient = 0,
+                    sp_coefficient = 0,
+                    pct = 0,
+                    roll = 0,
+                    mod = 1,
+                    seconds = 0,
+                }
+            end,
+        }
     end
     
     -- TODO: Spell Class/Spec Filtering
