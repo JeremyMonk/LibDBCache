@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-11-14 - World of Warcraft 10.2.0.52129
+-- Database generated from DBCache on 2023-11-17 - World of Warcraft 10.2.0.52188
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.0", 52129 ) then 
+if not validVersion( "10.2.0", 52188 ) then 
   return
 end
 
@@ -2807,10 +2807,10 @@ DBC = {
   [422886] = {
     [1] = { -- (id=1098484) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = 20,
-      scaled_value = 20,
+      base_value = 40,
+      scaled_value = 40,
       pvp_coefficient = 0.50000,
-      pct = 0.200,
+      pct = 0.400,
     },
     [2] = { -- (id=1103007) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2824,10 +2824,10 @@ DBC = {
   [422887] = {
     [1] = { -- (id=1098485) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 0.50000,
-      pct = 0.100,
+      pct = 0.150,
     },
     [2] = { -- (id=1103027) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2841,10 +2841,10 @@ DBC = {
   [422891] = {
     [1] = { -- (id=1098489) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Blackout Reinforcement",
-      base_value = 150,
-      scaled_value = 150,
+      base_value = 200,
+      scaled_value = 200,
       pvp_coefficient = 0.50000,
-      pct = 1.500,
+      pct = 2.000,
     },
   },
   -- Monk Windwalker 10.2 Class Set 4pc  
@@ -2872,10 +2872,10 @@ DBC = {
   [424454] = {
     [1] = { -- (id=1101241) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 150,
-      scaled_value = 150,
+      base_value = 200,
+      scaled_value = 200,
       pvp_coefficient = 0.50000,
-      pct = 1.500,
+      pct = 2.000,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -2885,6 +2885,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "10.2.0"
-DBC_BUILD = 52129
+DBC_BUILD = 52188
 -- ------------------------------------------------------------------------------
 
