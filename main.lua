@@ -15,7 +15,7 @@ end
 local _DBC = DBC
 
 -- Versioning
-LibDBCache.Version = 1.2
+LibDBCache.Version = 1.3
 
 -- ------------------------------------------------------------------------------
 
@@ -64,7 +64,25 @@ local function playerIsPvP()
     return false
 end
 
+local next = next
 local find = string.find
+local setmetatable = setmetatable
+local getmetatable = getmetatable
+
+function deepcopy( orig )
+    local orig_type = type( orig )
+    local copy
+    if orig_type == 'table' then
+        copy = {}
+        for orig_key, orig_value in next, orig, nil do
+            copy[ deepcopy( orig_key ) ] = deepcopy( orig_value )
+        end
+        setmetatable( copy, deepcopy( getmetatable( orig ) ) )
+    else -- number, string, boolean, etc
+        copy = orig
+    end
+    return copy
+end
 
 function LibDBCache:find_spell( spellID, rank )
 
@@ -103,12 +121,42 @@ function LibDBCache:find_spell( spellID, rank )
     
     spell.id = spellID
     spell.effectN = function( n )
-        local effect = spell[ n ]
+
+        if not spell[ n ] then
+            return nil
+        end
         
+        local effect = spell[ n ]
+ 
+         -- default values
+        effect.label = effect.label or "None"
+        effect.pvp_coefficient = effect.pvp_coefficient or 1       
+        
+        -- parse label
+        local label = effect.label
+        
+        effect.properties = effect.properties or {
+            add_percent_modifier    = find( label, "Add Percent Modifier"),
+            spell_direct_amount     = find( label, "Spell Direct Amount"),
+            spell_periodic_amount   = find( label, "Spell Periodic Amount"),
+        }        
+    
+        -- key affected spells list
+        if not effect.keyed then
+            if effect.affected_spells then
+                local keyed = {}
+                for _, v in pairs ( effect.affected_spells ) do
+                    keyed[ v ] = true
+                end
+                effect.affected_spells = keyed
+            end
+            effect.keyed = true
+         end       
+            
+        effect = deepcopy( effect )
+        
+        -- dynamic values
         if effect then
-            -- default values
-            effect.label = effect.label or "None"
-            effect.pvp_coefficient = effect.pvp_coefficient or 1
             
             -- talent values
             if rank then
@@ -146,14 +194,6 @@ function LibDBCache:find_spell( spellID, rank )
             effect.mod = 1 + pct
             effect.seconds = base_value / 1000
             
-            -- parse label
-            local label = effect.label
-            
-            effect.properties = effect.properties or {
-                add_percent_modifier    = find( label, "Add Percent Modifier"),
-                spell_direct_amount     = find( label, "Spell Direct Amount"),
-                spell_periodic_amount   = find( label, "Spell Periodic Amount"),
-            }
         end
         
         return effect
