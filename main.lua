@@ -15,7 +15,7 @@ end
 local _DBC = DBC
 
 -- Versioning
-LibDBCache.Version = 1.3
+LibDBCache.Version = 1.4
 
 -- ------------------------------------------------------------------------------
 
