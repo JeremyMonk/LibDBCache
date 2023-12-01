@@ -64,25 +64,7 @@ local function playerIsPvP()
     return false
 end
 
-local next = next
 local find = string.find
-local setmetatable = setmetatable
-local getmetatable = getmetatable
-
-function deepcopy( orig )
-    local orig_type = type( orig )
-    local copy
-    if orig_type == 'table' then
-        copy = {}
-        for orig_key, orig_value in next, orig, nil do
-            copy[ deepcopy( orig_key ) ] = deepcopy( orig_value )
-        end
-        setmetatable( copy, deepcopy( getmetatable( orig ) ) )
-    else -- number, string, boolean, etc
-        copy = orig
-    end
-    return copy
-end
 
 function LibDBCache:find_spell( spellID, rank )
 
@@ -153,7 +135,18 @@ function LibDBCache:find_spell( spellID, rank )
             effect.keyed = true
          end       
             
-        effect = deepcopy( effect )
+        effect = {
+            label = effect.label,
+            properties = effect.properties,
+            base_value = effect.base_value,
+            affected_spells = effect.affected_spells,
+            base_value = effect.base_value,
+            scaled_value = effect.scaled_value,
+            ranks = effect.ranks,
+            pvp_coefficient = effect.pvp_coefficient,
+            ap_coefficient = effect.ap_coefficient,
+            sp_coefficient = effect.sp_coefficient,
+        }
         
         -- dynamic values
         if effect then
