@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-11-30 - World of Warcraft 10.2.0.52188
+-- Database generated from DBCache on 2023-12-05 - World of Warcraft 10.2.0.52393
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.0", 52188 ) then 
+if not validVersion( "10.2.0", 52393 ) then 
   return
 end
 
@@ -811,7 +811,7 @@ DBC = {
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 245,
       scaled_value = 245,
-      pvp_coefficient = 0.53200,
+      pvp_coefficient = 0.34300,
       pct = 2.450,
       affected_spells = {
         100780,
@@ -889,10 +889,10 @@ DBC = {
     },
     [22] = { -- (id=1041505) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -12,
-      scaled_value = -12,
+      base_value = -8,
+      scaled_value = -8,
       pvp_coefficient = 1.00000,
-      pct = -0.120,
+      pct = -0.080,
       affected_spells = {
         116670,
       },
@@ -948,7 +948,7 @@ DBC = {
       label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 1 (3)",
       base_value = 10,
       scaled_value = 10,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.00000,
       pct = 0.100,
       misc_value = 3,
     },
@@ -982,10 +982,10 @@ DBC = {
   [137025] = {
     [1] = { -- (id=179709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -3,
-      scaled_value = -3,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.57143,
-      pct = -0.030,
+      pct = 0.030,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
@@ -1000,10 +1000,10 @@ DBC = {
     },
     [2] = { -- (id=191100) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
-      base_value = -3,
-      scaled_value = -3,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.57143,
-      pct = -0.030,
+      pct = 0.030,
       misc_value = 22,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
@@ -1019,10 +1019,10 @@ DBC = {
     },
     [3] = { -- (id=191101) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = -3,
-      scaled_value = -3,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.57143,
-      pct = -0.030,
+      pct = 0.030,
     },
     [4] = { -- (id=191102) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)",
@@ -2885,6 +2885,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "10.2.0"
-DBC_BUILD = 52188
+DBC_BUILD = 52393
 -- ------------------------------------------------------------------------------
 
