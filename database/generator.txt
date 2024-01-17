@@ -31,7 +31,7 @@
 395519 # Strike of the Windlord MH
 395521 # Strike of the Windlord OH
 148187 # Rushing Jade Windd (tick)
-395414 # Fae Exposure (damage)
+395414 # Jadefire Brand (damage)
 148135 # Chi Burst
 132467 # Chi Wave
 123586 # Flying Serpent Kick (landing)
@@ -41,7 +41,9 @@
 410139 # Shadowflame Nova proc
 391400 # Resonant Fists proc
 389541 # Claw of the White Tiger
-388201 # Faeline Stomp (WW Hit)
+327264 # Faeline Stomp (WW Hit)
+388201 # Jadefire Stomp (WW Hit)
+
 124507 # Gift of the Ox
 393786 # Chi Surge DoT
 196733 # Special Delivery
@@ -95,7 +97,7 @@
 101546 # Spinning Crane Kick
 100784 # Blackout Kick
 116847 # Rushing Jade Wind
-388207 # Faeline Stomp
+388207 # Jadefire Stomp
 100780 # Tiger Palm
 322101 # Expel Harm
 117952 # Crackling Jade Lightning

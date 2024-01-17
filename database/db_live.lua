@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-12-19 - World of Warcraft 10.2.0.52607
+-- Database generated from DBCache on 2024-01-16 - World of Warcraft 10.2.5.52902
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.0", 52607 ) then 
+if not validVersion( "10.2.5", 52902 ) then 
   return
 end
 
@@ -1750,6 +1750,17 @@ DBC = {
       pct = 3.000,
     },
   },
+  -- Faeline Stomp  
+  [327264] = {
+    [1] = { -- (id=818673) 
+      label = "School Damage (2): nature",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.65000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Pressure Point  
   [337482] = {
     [1] = { -- (id=835536) 
@@ -2095,7 +2106,7 @@ DBC = {
       },
     },
   },
-  -- Faeline Stomp  
+  -- Jadefire Stomp  
   [388201] = {
     [1] = { -- (id=1023725) 
       label = "School Damage (2): nature",
@@ -2106,7 +2117,7 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Faeline Stomp  
+  -- Jadefire Stomp  
   [388207] = {
     [1] = { -- (id=1023731) 
       label = "School Damage (2): nature",
@@ -2541,7 +2552,7 @@ DBC = {
       misc_value = 5,
     },
   },
-  -- Way of the Fae  
+  -- Path of Jade  
   [392994] = {
     [1] = { -- (id=1031622) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2673,7 +2684,7 @@ DBC = {
       pct = 0.450,
     },
   },
-  -- Fae Exposure  
+  -- Jadefire Brand  
   [395414] = {
     [1] = { -- (id=1035870) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)",
@@ -2914,7 +2925,7 @@ DBC = {
 }
 
 -- ------------------------------------------------------------------------------
-DBC_VERSION = "10.2.0"
-DBC_BUILD = 52607
+DBC_VERSION = "10.2.5"
+DBC_BUILD = 52902
 -- ------------------------------------------------------------------------------
 

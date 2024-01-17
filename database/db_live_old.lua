@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2023-12-05 - World of Warcraft 10.2.0.52393
+-- Database generated from DBCache on 2023-12-19 - World of Warcraft 10.2.0.52607
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.0", 52393 ) then 
+if not validVersion( "10.2.0", 52607 ) then 
   return
 end
 
@@ -915,10 +915,10 @@ DBC = {
     },
     [25] = { -- (id=1081588) 
       label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 1 (3)",
-      base_value = -5,
-      scaled_value = -5,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.00000,
-      pct = -0.050,
+      pct = 0.030,
       misc_value = 3,
     },
     [26] = { -- (id=1081589) 
@@ -1264,6 +1264,36 @@ DBC = {
       pct = 0.150,
       affected_spells = {
         100780,
+      },
+    },
+    [28] = { -- (id=1126386) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+      affected_spells = {
+        107270,
+      },
+    },
+    [29] = { -- (id=1126387) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 0.00000,
+      pct = 0.100,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+    [30] = { -- (id=1126388) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 0.00000,
+      pct = 0.080,
+      affected_spells = {
+        107428,        185099,
       },
     },
   },
@@ -1714,10 +1744,10 @@ DBC = {
   [325201] = {
     [1] = { -- (id=815341) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Dance of Chi-Ji",
-      base_value = 200,
-      scaled_value = 200,
+      base_value = 300,
+      scaled_value = 300,
       pvp_coefficient = 0.75000,
-      pct = 2.000,
+      pct = 3.000,
     },
   },
   -- Pressure Point  
@@ -2407,8 +2437,8 @@ DBC = {
       label = "School Damage (2): physical",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.36000,
-      pvp_coefficient = 1.00000,
+      ap_coefficient = 0.50000,
+      pvp_coefficient = 0.72000,
       pct = 0.000,
     },
     [2] = { -- (id=1031562) 
@@ -2841,10 +2871,10 @@ DBC = {
   [422891] = {
     [1] = { -- (id=1098489) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Blackout Reinforcement",
-      base_value = 200,
-      scaled_value = 200,
+      base_value = 250,
+      scaled_value = 250,
       pvp_coefficient = 0.50000,
-      pct = 2.000,
+      pct = 2.500,
     },
   },
   -- Monk Windwalker 10.2 Class Set 4pc  
@@ -2872,10 +2902,10 @@ DBC = {
   [424454] = {
     [1] = { -- (id=1101241) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 200,
-      scaled_value = 200,
-      pvp_coefficient = 0.50000,
-      pct = 2.000,
+      base_value = 250,
+      scaled_value = 250,
+      pvp_coefficient = 0.40000,
+      pct = 2.500,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -2885,6 +2915,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "10.2.0"
-DBC_BUILD = 52393
+DBC_BUILD = 52607
 -- ------------------------------------------------------------------------------
 
