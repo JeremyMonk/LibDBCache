@@ -1,14 +1,17 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-01-16 - World of Warcraft 10.2.5.52902
+-- Database generated from DBCache on 2024-02-21 - World of Warcraft 10.2.5.52646
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.5", 52902 ) then 
+if not validVersion( "10.2.5", 52646 ) then 
   return
 end
 
 DBC = {
-  -- Tiger Palm  
+  -- Tiger Palm 
   [100780] = {
+    localName = "Tiger Palm",
+    tokenName = "tiger_palm",
+
     [1] = { -- (id=108857) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -39,8 +42,11 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Blackout Kick  
+  -- Blackout Kick 
   [100784] = {
+    localName = "Blackout Kick",
+    tokenName = "blackout_kick",
+
     [1] = { -- (id=108867) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -65,8 +71,11 @@ DBC = {
       pct = 10.000,
     },
   },
-  -- Spinning Crane Kick  
+  -- Spinning Crane Kick 
   [101546] = {
+    localName = "Spinning Crane Kick",
+    tokenName = "spinning_crane_kick",
+
     [1] = { -- (id=110004) 
       label = "Apply Aura (6) | Periodic Trigger Spell (23): Spinning Crane Kick every 0.5 seconds",
       base_value = 5,
@@ -89,8 +98,11 @@ DBC = {
       pct = 0.150,
     },
   },
-  -- Spinning Crane Kick  
+  -- Spinning Crane Kick 
   [107270] = {
+    localName = "Spinning Crane Kick",
+    tokenName = "spinning_crane_kick",
+
     [1] = { -- (id=117946) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -100,8 +112,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Fists of Fury  
+  -- Fists of Fury 
   [113656] = {
+    localName = "Fists of Fury",
+    tokenName = "fists_of_fury",
+
     [1] = { -- (id=126625) 
       label = "Dummy (3)",
       base_value = 5,
@@ -146,8 +161,11 @@ DBC = {
       pct = 0.540,
     },
   },
-  -- Teachings of the Monastery  
+  -- Teachings of the Monastery 
   [116645] = {
+    localName = "Teachings of the Monastery",
+    tokenName = "teachings_of_the_monastery",
+
     [1] = { -- (id=131760) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 12,
@@ -157,8 +175,11 @@ DBC = {
       misc_value = 8,
     },
   },
-  -- Rushing Jade Wind  
+  -- Rushing Jade Wind 
   [116847] = {
+    localName = "Rushing Jade Wind",
+    tokenName = "rushing_jade_wind",
+
     [1] = { -- (id=132057) 
       label = "Apply Aura (6) | Periodic Trigger Spell (23): Rushing Jade Wind every 0.75 seconds",
       base_value = 5,
@@ -174,8 +195,11 @@ DBC = {
       pct = 0.020,
     },
   },
-  -- Crackling Jade Lightning  
+  -- Crackling Jade Lightning 
   [117952] = {
+    localName = "Crackling Jade Lightning",
+    tokenName = "crackling_jade_lightning",
+
     [1] = { -- (id=134063) 
       label = "Apply Aura (6) | Periodic Damage (3): nature every 1 seconds",
       base_value = 0,
@@ -192,8 +216,11 @@ DBC = {
       pct = 2.000,
     },
   },
-  -- Keg Smash  
+  -- Keg Smash 
   [121253] = {
+    localName = "Keg Smash",
+    tokenName = "keg_smash",
+
     [1] = { -- (id=150037) 
       label = "Dummy (3)",
       base_value = 0,
@@ -245,8 +272,11 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Power Strikes  
+  -- Power Strikes 
   [121817] = {
+    localName = "Power Strikes",
+    tokenName = "power_strikes",
+
     [1] = { -- (id=153005) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 15 seconds",
       base_value = 1,
@@ -262,8 +292,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Healing Elixir  
+  -- Healing Elixir 
   [122281] = {
+    localName = "Healing Elixir",
+    tokenName = "healing_elixir",
+
     [1] = { -- (id=153853) 
       label = "Direct Heal% (136)",
       base_value = 15,
@@ -272,8 +305,11 @@ DBC = {
       pct = 0.150,
     },
   },
-  -- Touch of Karma  
+  -- Touch of Karma 
   [122470] = {
+    localName = "Touch of Karma",
+    tokenName = "touch_of_karma",
+
     [1] = { -- (id=154179) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -311,8 +347,11 @@ DBC = {
       pct = 1.600,
     },
   },
-  -- Flying Serpent Kick  
+  -- Flying Serpent Kick 
   [123586] = {
+    localName = "Flying Serpent Kick",
+    tokenName = "flying_serpent_kick",
+
     [1] = { -- (id=155941) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -330,8 +369,11 @@ DBC = {
       pct = -0.700,
     },
   },
-  -- Breath of Fire  
+  -- Breath of Fire 
   [123725] = {
+    localName = "Breath of Fire",
+    tokenName = "breath_of_fire",
+
     [1] = { -- (id=156180) 
       label = "Apply Aura (6) | Periodic Damage (3): fire every 2 seconds",
       base_value = 0,
@@ -349,8 +391,11 @@ DBC = {
       misc_value = 0,
     },
   },
-  -- Gift of the Ox  
+  -- Gift of the Ox 
   [124507] = {
+    localName = "Gift of the Ox",
+    tokenName = "gift_of_the_ox",
+
     [1] = { -- (id=157621) 
       label = "Direct Heal (10)",
       base_value = 0,
@@ -360,8 +405,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Chi Wave  
+  -- Chi Wave 
   [132467] = {
+    localName = "Chi Wave",
+    tokenName = "chi_wave",
+
     [1] = { -- (id=171561) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -378,8 +426,80 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Brewmaster Monk  
+  -- PvP Rules Enabled 
+  [134735] = {
+    localName = "PvP Rules Enabled",
+    tokenName = "pvp_rules_enabled",
+
+    [1] = { -- (id=171791) 
+      label = "Apply Aura (6) | Modify Healing Received% (118)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=239967) 
+      label = "Apply Aura (6) | Modify Absorb% Done (422)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [3] = { -- (id=255562) 
+      label = "Apply Aura (6) | Unknown(448)",
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+    },
+    [4] = { -- (id=255744) 
+      label = "Apply Aura (6) | Modify Expertise% (240)",
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+    },
+    [5] = { -- (id=255745) 
+      label = "Apply Aura (6) | Unknown(119)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [6] = { -- (id=342165) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [7] = { -- (id=351564) 
+      label = "Apply Aura (6) | Unknown(309)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [8] = { -- (id=746554) 
+      label = "Apply Aura (6) | Modify Mana Regen% (379)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [9] = { -- (id=748514) 
+      label = "Apply Aura (6) | Modify Pet Damage Done% (429)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Brewmaster Monk 
   [137023] = {
+    localName = "Brewmaster Monk",
+    tokenName = "brewmaster_monk",
+
     [1] = { -- (id=179707) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 11,
@@ -679,8 +799,11 @@ DBC = {
       },
     },
   },
-  -- Mistweaver Monk  
+  -- Mistweaver Monk 
   [137024] = {
+    localName = "Mistweaver Monk",
+    tokenName = "mistweaver_monk",
+
     [1] = { -- (id=179708) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 11,
@@ -978,8 +1101,11 @@ DBC = {
       },
     },
   },
-  -- Windwalker Monk  
+  -- Windwalker Monk 
   [137025] = {
+    localName = "Windwalker Monk",
+    tokenName = "windwalker_monk",
+
     [1] = { -- (id=179709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 3,
@@ -1297,8 +1423,11 @@ DBC = {
       },
     },
   },
-  -- Chi Burst  
+  -- Chi Burst 
   [148135] = {
+    localName = "Chi Burst",
+    tokenName = "chi_burst",
+
     [1] = { -- (id=201313) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -1308,8 +1437,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Rushing Jade Wind  
+  -- Rushing Jade Wind 
   [148187] = {
+    localName = "Rushing Jade Wind",
+    tokenName = "rushing_jade_wind",
+
     [1] = { -- (id=201670) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1319,8 +1451,31 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Whirling Dragon Punch  
+  -- Whirling Dragon Punch 
+  [152175] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+
+    [1] = { -- (id=210680) 
+      label = "Apply Aura (6) | Periodic Dummy (226): every 0.25 seconds",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=288846) 
+      label = "Unknown(144)",
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Whirling Dragon Punch 
   [158221] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+
     [1] = { -- (id=220760) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1330,8 +1485,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Rising Sun Kick  
+  -- Rising Sun Kick 
   [185099] = {
+    localName = "Rising Sun Kick",
+    tokenName = "rising_sun_kick",
+
     [1] = { -- (id=268390) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1341,8 +1499,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Transfer the Power  
+  -- Transfer the Power 
   [195300] = {
+    localName = "Transfer the Power",
+    tokenName = "transfer_the_power",
+
     [1] = { -- (id=286702) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 3,
@@ -1351,8 +1512,24 @@ DBC = {
       pct = 0.030,
     },
   },
-  -- Special Delivery  
+  -- Special Delivery 
+  [196730] = {
+    localName = "Special Delivery",
+    tokenName = "special_delivery",
+
+    [1] = { -- (id=288829) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Special Delivery",
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+    },
+  },
+  -- Special Delivery 
   [196733] = {
+    localName = "Special Delivery",
+    tokenName = "special_delivery",
+
     [1] = { -- (id=288833) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1376,8 +1553,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Blackout Combo  
+  -- Blackout Combo 
   [196736] = {
+    localName = "Blackout Combo",
+    tokenName = "blackout_combo",
+
     [1] = { -- (id=288838) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 100,
@@ -1421,8 +1601,24 @@ DBC = {
       pct = 0.030,
     },
   },
-  -- Hit Combo  
+  -- Hit Combo 
+  [196740] = {
+    localName = "Hit Combo",
+    tokenName = "hit_combo",
+
+    [1] = { -- (id=288842) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Hit Combo 
   [196741] = {
+    localName = "Hit Combo",
+    tokenName = "hit_combo",
+
     [1] = { -- (id=288843) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 1,
@@ -1475,8 +1671,11 @@ DBC = {
       pct = 0.010,
     },
   },
-  -- Celestial Fortune  
+  -- Celestial Fortune 
   [216519] = {
+    localName = "Celestial Fortune",
+    tokenName = "celestial_fortune",
+
     [1] = { -- (id=322186) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 80,
@@ -1493,8 +1692,25 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Cyclone Strikes  
+  -- Mark of the Crane 
+  [220357] = {
+    localName = "Mark of the Crane",
+    tokenName = "mark_of_the_crane",
+
+    [1] = { -- (id=328546) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      misc_value = 2763,
+    },
+  },
+  -- Cyclone Strikes 
   [220358] = {
+    localName = "Cyclone Strikes",
+    tokenName = "cyclone_strikes",
+
     [1] = { -- (id=328547) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 18,
@@ -1520,8 +1736,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Blackout Combo  
+  -- Blackout Combo 
   [228563] = {
+    localName = "Blackout Combo",
+    tokenName = "blackout_combo",
+
     [1] = { -- (id=344191) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 100,
@@ -1568,8 +1787,11 @@ DBC = {
       },
     },
   },
-  -- Improved Vivify  
+  -- Improved Vivify 
   [231602] = {
+    localName = "Improved Vivify",
+    tokenName = "improved_vivify",
+
     [1] = { -- (id=349339) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 20, 40, },
@@ -1589,32 +1811,11 @@ DBC = {
       pct = 0.400,
     },
   },
-  -- Glory of the Dawn  
-  [288634] = {
-    [1] = { -- (id=752477) 
-      label = "Apply Aura (6) | Dummy (4) | Scaling Class: -8",
-      base_value = 0,
-      scaled_value = 12028,
-      pvp_coefficient = 0.50000,
-      pct = 0.000,
-    },
-    [2] = { -- (id=752478) 
-      label = "Dummy (3)",
-      base_value = 1,
-      scaled_value = 1,
-      pvp_coefficient = 1.00000,
-      pct = 0.010,
-    },
-    [3] = { -- (id=754207) 
-      label = "Dummy (3)",
-      base_value = 25,
-      scaled_value = 25,
-      pvp_coefficient = 1.00000,
-      pct = 0.250,
-    },
-  },
-  -- Expel Harm  
+  -- Expel Harm 
   [322101] = {
+    localName = "Expel Harm",
+    tokenName = "expel_harm",
+
     [1] = { -- (id=810236) 
       label = "Direct Heal (10)",
       base_value = 0,
@@ -1638,8 +1839,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Touch of Death  
+  -- Touch of Death 
   [322109] = {
+    localName = "Touch of Death",
+    tokenName = "touch_of_death",
+
     [1] = { -- (id=810250) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1662,8 +1866,57 @@ DBC = {
       pct = 0.350,
     },
   },
-  -- Empowered Tiger Lightning  
+  -- Improved Touch of Death 
+  [322113] = {
+    localName = "Improved Touch of Death",
+    tokenName = "improved_touch_of_death",
+
+    [1] = { -- (id=810254) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=810255) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 35,
+      scaled_value = 35,
+      pvp_coefficient = 1.00000,
+      pct = 0.350,
+    },
+  },
+  -- Shuffle 
+  [322120] = {
+    localName = "Shuffle",
+    tokenName = "shuffle",
+
+    [1] = { -- (id=810265) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+    },
+  },
+  -- Improved Celestial Brew 
+  [322510] = {
+    localName = "Improved Celestial Brew",
+    tokenName = "improved_celestial_brew",
+
+    [1] = { -- (id=810875) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
+    },
+  },
+  -- Empowered Tiger Lightning 
   [323999] = {
+    localName = "Empowered Tiger Lightning",
+    tokenName = "empowered_tiger_lightning",
+
     [1] = { -- (id=813290) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 4,
@@ -1679,8 +1932,11 @@ DBC = {
       pct = 0.100,
     },
   },
-  -- Purified Chi  
+  -- Purified Chi 
   [325092] = {
+    localName = "Purified Chi",
+    tokenName = "purified_chi",
+
     [1] = { -- (id=815143) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -1690,8 +1946,11 @@ DBC = {
       misc_value = 3,
     },
   },
-  -- Exploding Keg  
+  -- Exploding Keg 
   [325153] = {
+    localName = "Exploding Keg",
+    tokenName = "exploding_keg",
+
     [1] = { -- (id=815254) 
       label = "School Damage (2): fire",
       base_value = 0,
@@ -1723,8 +1982,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Celestial Flames  
+  -- Celestial Flames 
   [325177] = {
+    localName = "Celestial Flames",
+    tokenName = "celestial_flames",
+
     [1] = { -- (id=815306) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Celestial Flames",
       base_value = 1,
@@ -1740,8 +2002,11 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Dance of Chi-Ji  
+  -- Dance of Chi-Ji 
   [325201] = {
+    localName = "Dance of Chi-Ji",
+    tokenName = "dance_of_chiji",
+
     [1] = { -- (id=815341) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Dance of Chi-Ji",
       base_value = 300,
@@ -1750,8 +2015,11 @@ DBC = {
       pct = 3.000,
     },
   },
-  -- Faeline Stomp  
+  -- Faeline Stomp 
   [327264] = {
+    localName = "Faeline Stomp",
+    tokenName = "faeline_stomp",
+
     [1] = { -- (id=818673) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -1761,8 +2029,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Pressure Point  
+  -- Pressure Point 
   [337482] = {
+    localName = "Pressure Point",
+    tokenName = "pressure_point",
+
     [1] = { -- (id=835536) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)",
       base_value = 40,
@@ -1775,8 +2046,11 @@ DBC = {
       },
     },
   },
-  -- Reverse Harm  
+  -- Reverse Harm 
   [342928] = {
+    localName = "Reverse Harm",
+    tokenName = "reverse_harm",
+
     [1] = { -- (id=844367) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 30,
@@ -1799,8 +2073,11 @@ DBC = {
       },
     },
   },
-  -- Keefer's Skyreach  
+  -- Keefer's Skyreach 
   [344021] = {
+    localName = "Keefer's Skyreach",
+    tokenName = "keefers_skyreach",
+
     [1] = { -- (id=868060) 
       label = "Apply Aura (6) | Modify Crit Chance% from Caster's Spells (308)",
       base_value = 50,
@@ -1828,8 +2105,11 @@ DBC = {
       pct = 0.500,
     },
   },
-  -- Hit Scheme  
+  -- Hit Scheme 
   [383696] = {
+    localName = "Hit Scheme",
+    tokenName = "hit_scheme",
+
     [1] = { -- (id=1015764) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 10,
@@ -1841,8 +2121,25 @@ DBC = {
       },
     },
   },
-  -- Scalding Brew  
+  -- Sal'salabim's Strength 
+  [383697] = {
+    localName = "Sal'salabim's Strength",
+    tokenName = "salsalabims_strength",
+
+    [1] = { -- (id=1015765) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 11,
+    },
+  },
+  -- Scalding Brew 
   [383698] = {
+    localName = "Scalding Brew",
+    tokenName = "scalding_brew",
+
     [1] = { -- (id=1015766) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -1851,8 +2148,11 @@ DBC = {
       pct = 0.200,
     },
   },
-  -- Gai Plin's Imperial Brew  
+  -- Gai Plin's Imperial Brew 
   [383700] = {
+    localName = "Gai Plin's Imperial Brew",
+    tokenName = "gai_plins_imperial_brew",
+
     [1] = { -- (id=1015768) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 25,
@@ -1861,8 +2161,11 @@ DBC = {
       pct = 0.250,
     },
   },
-  -- Stormstout's Last Keg  
+  -- Stormstout's Last Keg 
   [383707] = {
+    localName = "Stormstout's Last Keg",
+    tokenName = "stormstouts_last_keg",
+
     [1] = { -- (id=1015783) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 20,
@@ -1882,8 +2185,11 @@ DBC = {
       misc_value = 1490,
     },
   },
-  -- Counterstrike  
+  -- Counterstrike 
   [383785] = {
+    localName = "Counterstrike",
+    tokenName = "counterstrike",
+
     [1] = { -- (id=1015925) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Counterstrike",
       base_value = 0,
@@ -1892,8 +2198,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Counterstrike  
+  -- Counterstrike 
   [383800] = {
+    localName = "Counterstrike",
+    tokenName = "counterstrike",
+
     [1] = { -- (id=1015951) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 100,
@@ -1912,8 +2221,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Dragonfire Brew  
+  -- Dragonfire Brew 
   [383994] = {
+    localName = "Dragonfire Brew",
+    tokenName = "dragonfire_brew",
+
     [1] = { -- (id=1016250) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 2,
@@ -1929,8 +2241,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Bonedust Brew  
+  -- Bonedust Brew 
   [386276] = {
+    localName = "Bonedust Brew",
+    tokenName = "bonedust_brew",
+
     [1] = { -- (id=1020234) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 40,
@@ -1953,8 +2268,11 @@ DBC = {
       pct = 0.010,
     },
   },
-  -- Attenuation  
+  -- Attenuation 
   [386941] = {
+    localName = "Attenuation",
+    tokenName = "attenuation",
+
     [1] = { -- (id=1021400) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -1971,8 +2289,24 @@ DBC = {
       misc_value = 1,
     },
   },
-  -- Charred Passions  
+  -- Bountiful Brew 
+  [386949] = {
+    localName = "Bountiful Brew",
+    tokenName = "bountiful_brew",
+
+    [1] = { -- (id=1021413) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 10000,
+      scaled_value = 10000,
+      pvp_coefficient = 1.00000,
+      pct = 100.000,
+    },
+  },
+  -- Charred Passions 
   [386965] = {
+    localName = "Charred Passions",
+    tokenName = "charred_passions",
+
     [1] = { -- (id=1021441) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Charred Passions",
       base_value = 50,
@@ -1981,8 +2315,11 @@ DBC = {
       pct = 0.500,
     },
   },
-  -- Elusive Footwork  
+  -- Elusive Footwork 
   [387046] = {
+    localName = "Elusive Footwork",
+    tokenName = "elusive_footwork",
+
     [1] = { -- (id=1021574) 
       label = "Apply Aura (6) | Unknown(285)",
       base_value = 0,
@@ -2010,8 +2347,78 @@ DBC = {
       },
     },
   },
-  -- Fluidity of Motion  
+  -- Weapons of Order 
+  [387184] = {
+    localName = "Weapons of Order",
+    tokenName = "weapons_of_order",
+
+    [1] = { -- (id=1021812) 
+      label = "Apply Aura (6) | Modify Mastery% (318)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [2] = { -- (id=1021813) 
+      label = "Apply Aura (6) | Modify Critical Strike% (290)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [3] = { -- (id=1021814) 
+      label = "Apply Aura (6) | Modify Versatility% (471)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [4] = { -- (id=1021815) 
+      label = "Apply Aura (6) | Modify All Haste% (193)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [5] = { -- (id=1021816) 
+      label = "Apply Aura (6) | Modify Leech% (443)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [6] = { -- (id=1021817) 
+      label = "Apply Aura (6) | Modify Armor% (101)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 1,
+    },
+    [7] = { -- (id=1021818) 
+      label = "Unknown(140)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [8] = { -- (id=1021819) 
+      label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 3 (23)",
+      base_value = 1000,
+      scaled_value = 1000,
+      pvp_coefficient = 1.00000,
+      pct = 10.000,
+      misc_value = 23,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+  },
+  -- Fluidity of Motion 
   [387230] = {
+    localName = "Fluidity of Motion",
+    tokenName = "fluidity_of_motion",
+
     [1] = { -- (id=1021886) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)",
       base_value = -1000,
@@ -2042,8 +2449,11 @@ DBC = {
       misc_value = 1561,
     },
   },
-  -- Strength of Spirit  
+  -- Strength of Spirit 
   [387276] = {
+    localName = "Strength of Spirit",
+    tokenName = "strength_of_spirit",
+
     [1] = { -- (id=1021960) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 100,
@@ -2052,8 +2462,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Dragonfire Brew  
+  -- Dragonfire Brew 
   [387621] = {
+    localName = "Dragonfire Brew",
+    tokenName = "dragonfire_brew",
+
     [1] = { -- (id=1022525) 
       label = "School Damage (2): fire",
       base_value = 0,
@@ -2063,8 +2476,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Staggering Strikes  
+  -- Staggering Strikes 
   [387625] = {
+    localName = "Staggering Strikes",
+    tokenName = "staggering_strikes",
+
     [1] = { -- (id=1022530) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Staggering Strikes",
       base_value = 0,
@@ -2082,8 +2498,11 @@ DBC = {
       pct = 1.250,
     },
   },
-  -- Shadowboxing Treads  
+  -- Shadowboxing Treads 
   [387638] = {
+    localName = "Shadowboxing Treads",
+    tokenName = "shadowboxing_treads",
+
     [1] = { -- (id=1022553) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Targets (17)",
       base_value = 2,
@@ -2106,8 +2525,11 @@ DBC = {
       },
     },
   },
-  -- Jadefire Stomp  
+  -- Jadefire Stomp 
   [388201] = {
+    localName = "Jadefire Stomp",
+    tokenName = "jadefire_stomp",
+
     [1] = { -- (id=1023725) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2117,8 +2539,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Jadefire Stomp  
+  -- Jadefire Stomp 
   [388207] = {
+    localName = "Jadefire Stomp",
+    tokenName = "jadefire_stomp",
+
     [1] = { -- (id=1023731) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2136,8 +2561,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Quick Sip  
+  -- Quick Sip 
   [388505] = {
+    localName = "Quick Sip",
+    tokenName = "quick_sip",
+
     [1] = { -- (id=1024228) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -2153,8 +2581,11 @@ DBC = {
       pct = 0.030,
     },
   },
-  -- Ferocity of Xuen  
+  -- Ferocity of Xuen 
   [388674] = {
+    localName = "Ferocity of Xuen",
+    tokenName = "ferocity_of_xuen",
+
     [1] = { -- (id=1024507) 
       label = "Apply Aura (6) | Modify Damage Done% (79)",
       ranks = { 2, 4, },
@@ -2179,8 +2610,11 @@ DBC = {
       pct = 0.020,
     },
   },
-  -- Fast Feet  
+  -- Fast Feet 
   [388809] = {
+    localName = "Fast Feet",
+    tokenName = "fast_feet",
+
     [1] = { -- (id=1024727) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 35, 70, },
@@ -2204,8 +2638,11 @@ DBC = {
       },
     },
   },
-  -- Grace of the Crane  
+  -- Grace of the Crane 
   [388811] = {
+    localName = "Grace of the Crane",
+    tokenName = "grace_of_the_crane",
+
     [1] = { -- (id=1024730) 
       label = "Apply Aura (6) | Modify Healing Received% (118)",
       ranks = { 4, 8, },
@@ -2216,8 +2653,11 @@ DBC = {
       misc_value = 127,
     },
   },
-  -- Crane Vortex  
+  -- Crane Vortex 
   [388848] = {
+    localName = "Crane Vortex",
+    tokenName = "crane_vortex",
+
     [1] = { -- (id=1024786) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 10, 20, },
@@ -2230,8 +2670,11 @@ DBC = {
       },
     },
   },
-  -- Rising Star  
+  -- Rising Star 
   [388849] = {
+    localName = "Rising Star",
+    tokenName = "rising_star",
+
     [1] = { -- (id=1024787) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 3, 6, },
@@ -2256,8 +2699,11 @@ DBC = {
       },
     },
   },
-  -- Flashing Fists  
+  -- Flashing Fists 
   [388854] = {
+    localName = "Flashing Fists",
+    tokenName = "flashing_fists",
+
     [1] = { -- (id=1024794) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 10, 20, },
@@ -2270,8 +2716,11 @@ DBC = {
       },
     },
   },
-  -- Touch of the Tiger  
+  -- Touch of the Tiger 
   [388856] = {
+    localName = "Touch of the Tiger",
+    tokenName = "touch_of_the_tiger",
+
     [1] = { -- (id=1024796) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       ranks = { 15, 30, },
@@ -2284,8 +2733,11 @@ DBC = {
       },
     },
   },
-  -- Claw of the White Tiger  
+  -- Claw of the White Tiger 
   [389541] = {
+    localName = "Claw of the White Tiger",
+    tokenName = "claw_of_the_white_tiger",
+
     [1] = { -- (id=1025853) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2295,8 +2747,40 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Save Them All  
+  -- Resonant Fists 
+  [389578] = {
+    localName = "Resonant Fists",
+    tokenName = "resonant_fists",
+
+    [1] = { -- (id=1025905) 
+      label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Direct Amount (0)",
+      ranks = { 0, 100, },
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1037093) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Resonant Fists",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [3] = { -- (id=1037106) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.15000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Save Them All 
   [389579] = {
+    localName = "Save Them All",
+    tokenName = "save_them_all",
+
     [1] = { -- (id=1025906) 
       label = "Apply Aura (6) | Dummy (4)",
       ranks = { 10, 20, },
@@ -2321,8 +2805,11 @@ DBC = {
       pct = 0.350,
     },
   },
-  -- Face Palm  
+  -- Face Palm 
   [389942] = {
+    localName = "Face Palm",
+    tokenName = "face_palm",
+
     [1] = { -- (id=1026492) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 50,
@@ -2346,8 +2833,11 @@ DBC = {
       pct = 10.000,
     },
   },
-  -- Meridian Strikes  
+  -- Meridian Strikes 
   [391330] = {
+    localName = "Meridian Strikes",
+    tokenName = "meridian_strikes",
+
     [1] = { -- (id=1028780) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 15,
@@ -2366,8 +2856,11 @@ DBC = {
       pct = 0.350,
     },
   },
-  -- Hardened Soles  
+  -- Hardened Soles 
   [391383] = {
+    localName = "Hardened Soles",
+    tokenName = "hardened_soles",
+
     [1] = { -- (id=1028863) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)",
       ranks = { 2, 4, },
@@ -2393,8 +2886,11 @@ DBC = {
       },
     },
   },
-  -- Resonant Fists  
+  -- Resonant Fists 
   [391400] = {
+    localName = "Resonant Fists",
+    tokenName = "resonant_fists",
+
     [1] = { -- (id=1028892) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2404,8 +2900,31 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Vigorous Expulsion  
+  -- Jadefire Harmony 
+  [391412] = {
+    localName = "Jadefire Harmony",
+    tokenName = "jadefire_harmony",
+
+    [1] = { -- (id=1028916) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1028917) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Vigorous Expulsion 
   [392900] = {
+    localName = "Vigorous Expulsion",
+    tokenName = "vigorous_expulsion",
+
     [1] = { -- (id=1031441) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 5,
@@ -2428,8 +2947,11 @@ DBC = {
       },
     },
   },
-  -- Profound Rebuttal  
+  -- Profound Rebuttal 
   [392910] = {
+    localName = "Profound Rebuttal",
+    tokenName = "profound_rebuttal",
+
     [1] = { -- (id=1031465) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
       base_value = 50,
@@ -2442,8 +2964,38 @@ DBC = {
       },
     },
   },
-  -- Glory of the Dawn  
+  -- Glory of the Dawn 
+  [392958] = {
+    localName = "Glory of the Dawn",
+    tokenName = "glory_of_the_dawn",
+
+    [1] = { -- (id=1031558) 
+      label = "Apply Aura (6) | Dummy (4) | Scaling Class: -8",
+      base_value = 0,
+      scaled_value = 12028,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1031559) 
+      label = "Dummy (3)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [3] = { -- (id=1031560) 
+      label = "Dummy (3)",
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Glory of the Dawn 
   [392959] = {
+    localName = "Glory of the Dawn",
+    tokenName = "glory_of_the_dawn",
+
     [1] = { -- (id=1031561) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -2467,8 +3019,11 @@ DBC = {
       pct = 0.010,
     },
   },
-  -- Open Palm Strikes  
+  -- Open Palm Strikes 
   [392970] = {
+    localName = "Open Palm Strikes",
+    tokenName = "open_palm_strikes",
+
     [1] = { -- (id=1031581) 
       label = "Apply Aura (6) | Unknown(285)",
       base_value = 0,
@@ -2501,8 +3056,11 @@ DBC = {
       },
     },
   },
-  -- Shadowboxing Treads  
+  -- Shadowboxing Treads 
   [392982] = {
+    localName = "Shadowboxing Treads",
+    tokenName = "shadowboxing_treads",
+
     [1] = { -- (id=1031598) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Targets (17)",
       base_value = 2,
@@ -2525,8 +3083,11 @@ DBC = {
       },
     },
   },
-  -- Xuen's Battlegear  
+  -- Xuen's Battlegear 
   [392993] = {
+    localName = "Xuen's Battlegear",
+    tokenName = "xuens_battlegear",
+
     [1] = { -- (id=1031618) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -2552,8 +3113,11 @@ DBC = {
       misc_value = 5,
     },
   },
-  -- Path of Jade  
+  -- Path of Jade 
   [392994] = {
+    localName = "Path of Jade",
+    tokenName = "path_of_jade",
+
     [1] = { -- (id=1031622) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 10,
@@ -2569,8 +3133,11 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- The Emperor's Capacitor  
+  -- The Emperor's Capacitor 
   [393039] = {
+    localName = "The Emperor's Capacitor",
+    tokenName = "the_emperors_capacitor",
+
     [1] = { -- (id=1031700) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
       base_value = 100,
@@ -2594,8 +3161,11 @@ DBC = {
       },
     },
   },
-  -- Chi Explosion  
+  -- Chi Explosion 
   [393056] = {
+    localName = "Chi Explosion",
+    tokenName = "chi_explosion",
+
     [1] = { -- (id=1031743) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2605,8 +3175,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Chi Energy  
+  -- Chi Energy 
   [393057] = {
+    localName = "Chi Energy",
+    tokenName = "chi_energy",
+
     [1] = { -- (id=1031744) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -2615,8 +3188,11 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Forbidden Technique  
+  -- Forbidden Technique 
   [393098] = {
+    localName = "Forbidden Technique",
+    tokenName = "forbidden_technique",
+
     [1] = { -- (id=1031818) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -2635,8 +3211,11 @@ DBC = {
       },
     },
   },
-  -- Tranquil Spirit  
+  -- Tranquil Spirit 
   [393357] = {
+    localName = "Tranquil Spirit",
+    tokenName = "tranquil_spirit",
+
     [1] = { -- (id=1032223) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -2645,8 +3224,24 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Pretense of Instability  
+  -- Chi Surge 
+  [393400] = {
+    localName = "Chi Surge",
+    tokenName = "chi_surge",
+
+    [1] = { -- (id=1032309) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Chi Surge",
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+    },
+  },
+  -- Pretense of Instability 
   [393515] = {
+    localName = "Pretense of Instability",
+    tokenName = "pretense_of_instability",
+
     [1] = { -- (id=1032548) 
       label = "Apply Aura (6) | Modify Dodge% (49)",
       base_value = 15,
@@ -2655,8 +3250,24 @@ DBC = {
       pct = 0.150,
     },
   },
-  -- Thunderfist  
+  -- Pretense of Instability 
+  [393516] = {
+    localName = "Pretense of Instability",
+    tokenName = "pretense_of_instability",
+
+    [1] = { -- (id=1032549) 
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Pretense of Instability",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Thunderfist 
   [393566] = {
+    localName = "Thunderfist",
+    tokenName = "thunderfist",
+
     [1] = { -- (id=1032621) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2666,8 +3277,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Chi Surge  
+  -- Chi Surge 
   [393786] = {
+    localName = "Chi Surge",
+    tokenName = "chi_surge",
+
     [1] = { -- (id=1032926) 
       label = "Apply Aura (6) | Periodic Damage (3): nature every 2 seconds",
       base_value = 0,
@@ -2684,8 +3298,28 @@ DBC = {
       pct = 0.450,
     },
   },
-  -- Jadefire Brand  
+  -- Fatal Flying Guillotine 
+  [394923] = {
+    localName = "Fatal Flying Guillotine",
+    tokenName = "fatal_flying_guillotine",
+
+    [1] = { -- (id=1034977) 
+      label = "Apply Aura (6) | Add Flat Modifier (107): Spell Targets (17)",
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+      misc_value = 17,
+      affected_spells = {
+        322109,
+      },
+    },
+  },
+  -- Jadefire Brand 
   [395414] = {
+    localName = "Jadefire Brand",
+    tokenName = "jadefire_brand",
+
     [1] = { -- (id=1035870) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)",
       base_value = 12,
@@ -2719,8 +3353,11 @@ DBC = {
       pct = 0.120,
     },
   },
-  -- Strike of the Windlord  
+  -- Strike of the Windlord 
   [395519] = {
+    localName = "Strike of the Windlord",
+    tokenName = "strike_of_the_windlord",
+
     [1] = { -- (id=1036049) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -2730,8 +3367,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Strike of the Windlord  
+  -- Strike of the Windlord 
   [395521] = {
+    localName = "Strike of the Windlord",
+    tokenName = "strike_of_the_windlord",
+
     [1] = { -- (id=1036052) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -2741,8 +3381,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Inner Peace  
+  -- Inner Peace 
   [397768] = {
+    localName = "Inner Peace",
+    tokenName = "inner_peace",
+
     [1] = { -- (id=1040376) 
       label = "Apply Aura (6) | Modify Max Resource (418)",
       base_value = 30,
@@ -2762,8 +3405,11 @@ DBC = {
       },
     },
   },
-  -- Shadowflame Nova  
+  -- Shadowflame Nova 
   [410139] = {
+    localName = "Shadowflame Nova",
+    tokenName = "shadowflame_nova",
+
     [1] = { -- (id=1075491) 
       label = "School Damage (2): shadowflame",
       base_value = 0,
@@ -2773,8 +3419,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Press the Advantage  
+  -- Press the Advantage 
   [418359] = {
+    localName = "Press the Advantage",
+    tokenName = "press_the_advantage",
+
     [1] = { -- (id=1090589) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 500,
@@ -2805,8 +3454,11 @@ DBC = {
       misc_value = 22,
     },
   },
-  -- Press the Advantage  
+  -- Press the Advantage 
   [418360] = {
+    localName = "Press the Advantage",
+    tokenName = "press_the_advantage",
+
     [1] = { -- (id=1090590) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2816,8 +3468,11 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Press the Advantage  
+  -- Press the Advantage 
   [418361] = {
+    localName = "Press the Advantage",
+    tokenName = "press_the_advantage",
+
     [1] = { -- (id=1090593) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 1,
@@ -2844,8 +3499,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Monk Brewmaster 10.2 Class Set 2pc  
+  -- Monk Brewmaster 10.2 Class Set 2pc 
   [422886] = {
+    localName = "Monk Brewmaster 10.2 Class Set 2pc",
+    tokenName = "monk_brewmaster_10.2_class_set_2pc",
+
     [1] = { -- (id=1098484) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 40,
@@ -2861,8 +3519,11 @@ DBC = {
       pct = 0.500,
     },
   },
-  -- Monk Brewmaster 10.2 Class Set 4pc  
+  -- Monk Brewmaster 10.2 Class Set 4pc 
   [422887] = {
+    localName = "Monk Brewmaster 10.2 Class Set 4pc",
+    tokenName = "monk_brewmaster_10.2_class_set_4pc",
+
     [1] = { -- (id=1098485) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 15,
@@ -2878,8 +3539,11 @@ DBC = {
       pct = 1.000,
     },
   },
-  -- Monk Windwalker 10.2 Class Set 2pc  
+  -- Monk Windwalker 10.2 Class Set 2pc 
   [422891] = {
+    localName = "Monk Windwalker 10.2 Class Set 2pc",
+    tokenName = "monk_windwalker_10.2_class_set_2pc",
+
     [1] = { -- (id=1098489) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Blackout Reinforcement",
       base_value = 250,
@@ -2888,8 +3552,11 @@ DBC = {
       pct = 2.500,
     },
   },
-  -- Monk Windwalker 10.2 Class Set 4pc  
+  -- Monk Windwalker 10.2 Class Set 4pc 
   [422892] = {
+    localName = "Monk Windwalker 10.2 Class Set 4pc",
+    tokenName = "monk_windwalker_10.2_class_set_4pc",
+
     [1] = { -- (id=1098490) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 3,
@@ -2909,8 +3576,11 @@ DBC = {
       },
     },
   },
-  -- Blackout Reinforcement  
+  -- Blackout Reinforcement 
   [424454] = {
+    localName = "Blackout Reinforcement",
+    tokenName = "blackout_reinforcement",
+
     [1] = { -- (id=1101241) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 250,
@@ -2922,10 +3592,25 @@ DBC = {
       },
     },
   },
+  talentKeys = {
+    418359,    397768,    394923,    393516,    393400,
+    393357,    393098,    392994,    392993,    392982,
+    392970,    392958,    392910,    392900,    391412,
+    391383,    391330,    389942,    389579,    389578,
+    388856,    388854,    388849,    388848,    388811,
+    388809,    388674,    388505,    387638,    387625,
+    387276,    387230,    387184,    387046,    386965,
+    386949,    386941,    386276,    383994,    383785,
+    383707,    383700,    383698,    383697,    325201,
+    325177,    325153,    323999,    322510,    322120,
+    322113,    231602,    220357,    196740,    196736,
+    196730,    195300,    152175,    122470,    122281,
+    121817,    121253,    116847,    116645,    113656,
+  },
 }
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "10.2.5"
-DBC_BUILD = 52902
+DBC_BUILD = 52646
 -- ------------------------------------------------------------------------------
 

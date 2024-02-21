@@ -1,6 +1,9 @@
 # Any spellIDs added below will be parsed and added to the database
 # duplicate entries are ignored
 
+# Other
+134735 # PvP Rules Enabled
+
 # Monk Set Bonuses
 422886 # T31 Brewmaster Class Set 2pc
 422887 # T31 Brewmaster Class Set 4pc
@@ -54,13 +57,16 @@
 # Monk Class Tree
 
 388809 # Fast Feet
+388674 # Ferocity of Xuen
 388811 # Grace of the Crane
+322113 # Improved Touch of Death
 231602 # Improved Vivify
 392910 # Profound Rebuttal
+389578 # Resonant Fists
 387276 # Strength of Spirit
 389579 # Save them All
 392900 # Vigorous Expulsion
-388674 # Ferocity of Xuen
+
 
 # Windwalker Talents
 
@@ -69,22 +75,27 @@
 388848 # Crane Vortex
 325201 # Dance of Chi-Ji
 323999 # Empowered Tiger Lightning
+394923 # Fatal Flying Guillotine
 388854 # Flashing Fists
 393098 # Forbidden Technique
-288634 # Glory of the Dawn
+196740 # Hit Combo
+392958 # Glory of the Dawn
 391383 # Hardened Soles
 397768 # Inner Peace
+391412 # Jadefire Harmony
+220357 # Mark of the Crane
 391330 # Meridian Strikes
 392970 # Open Palm Strikes
+392994 # Path of Jade
 121817 # Power Strikes
 388849 # Rising Star
 392982 # Shadowboxing Treads
 116645 # Teachings of the Monastery
+122470 # Touch of Karma
 388856 # Touch of the Tiger
 195300 # Transfer the Power
-392994 # Way of the Fae
+152175 # Whirling Dragon Punch
 392993 # Xuen's Battlegear
-122470 # Touch of Karma
 
 # Windwalker PvP Talents
 
@@ -105,10 +116,11 @@
 
 # Brewmaster Talents
 
-387638 # Shadowboxing Treads
 196736 # Blackout Combo
+386949 # Bountiful Brew
 325177 # Celestial Flames
 386965 # Charred Passions
+393400 # Chi Surge
 383785 # Counterstrike
 383994 # Dragonfire Brew
 387046 # Elusive Footwork
@@ -117,12 +129,19 @@
 387230 # Fluidity of Motion
 383700 # Gai Plin's Imperial Brew
 122281 # Healing Elixir
-383707 # Stormstout's Last Keg
+322510 # Improved Celestial Brew
 418359 # Press the Advantage
+393516 # Pretense of Instability
 388505 # Quick Sip
+383697 # Sal'salabim's Strength
 383698 # Scalding Brew
+387638 # Shadowboxing Treads
+322120 # Shuffle
+196730 # Special Delivery
 387625 # Staggering Strikes
+383707 # Stormstout's Last Keg
 393357 # Tranquil Spirit
+387184 # Weapons of Order
 
 # Brewmaster Abilities
 

@@ -13,9 +13,12 @@ end
 
 -- Storing as local reduces instructions by 30%
 local _DBC = DBC
+local pairs = pairs
+local tonumber = tonumber
+local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 1.7
+LibDBCache.Version = 1.8
 
 -- ------------------------------------------------------------------------------
 
@@ -81,6 +84,7 @@ function LibDBCache:find_spell( spellID, rank )
     if not spell then
         return  {
             id = 0,
+            found = false,
             effectN = function( n )
                 return {
                     label = "Spell not found!",
@@ -102,6 +106,9 @@ function LibDBCache:find_spell( spellID, rank )
     -- TODO: Spell Schools
     
     spell.id = spellID
+    spell.found = true
+    spell.localName = spell.localName
+    spell.tokenName = spell.tokenName
     spell.effectN = function( n )
 
         if not spell[ n ] then
@@ -146,10 +153,13 @@ function LibDBCache:find_spell( spellID, rank )
             pvp_coefficient = effect.pvp_coefficient,
             ap_coefficient = effect.ap_coefficient,
             sp_coefficient = effect.sp_coefficient,
+            last_refresh = effect.last_refresh, -- for dynamic values
         }
         
+        local frameTime = GetTime()
+        
         -- dynamic values
-        if effect then
+        if effect and ( not effect.last_refresh or effect.last_refresh < frameTime - 0.2 ) then
             
             -- talent values
             if rank then
@@ -186,7 +196,7 @@ function LibDBCache:find_spell( spellID, rank )
             effect.roll = pct
             effect.mod = 1 + pct
             effect.seconds = base_value / 1000
-            
+            effect.last_refresh = frameTime
         end
         
         return effect
@@ -203,4 +213,79 @@ function LibDBCache:find_talent( spellID, rank )
     talent.ok = ( rank > 0 )
     
     return talent
+end
+
+local C_ClassTalents = C_ClassTalents
+local GetActiveConfigID = C_ClassTalents.GetActiveConfigID
+local GetConfigIDsBySpecID = C_ClassTalents.GetConfigIDsBySpecID
+local C_Traits = C_Traits
+local GetConfigInfo = C_Traits.GetConfigInfo
+local GetDefinitionInfo = C_Traits.GetDefinitionInfo
+local GetEntryInfo = C_Traits.GetEntryInfo
+local GetNodeInfo = C_Traits.GetNodeInfo
+local GetTreeNodes = C_Traits.GetTreeNodes
+
+function LibDBCache:initialize_talents()
+    if not DBC then
+        return {}
+    end
+    
+    if not _DBC then
+        _DBC = DBC
+    end
+    
+    local talents = {}
+    local talentKeys = _DBC.talentKeys
+    
+    -- initialize 0 rank values
+    if talentKeys then
+        for _, spellID in pairs( talentKeys ) do
+            local token = _DBC[ spellID ].tokenName
+            talents[ token ] = LibDBCache:find_talent( spellID, 0 )
+        end
+    end
+    
+    -- parse active tree 
+    local lConfigID = GetActiveConfigID()
+    if not lConfigID then
+        return talents
+    end
+    
+    local lConfigInfo = GetConfigInfo( lConfigID )
+    if not lConfigInfo then
+        return talents
+    end
+    
+    local lTreeIDs = lConfigInfo[ "treeIDs" ]
+    for i = 1, #lTreeIDs do
+        for _, lNodeID in pairs( GetTreeNodes( lTreeIDs[ i ] ) ) do
+            local lNodeInfo = GetNodeInfo( lConfigID, lNodeID )
+            if lNodeInfo.entryIDs then
+                for _, EntryID in pairs( lNodeInfo.entryIDs ) do
+                    local lEntryInfo = GetEntryInfo( lConfigID, EntryID )
+                    if lEntryInfo then
+                        
+                        local activeRank = 0
+                        
+                        if lNodeInfo.activeEntry and lNodeInfo.activeEntry.entryID == EntryID then
+                            activeRank = lNodeInfo.activeRank or 0 
+                        end
+                        
+                        local lDefinitionID = lEntryInfo[ "definitionID" ]
+                        local lDefinitionInfo = GetDefinitionInfo( lDefinitionID )
+                        local spellID = lDefinitionInfo[ "spellID" ]
+                        
+                        if spellID then
+                            local talentData = LibDBCache:find_talent( spellID, activeRank )
+                            if talentData and talentData.found then
+                                talents [ talentData.tokenName ] = talentData
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end    
+    
+    return talents
 end
