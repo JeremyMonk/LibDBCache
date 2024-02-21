@@ -237,11 +237,11 @@ function LibDBCache:initialize_talents()
     local talents = {}
     local talentKeys = _DBC.talentKeys
     
-    -- initialize 0 rank values
+    -- initialize table values
     if talentKeys then
         for _, spellID in pairs( talentKeys ) do
             local token = _DBC[ spellID ].tokenName
-            talents[ token ] = LibDBCache:find_talent( spellID, 0 )
+            talents[ token ] = LibDBCache:find_talent( nil, 0 )
         end
     end
     
