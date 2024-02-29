@@ -82,6 +82,7 @@
 392958 # Glory of the Dawn
 391383 # Hardened Soles
 397768 # Inner Peace
+388193 # Jadefire Stomp
 391412 # Jadefire Harmony
 220357 # Mark of the Crane
 391330 # Meridian Strikes
