@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 1.8
+LibDBCache.Version = 1.9
 
 -- ------------------------------------------------------------------------------
 
@@ -125,7 +125,7 @@ function LibDBCache:find_spell( spellID, rank )
         local label = effect.label
         
         effect.properties = effect.properties or {
-            add_percent_modifier    = find( label, "Add Percent Modifier"),
+            add_percent_modifier    = find( label, "Add Percent Modifier") or find( label, "Apply Percent Modifier" ),
             spell_direct_amount     = find( label, "Spell Direct Amount"),
             spell_periodic_amount   = find( label, "Spell Periodic Amount"),
         }        
