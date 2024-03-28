@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-03-27 - World of Warcraft 10.2.5.52902
+-- Database generated from DBCache on 2024-03-28 - World of Warcraft 10.2.6.53913
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.5", 52902 ) then 
+if not validVersion( "10.2.6", 53913 ) then 
   return
 end
 
@@ -494,6 +494,14 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
+    [10] = { -- (id=1132070) 
+      label = "Apply Aura (6) | Modify Armor% (101)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 1,
+    },
   },
   -- Brewmaster Monk 
   [137023] = {
@@ -935,10 +943,10 @@ DBC = {
 
     [1] = { -- (id=179708) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 11,
-      scaled_value = 11,
-      pvp_coefficient = 0.70000,
-      pct = 0.110,
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 2.00000,
+      pct = 0.040,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
         130654,        132463,        162530,        191840,        191894,
@@ -947,14 +955,15 @@ DBC = {
         325212,        328283,        328748,        337268,        343737,
         343819,        344008,        345727,        388044,        388207,
         388615,        388668,        399230,        399491,        407058,
+        425804,
       },
     },
     [2] = { -- (id=191104) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
-      base_value = 11,
-      scaled_value = 11,
-      pvp_coefficient = 0.70000,
-      pct = 0.110,
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 2.00000,
+      pct = 0.040,
       misc_value = 22,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
@@ -964,6 +973,7 @@ DBC = {
         325212,        328283,        328748,        337268,        343737,
         343819,        344008,        345727,        388044,        388207,
         388615,        388668,        399230,        399491,        407058,
+        425804,
       },
     },
     [3] = { -- (id=191105) 
@@ -1187,10 +1197,10 @@ DBC = {
     },
     [26] = { -- (id=1081589) 
       label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 2 (12)",
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 5,
+      scaled_value = 5,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.050,
       misc_value = 12,
     },
     [27] = { -- (id=1093851) 
@@ -1236,13 +1246,16 @@ DBC = {
       scaled_value = -12,
       pvp_coefficient = 1.00000,
       pct = -0.120,
+      affected_spells = {
+        425804,
+      },
     },
     [32] = { -- (id=1108334) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 550,
-      scaled_value = 550,
+      base_value = 589,
+      scaled_value = 589,
       pvp_coefficient = 0.52800,
-      pct = 5.500,
+      pct = 5.890,
       affected_spells = {
         322101,
       },
@@ -2073,6 +2086,9 @@ DBC = {
       scaled_value = 40,
       pvp_coefficient = 1.00000,
       pct = 0.400,
+      affected_spells = {
+        425804,
+      },
     },
   },
   -- Expel Harm 
@@ -3888,7 +3904,7 @@ DBC = {
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 250,
       scaled_value = 250,
-      pvp_coefficient = 0.40000,
+      pvp_coefficient = 0.20000,
       pct = 2.500,
       affected_spells = {
         100784,        205523,        228649,
@@ -3914,7 +3930,7 @@ DBC = {
 }
 
 -- ------------------------------------------------------------------------------
-DBC_VERSION = "10.2.5"
-DBC_BUILD = 52902
+DBC_VERSION = "10.2.6"
+DBC_BUILD = 53913
 -- ------------------------------------------------------------------------------
 
