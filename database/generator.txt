@@ -9,6 +9,8 @@
 422887 # T31 Brewmaster Class Set 4pc
 422891 # T31 Windwalker Class Set 2pc
 422892 # T31 Windwalker Class Set 4pc
+394944 # Kicks of Flowing Momentum
+394949 # Fists of Flowing Momentum
 
 # Monk Spells
 
@@ -119,6 +121,7 @@
 
 196736 # Blackout Combo
 386949 # Bountiful Brew
+115181 # Breath of Fire
 325177 # Celestial Flames
 386965 # Charred Passions
 393400 # Chi Surge

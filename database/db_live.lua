@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-03-28 - World of Warcraft 10.2.6.53913
+-- Database generated from DBCache on 2024-03-31 - World of Warcraft 10.2.6.53913
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.6", 53913 ) then 
@@ -159,6 +159,20 @@ DBC = {
       scaled_value = 54,
       pvp_coefficient = 1.00000,
       pct = 0.540,
+    },
+  },
+  -- Breath of Fire 
+  [115181] = {
+    localName = "Breath of Fire",
+    tokenName = "breath_of_fire",
+
+    [1] = { -- (id=128879) 
+      label = "School Damage (2): fire",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.48000,
+      pvp_coefficient = 1.35000,
+      pct = 0.000,
     },
   },
   -- Teachings of the Monastery 
@@ -3631,6 +3645,35 @@ DBC = {
       },
     },
   },
+  -- Kicks of Flowing Momentum 
+  [394944] = {
+    localName = "Kicks of Flowing Momentum",
+    tokenName = "kicks_of_flowing_momentum",
+
+    [1] = { -- (id=1035012) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 0.50000,
+      pct = 0.400,
+      affected_spells = {
+        107428,        185099,
+      },
+    },
+  },
+  -- Fists of Flowing Momentum 
+  [394949] = {
+    localName = "Fists of Flowing Momentum",
+    tokenName = "fists_of_flowing_momentum",
+
+    [1] = { -- (id=1035024) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 7,
+      scaled_value = 7,
+      pvp_coefficient = 1.00000,
+      pct = 0.070,
+    },
+  },
   -- Jadefire Brand 
   [395414] = {
     localName = "Jadefire Brand",
@@ -3925,7 +3968,7 @@ DBC = {
     322120,    322113,    231602,    220357,    196740,
     196736,    196730,    195300,    152175,    122470,
     122281,    121817,    121253,    116847,    116645,
-    113656,
+    115181,    113656,
   },
 }
 
