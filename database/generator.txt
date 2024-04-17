@@ -35,7 +35,7 @@
 158221 # Whirling Dragon Punch (tick)
 395519 # Strike of the Windlord MH
 395521 # Strike of the Windlord OH
-148187 # Rushing Jade Windd (tick)
+148187 # Rushing Jade Wind (tick)
 395414 # Jadefire Brand (damage)
 148135 # Chi Burst
 132467 # Chi Wave
@@ -56,43 +56,129 @@
 418360 # Press the Advantage Melee Swing
 424454 # Blackout Reinforcement
 
+451298 # Momentum Boost (Buff)
+451433 # Acclamation (Buff)
+451833 # Dual Threat (Buff)
+451457 # Martial Mixture (Buff)
+451582 # Gale Force (Debuff)
+
 # Monk Class Tree
 
+450426 # Chi Proficiency
+450391 # Chi Wave
 388809 # Fast Feet
 388674 # Ferocity of Xuen
 388811 # Grace of the Crane
 322113 # Improved Touch of Death
 231602 # Improved Vivify
+450432 # Pressure Points
 392910 # Profound Rebuttal
 389578 # Resonant Fists
 387276 # Strength of Spirit
 389579 # Save them All
 392900 # Vigorous Expulsion
 
+# Shado-Pan Hero Tree
+
+450986 # Against All Odds
+451061 # Against All Odds (Buff)
+450615 # Flurry Strikes
+451021 # Flurry Charge (Buff)
+450989 # Efficient Training
+450982 # High Impact
+450985 # Lead from the Front
+450990 # Martial Precision
+450988 # One Versus Many
+450979 # Pride of Pandaria
+450987 # Veteran's Eye
+451085 # Veteran's Eye (Buff)
+450993 # Vigilant Watch
+451233 # Vigilant Watch (Buff)
+450994 # Wisdom of the Wall
+451242 # Wisdom of the Wall (Buff)
+
+# Conduit of the Celestials Tree
+
+442818 # August Dynasty
+442850 # August Dynasty (Buff)
+440328 # Celestial Conduit
+443087 # Courage of the White Tiger
+443572 # Crane Stance
+443255 # Flight of the Red Crane
+443294 # Heart of the Jade Serpent
+443424 # Heart of the Jade Serpent (Stacking Buff)
+443616 # Heart of the Jade Serpent (Buff)
+443571 # Inner Compass
+443059 # Jade Sanctuary
+442747 # Niuzao's Protection
+443574 # Ox Stance
+442719 # Restore Balance
+443576 # Serpent Stance
+443110 # Strength of the Black Ox
+443112 # Strength of the Black Ox (Buff)
+442743 # Temple Training
+443575 # Tiger Stance
+443589 # Unity Within
+442687 # Xuen's Guidance
+443625 # Yulon's Knowledge
+
+# Master of Harmony Tree
+
+450508 # Aspect of Harmony
+450711 # Aspect of Harmony (Buff) (Vitality)
+450889 # Balanced Stratagem
+451017 # Clarity of Purpose
+450892 # Endless Draught
+450870 # Harmonic Gambit
+450875 # Manifestation
+451036 # Mantra of Purity
+451029 # Mantra of Tenacity
+451299 # Mantra of Tenacity Chi Cocoon 
+451024 # Overwhelming Force
+450912 # Path of Resurgence
+450867 # Purified Spirit
+450529 # Resonance
+450965 # Way of a Thousand Strikes
 
 # Windwalker Talents
 
 386941 # Attenuation
+451432 # Acclamation
 386276 # Bonedust Brew
+451485 # Brawler's Intensity
 388848 # Crane Vortex
+121817 # Combat Wisdom
+451576 # Communion with the Wind
+451495 # Courageous Impulse
 325201 # Dance of Chi-Ji
+451823 # Dual Threat
 323999 # Empowered Tiger Lightning
+451498 # Energy Burst
 394923 # Fatal Flying Guillotine
 388854 # Flashing Fists
 393098 # Forbidden Technique
-196740 # Hit Combo
+451580 # Gale Force
 392958 # Glory of the Dawn
 391383 # Hardened Soles
+196740 # Hit Combo
 397768 # Inner Peace
 388193 # Jadefire Stomp
 391412 # Jadefire Harmony
+451529 # Knowledge of the Broken Temple
 220357 # Mark of the Crane
+451454 # Martial Mixture
 391330 # Meridian Strikes
+451294 # Momentum Boost
 392970 # Open Palm Strikes
+451463 # Ordered Elements
 392994 # Path of Jade
 121817 # Power Strikes
+451524 # Revolving Wind
 388849 # Rising Star
+451505 # Rushing Jade Wind
+451515 # Sequenced Strikes
 392982 # Shadowboxing Treads
+451573 # Singularly Focused Jade
 116645 # Teachings of the Monastery
 122470 # Touch of Karma
 388856 # Touch of the Tiger
