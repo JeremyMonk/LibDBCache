@@ -103,12 +103,29 @@ function LibDBCache:find_spell( spellID, rank )
     end
     
     -- TODO: Spell Class/Spec Filtering
-    -- TODO: Spell Schools
     
     spell.id = spellID
     spell.found = true
     spell.localName = spell.localName
     spell.tokenName = spell.tokenName
+    
+    spell.gcd               = spell.gcd or 0
+    spell.cooldown          = spell.cooldown or 0
+    spell.icd               = spell.icd or 0
+    spell.duration          = spell.duration or 0
+    spell.max_stacks        = spell.max_stacks or 1
+    spell.initial_stacks    = spell.initial_stacks or spell.max_stacks
+    spell.trigger_rate      = spell.trigger_rate or 1
+    
+    spell.channeled         = spell.channeled or false
+    spell.duration_hasted   = spell.duration_hasted or false
+    spell.ignores_armor     = spell.ignores_armor or false
+    spell.may_miss          = spell.may_miss or false
+    spell.may_crit          = spell.may_crit or false
+    spell.tick_zero         = spell.tick_zero or false
+    spell.dot_hasted        = spell.dot_hasted or false
+    spell.pandemic          = spell.pandemic or false
+    
     spell.effectN = function( n )
 
         if not spell[ n ] then
