@@ -1,4 +1,4 @@
-## Interface: 100206
+## Interface: 110000
 ## Title: LibDBCache
 ## Author: Jeremy
 ## Version: 1.0
@@ -8,4 +8,5 @@
 main.lua
 database/db_live_old.lua
 database/db_live.lua
+database/db_beta.lua
 database/db_ptr.lua
