@@ -56,7 +56,8 @@
 418360 # Press the Advantage Melee Swing
 424454 # Blackout Reinforcement
 
-451298 # Momentum Boost (Buff)
+451297 # Momentum Boost Damage (Buff)
+451298 # Momentum Boost Speed (Buff)
 451433 # Acclamation (Buff)
 451833 # Dual Threat (Buff)
 451457 # Martial Mixture (Buff)

@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-04-18 - World of Warcraft 11.0.0.54311
+-- Database generated from DBCache on 2024-04-19 - World of Warcraft 11.0.0.54311
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 54311 ) then 
@@ -11,6 +11,10 @@ DBC = {
   [100780] = {
     localName = "Tiger Palm",
     tokenName = "tiger_palm",
+    gcd = 1.5,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=108857) 
       label = "School Damage (2): physical",
@@ -46,6 +50,11 @@ DBC = {
   [100784] = {
     localName = "Blackout Kick",
     tokenName = "blackout_kick",
+    gcd = 1.5,
+    cooldown = 3,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=108867) 
       label = "School Damage (2): physical",
@@ -75,6 +84,16 @@ DBC = {
   [101546] = {
     localName = "Spinning Crane Kick",
     tokenName = "spinning_crane_kick",
+    gcd = 1.5,
+    duration = 1.5,
+
+    channeled = true,
+    duration_hasted = true,
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
+    pandemic = true,
 
     [1] = { -- (id=110004) 
       label = "Apply Aura (6) | Periodic Trigger Spell (23): Spinning Crane Kick every 0.5 seconds",
@@ -103,6 +122,9 @@ DBC = {
     localName = "Spinning Crane Kick",
     tokenName = "spinning_crane_kick",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=117946) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -116,6 +138,17 @@ DBC = {
   [113656] = {
     localName = "Fists of Fury",
     tokenName = "fists_of_fury",
+    gcd = 1,
+    cooldown = 24,
+    duration = 4,
+
+    channeled = true,
+    duration_hasted = true,
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
+    pandemic = true,
 
     [1] = { -- (id=126625) 
       label = "Dummy (3)",
@@ -165,6 +198,12 @@ DBC = {
   [115181] = {
     localName = "Breath of Fire",
     tokenName = "breath_of_fire",
+    gcd = 1,
+    cooldown = 15,
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=128879) 
       label = "School Damage (2): fire",
@@ -180,6 +219,9 @@ DBC = {
     localName = "Teachings of the Monastery",
     tokenName = "teachings_of_the_monastery",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=131760) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 12,
@@ -193,6 +235,17 @@ DBC = {
   [116847] = {
     localName = "Rushing Jade Wind",
     tokenName = "rushing_jade_wind",
+    gcd = 1.5,
+    cooldown = 6,
+    duration = 6,
+
+    duration_hasted = true,
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
+    pandemic = true,
 
     [1] = { -- (id=132057) 
       label = "Apply Aura (6) | Periodic Trigger Spell (23): Rushing Jade Wind every 0.75 seconds",
@@ -213,6 +266,17 @@ DBC = {
   [117952] = {
     localName = "Crackling Jade Lightning",
     tokenName = "crackling_jade_lightning",
+    gcd = 1.5,
+    duration = 4,
+
+    channeled = true,
+    duration_hasted = true,
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
+    pandemic = true,
 
     [1] = { -- (id=134063) 
       label = "Apply Aura (6) | Periodic Damage (3): nature every 1 seconds",
@@ -234,6 +298,12 @@ DBC = {
   [121253] = {
     localName = "Keg Smash",
     tokenName = "keg_smash",
+    gcd = 1,
+    cooldown = 1,
+    duration = 15,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=150037) 
       label = "Dummy (3)",
@@ -291,6 +361,11 @@ DBC = {
     localName = "Combat Wisdom",
     tokenName = "combat_wisdom",
 
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    pandemic = true,
+
     [1] = { -- (id=153005) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 15 seconds",
       base_value = 1,
@@ -311,6 +386,9 @@ DBC = {
     localName = "Healing Elixir",
     tokenName = "healing_elixir",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+
     [1] = { -- (id=153853) 
       label = "Direct Heal% (136)",
       base_value = 15,
@@ -323,6 +401,10 @@ DBC = {
   [122470] = {
     localName = "Touch of Karma",
     tokenName = "touch_of_karma",
+    cooldown = 90,
+    duration = 10,
+
+    may_miss = true,
 
     [1] = { -- (id=154179) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -365,6 +447,10 @@ DBC = {
   [123586] = {
     localName = "Flying Serpent Kick",
     tokenName = "flying_serpent_kick",
+    duration = 4,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=155941) 
       label = "School Damage (2): physical",
@@ -387,6 +473,14 @@ DBC = {
   [123725] = {
     localName = "Breath of Fire",
     tokenName = "breath_of_fire",
+    gcd = 1,
+    duration = 12,
+    trigger_rate = 0.5,
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+    may_crit = true,
+    pandemic = true,
 
     [1] = { -- (id=156180) 
       label = "Apply Aura (6) | Periodic Damage (3): fire every 2 seconds",
@@ -410,6 +504,10 @@ DBC = {
     localName = "Gift of the Ox",
     tokenName = "gift_of_the_ox",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=157621) 
       label = "Direct Heal (10)",
       base_value = 0,
@@ -423,6 +521,11 @@ DBC = {
   [132467] = {
     localName = "Chi Wave",
     tokenName = "chi_wave",
+    duration = 0.1,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=171561) 
       label = "School Damage (2): nature",
@@ -444,6 +547,10 @@ DBC = {
   [134735] = {
     localName = "PvP Rules Enabled",
     tokenName = "pvp_rules_enabled",
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=171791) 
       label = "Apply Aura (6) | Modify Healing Received% (118)",
@@ -521,6 +628,9 @@ DBC = {
   [137023] = {
     localName = "Brewmaster Monk",
     tokenName = "brewmaster_monk",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=179707) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -963,6 +1073,9 @@ DBC = {
     localName = "Mistweaver Monk",
     tokenName = "mistweaver_monk",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=179708) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 4,
@@ -1290,6 +1403,9 @@ DBC = {
   [137025] = {
     localName = "Windwalker Monk",
     tokenName = "windwalker_monk",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=179709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -1751,6 +1867,10 @@ DBC = {
     localName = "Chi Burst",
     tokenName = "chi_burst",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=201313) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -1765,6 +1885,9 @@ DBC = {
     localName = "Rushing Jade Wind",
     tokenName = "rushing_jade_wind",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=201670) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1778,6 +1901,14 @@ DBC = {
   [152175] = {
     localName = "Whirling Dragon Punch",
     tokenName = "whirling_dragon_punch",
+    gcd = 1,
+    cooldown = 30,
+    icd = 3,
+    duration = 1,
+
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
 
     [1] = { -- (id=210680) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 0.25 seconds",
@@ -1799,6 +1930,10 @@ DBC = {
     localName = "Whirling Dragon Punch",
     tokenName = "whirling_dragon_punch",
 
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+
     [1] = { -- (id=220760) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -1812,6 +1947,9 @@ DBC = {
   [185099] = {
     localName = "Rising Sun Kick",
     tokenName = "rising_sun_kick",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=268390) 
       label = "School Damage (2): physical",
@@ -1827,6 +1965,9 @@ DBC = {
     localName = "Transfer the Power",
     tokenName = "transfer_the_power",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=286702) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 3,
@@ -1840,6 +1981,9 @@ DBC = {
     localName = "Special Delivery",
     tokenName = "special_delivery",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=288829) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Special Delivery",
       base_value = 3,
@@ -1852,6 +1996,10 @@ DBC = {
   [196733] = {
     localName = "Special Delivery",
     tokenName = "special_delivery",
+    duration = 15,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=288833) 
       label = "School Damage (2): physical",
@@ -1880,6 +2028,9 @@ DBC = {
   [196736] = {
     localName = "Blackout Combo",
     tokenName = "blackout_combo",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=288838) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -1929,6 +2080,9 @@ DBC = {
     localName = "Hit Combo",
     tokenName = "hit_combo",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=288842) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -1941,6 +2095,11 @@ DBC = {
   [196741] = {
     localName = "Hit Combo",
     tokenName = "hit_combo",
+    duration = 10,
+    max_stacks = 6,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=288843) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2001,6 +2160,10 @@ DBC = {
     localName = "Celestial Fortune",
     tokenName = "celestial_fortune",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=322186) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 80,
@@ -2021,6 +2184,11 @@ DBC = {
   [220357] = {
     localName = "Mark of the Crane",
     tokenName = "mark_of_the_crane",
+    cooldown = 0.1,
+    icd = 0.1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=328546) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2035,6 +2203,11 @@ DBC = {
   [220358] = {
     localName = "Cyclone Strikes",
     tokenName = "cyclone_strikes",
+    duration = 20,
+    max_stacks = 5,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=328547) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2065,6 +2238,11 @@ DBC = {
   [228563] = {
     localName = "Blackout Combo",
     tokenName = "blackout_combo",
+    duration = 15,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=344191) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2117,6 +2295,10 @@ DBC = {
     localName = "Improved Vivify",
     tokenName = "improved_vivify",
 
+    ignores_armor = true, -- Frost
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=349339) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 40,
@@ -2142,6 +2324,12 @@ DBC = {
   [322101] = {
     localName = "Expel Harm",
     tokenName = "expel_harm",
+    gcd = 1,
+    cooldown = 15,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=810236) 
       label = "Direct Heal (10)",
@@ -2163,6 +2351,10 @@ DBC = {
   [322109] = {
     localName = "Touch of Death",
     tokenName = "touch_of_death",
+    gcd = 1.5,
+    cooldown = 180,
+
+    may_miss = true,
 
     [1] = { -- (id=810250) 
       label = "School Damage (2): physical",
@@ -2191,6 +2383,9 @@ DBC = {
     localName = "Improved Touch of Death",
     tokenName = "improved_touch_of_death",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=810254) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 15,
@@ -2210,6 +2405,11 @@ DBC = {
   [322120] = {
     localName = "Shuffle",
     tokenName = "shuffle",
+    cooldown = 0.1,
+    icd = 0.1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=810265) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2224,6 +2424,9 @@ DBC = {
     localName = "Improved Celestial Brew",
     tokenName = "improved_celestial_brew",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=810875) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 200,
@@ -2236,6 +2439,9 @@ DBC = {
   [323999] = {
     localName = "Empowered Tiger Lightning",
     tokenName = "empowered_tiger_lightning",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=813290) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2256,6 +2462,11 @@ DBC = {
   [325092] = {
     localName = "Purified Chi",
     tokenName = "purified_chi",
+    duration = 15,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=815143) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2270,6 +2481,13 @@ DBC = {
   [325153] = {
     localName = "Exploding Keg",
     tokenName = "exploding_keg",
+    gcd = 1,
+    cooldown = 60,
+    duration = 3,
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=815254) 
       label = "School Damage (2): fire",
@@ -2306,6 +2524,10 @@ DBC = {
   [325177] = {
     localName = "Celestial Flames",
     tokenName = "celestial_flames",
+    trigger_rate = 0.3,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=815306) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Celestial Flames",
@@ -2327,6 +2549,9 @@ DBC = {
     localName = "Dance of Chi-Ji",
     tokenName = "dance_of_chiji",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=815341) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Dance of Chi-Ji",
       base_value = 300,
@@ -2339,6 +2564,10 @@ DBC = {
   [327264] = {
     localName = "Faeline Stomp",
     tokenName = "faeline_stomp",
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=818673) 
       label = "School Damage (2): nature",
@@ -2353,6 +2582,10 @@ DBC = {
   [337482] = {
     localName = "Pressure Point",
     tokenName = "pressure_point",
+    duration = 5,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=835536) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)",
@@ -2370,6 +2603,9 @@ DBC = {
   [342928] = {
     localName = "Reverse Harm",
     tokenName = "reverse_harm",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=844367) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2397,6 +2633,10 @@ DBC = {
   [344021] = {
     localName = "Keefer's Skyreach",
     tokenName = "keefers_skyreach",
+    duration = 6,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=868060) 
       label = "Apply Aura (6) | Modify Crit Chance% from Caster's Spells (308)",
@@ -2430,6 +2670,11 @@ DBC = {
   [383696] = {
     localName = "Hit Scheme",
     tokenName = "hit_scheme",
+    duration = 8,
+    max_stacks = 4,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1015764) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2447,6 +2692,9 @@ DBC = {
     localName = "Sal'salabim's Strength",
     tokenName = "salsalabims_strength",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1015765) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -2461,6 +2709,9 @@ DBC = {
     localName = "Scalding Brew",
     tokenName = "scalding_brew",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1015766) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -2474,6 +2725,9 @@ DBC = {
     localName = "Gai Plin's Imperial Brew",
     tokenName = "gai_plins_imperial_brew",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1015768) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 25,
@@ -2486,6 +2740,9 @@ DBC = {
   [383707] = {
     localName = "Stormstout's Last Keg",
     tokenName = "stormstouts_last_keg",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1015783) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2513,6 +2770,11 @@ DBC = {
   [383785] = {
     localName = "Counterstrike",
     tokenName = "counterstrike",
+    cooldown = 1,
+    icd = 1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1015925) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Counterstrike",
@@ -2526,6 +2788,11 @@ DBC = {
   [383800] = {
     localName = "Counterstrike",
     tokenName = "counterstrike",
+    duration = 10,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1015951) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2550,6 +2817,9 @@ DBC = {
     localName = "Dragonfire Brew",
     tokenName = "dragonfire_brew",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1016250) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 2,
@@ -2569,6 +2839,14 @@ DBC = {
   [386276] = {
     localName = "Bonedust Brew",
     tokenName = "bonedust_brew",
+    gcd = 1,
+    cooldown = 60,
+    duration = 10,
+    trigger_rate = 0.5,
+
+    ignores_armor = true, -- Shadow
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1020234) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2597,6 +2875,9 @@ DBC = {
     localName = "Attenuation",
     tokenName = "attenuation",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1021400) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -2617,6 +2898,11 @@ DBC = {
   [386949] = {
     localName = "Bountiful Brew",
     tokenName = "bountiful_brew",
+    cooldown = 0.5,
+    icd = 0.5,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1021413) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -2631,6 +2917,9 @@ DBC = {
     localName = "Charred Passions",
     tokenName = "charred_passions",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1021441) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Charred Passions",
       base_value = 50,
@@ -2643,6 +2932,9 @@ DBC = {
   [387046] = {
     localName = "Elusive Footwork",
     tokenName = "elusive_footwork",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1021574) 
       label = "Apply Aura (6) | Unknown(285)",
@@ -2675,6 +2967,15 @@ DBC = {
   [387184] = {
     localName = "Weapons of Order",
     tokenName = "weapons_of_order",
+    gcd = 1.5,
+    cooldown = 120,
+    icd = 0.1,
+    duration = 30,
+    max_stacks = 1,
+
+    ignores_armor = true, -- Arcane
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1021812) 
       label = "Apply Aura (6) | Modify Mastery% (318)",
@@ -2743,6 +3044,9 @@ DBC = {
     localName = "Fluidity of Motion",
     tokenName = "fluidity_of_motion",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1021886) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)",
       base_value = -1000,
@@ -2781,6 +3085,9 @@ DBC = {
     localName = "Strength of Spirit",
     tokenName = "strength_of_spirit",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1021960) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 100,
@@ -2793,6 +3100,10 @@ DBC = {
   [387621] = {
     localName = "Dragonfire Brew",
     tokenName = "dragonfire_brew",
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1022525) 
       label = "School Damage (2): fire",
@@ -2807,6 +3118,9 @@ DBC = {
   [387625] = {
     localName = "Staggering Strikes",
     tokenName = "staggering_strikes",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1022530) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Staggering Strikes",
@@ -2829,6 +3143,10 @@ DBC = {
   [387638] = {
     localName = "Shadowboxing Treads",
     tokenName = "shadowboxing_treads",
+    max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1022553) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Targets (17)",
@@ -2856,6 +3174,14 @@ DBC = {
   [388193] = {
     localName = "Jadefire Stomp",
     tokenName = "jadefire_stomp",
+    gcd = 1,
+    cooldown = 0.5,
+    icd = 0.5,
+    duration = 30,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1023715) 
       label = "Dummy (3)",
@@ -2891,6 +3217,10 @@ DBC = {
     localName = "Jadefire Stomp",
     tokenName = "jadefire_stomp",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1023725) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -2904,6 +3234,10 @@ DBC = {
   [388207] = {
     localName = "Jadefire Stomp",
     tokenName = "jadefire_stomp",
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1023731) 
       label = "School Damage (2): nature",
@@ -2927,6 +3261,9 @@ DBC = {
     localName = "Quick Sip",
     tokenName = "quick_sip",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1024228) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -2946,6 +3283,9 @@ DBC = {
   [388809] = {
     localName = "Fast Feet",
     tokenName = "fast_feet",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1024727) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2973,6 +3313,9 @@ DBC = {
     localName = "Grace of the Crane",
     tokenName = "grace_of_the_crane",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1024730) 
       label = "Apply Aura (6) | Modify Healing Received% (118)",
       ranks = { 4, 8, },
@@ -2987,6 +3330,9 @@ DBC = {
   [388848] = {
     localName = "Crane Vortex",
     tokenName = "crane_vortex",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1024786) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3004,6 +3350,9 @@ DBC = {
   [388849] = {
     localName = "Rising Star",
     tokenName = "rising_star",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1024787) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3034,6 +3383,9 @@ DBC = {
     localName = "Touch of the Tiger",
     tokenName = "touch_of_the_tiger",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1024796) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 25,
@@ -3049,6 +3401,11 @@ DBC = {
   [389541] = {
     localName = "Claw of the White Tiger",
     tokenName = "claw_of_the_white_tiger",
+    cooldown = 2,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1025853) 
       label = "School Damage (2): nature",
@@ -3063,6 +3420,12 @@ DBC = {
   [389578] = {
     localName = "Resonant Fists",
     tokenName = "resonant_fists",
+    cooldown = 1,
+    icd = 1,
+    trigger_rate = 0.1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1025905) 
       label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Direct Amount (0)",
@@ -3095,6 +3458,9 @@ DBC = {
     localName = "Save Them All",
     tokenName = "save_them_all",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1025906) 
       label = "Apply Aura (6) | Dummy (4)",
       ranks = { 10, 20, },
@@ -3124,6 +3490,9 @@ DBC = {
     localName = "Face Palm",
     tokenName = "face_palm",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1026492) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 50,
@@ -3152,6 +3521,9 @@ DBC = {
     localName = "Meridian Strikes",
     tokenName = "meridian_strikes",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1028780) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
       base_value = 15,
@@ -3174,6 +3546,9 @@ DBC = {
   [391383] = {
     localName = "Hardened Soles",
     tokenName = "hardened_soles",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1028863) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Critical Chance (7)",
@@ -3203,6 +3578,10 @@ DBC = {
     localName = "Resonant Fists",
     tokenName = "resonant_fists",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1028892) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -3216,6 +3595,9 @@ DBC = {
   [391412] = {
     localName = "Jadefire Harmony",
     tokenName = "jadefire_harmony",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1028916) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3236,6 +3618,9 @@ DBC = {
   [392900] = {
     localName = "Vigorous Expulsion",
     tokenName = "vigorous_expulsion",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031441) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3264,6 +3649,9 @@ DBC = {
     localName = "Profound Rebuttal",
     tokenName = "profound_rebuttal",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1031465) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
       base_value = 50,
@@ -3280,6 +3668,9 @@ DBC = {
   [392958] = {
     localName = "Glory of the Dawn",
     tokenName = "glory_of_the_dawn",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031558) 
       label = "Apply Aura (6) | Dummy (4) | Scaling Class: -8",
@@ -3307,6 +3698,9 @@ DBC = {
   [392959] = {
     localName = "Glory of the Dawn",
     tokenName = "glory_of_the_dawn",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031561) 
       label = "School Damage (2): physical",
@@ -3336,6 +3730,9 @@ DBC = {
     localName = "Shadowboxing Treads",
     tokenName = "shadowboxing_treads",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1031598) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Targets (17)",
       base_value = 2,
@@ -3362,6 +3759,9 @@ DBC = {
   [392993] = {
     localName = "Xuen's Battlegear",
     tokenName = "xuens_battlegear",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031618) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3393,6 +3793,9 @@ DBC = {
     localName = "Path of Jade",
     tokenName = "path_of_jade",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1031622) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 10,
@@ -3412,6 +3815,11 @@ DBC = {
   [393039] = {
     localName = "The Emperor's Capacitor",
     tokenName = "the_emperors_capacitor",
+    duration = -1,
+    max_stacks = 20,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031700) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
@@ -3441,6 +3849,10 @@ DBC = {
     localName = "Chi Explosion",
     tokenName = "chi_explosion",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1031743) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -3454,6 +3866,11 @@ DBC = {
   [393057] = {
     localName = "Chi Energy",
     tokenName = "chi_energy",
+    duration = 45,
+    max_stacks = 30,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1031744) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3468,6 +3885,9 @@ DBC = {
     localName = "Tranquil Spirit",
     tokenName = "tranquil_spirit",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1032223) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -3481,6 +3901,10 @@ DBC = {
     localName = "Chi Surge",
     tokenName = "chi_surge",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1032309) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Chi Surge",
       base_value = 4,
@@ -3493,6 +3917,11 @@ DBC = {
   [393515] = {
     localName = "Pretense of Instability",
     tokenName = "pretense_of_instability",
+    duration = 5,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1032548) 
       label = "Apply Aura (6) | Modify Dodge% (49)",
@@ -3506,6 +3935,9 @@ DBC = {
   [393516] = {
     localName = "Pretense of Instability",
     tokenName = "pretense_of_instability",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1032549) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Pretense of Instability",
@@ -3533,6 +3965,13 @@ DBC = {
   [393786] = {
     localName = "Chi Surge",
     tokenName = "chi_surge",
+    duration = 8,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
 
     [1] = { -- (id=1032926) 
       label = "Apply Aura (6) | Periodic Damage (3): nature every 2 seconds",
@@ -3554,6 +3993,12 @@ DBC = {
   [394944] = {
     localName = "Kicks of Flowing Momentum",
     tokenName = "kicks_of_flowing_momentum",
+    duration = 30,
+    max_stacks = 1,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1035012) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3570,6 +4015,12 @@ DBC = {
   [394949] = {
     localName = "Fists of Flowing Momentum",
     tokenName = "fists_of_flowing_momentum",
+    duration = 30,
+    max_stacks = 3,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1035024) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3583,6 +4034,10 @@ DBC = {
   [395414] = {
     localName = "Jadefire Brand",
     tokenName = "jadefire_brand",
+    duration = 10,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1035870) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)",
@@ -3623,6 +4078,9 @@ DBC = {
     localName = "Strike of the Windlord",
     tokenName = "strike_of_the_windlord",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1036049) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -3637,6 +4095,9 @@ DBC = {
     localName = "Strike of the Windlord",
     tokenName = "strike_of_the_windlord",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1036052) 
       label = "School Damage (2): physical",
       base_value = 0,
@@ -3650,6 +4111,9 @@ DBC = {
   [397768] = {
     localName = "Inner Peace",
     tokenName = "inner_peace",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1040376) 
       label = "Apply Aura (6) | Modify Max Resource (418)",
@@ -3676,6 +4140,10 @@ DBC = {
     localName = "Shadowflame Nova",
     tokenName = "shadowflame_nova",
 
+    ignores_armor = true, -- Shadowflame
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1075491) 
       label = "School Damage (2): shadowflame",
       base_value = 0,
@@ -3689,6 +4157,9 @@ DBC = {
   [418359] = {
     localName = "Press the Advantage",
     tokenName = "press_the_advantage",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1090589) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3728,6 +4199,10 @@ DBC = {
     localName = "Press the Advantage",
     tokenName = "press_the_advantage",
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1090590) 
       label = "School Damage (2): nature",
       base_value = 0,
@@ -3741,6 +4216,13 @@ DBC = {
   [418361] = {
     localName = "Press the Advantage",
     tokenName = "press_the_advantage",
+    cooldown = 1,
+    icd = 1,
+    duration = 20,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1090593) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3774,6 +4256,9 @@ DBC = {
     localName = "Monk Brewmaster 10.2 Class Set 2pc",
     tokenName = "monk_brewmaster_10.2_class_set_2pc",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1098484) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 40,
@@ -3793,6 +4278,9 @@ DBC = {
   [422887] = {
     localName = "Monk Brewmaster 10.2 Class Set 4pc",
     tokenName = "monk_brewmaster_10.2_class_set_4pc",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1098485) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3814,6 +4302,9 @@ DBC = {
     localName = "Monk Windwalker 10.2 Class Set 2pc",
     tokenName = "monk_windwalker_10.2_class_set_2pc",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1098489) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Blackout Reinforcement",
       base_value = 250,
@@ -3826,6 +4317,9 @@ DBC = {
   [422892] = {
     localName = "Monk Windwalker 10.2 Class Set 4pc",
     tokenName = "monk_windwalker_10.2_class_set_4pc",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1098490) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3850,6 +4344,12 @@ DBC = {
   [424454] = {
     localName = "Blackout Reinforcement",
     tokenName = "blackout_reinforcement",
+    duration = -1,
+    max_stacks = 1,
+
+    ignores_armor = true, -- Shadow
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1101241) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3866,6 +4366,9 @@ DBC = {
   [442687] = {
     localName = "Xuen's Guidance",
     tokenName = "xuens_guidance",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138070) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -3890,6 +4393,9 @@ DBC = {
     localName = "Restore Balance",
     tokenName = "restore_balance",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1138125) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -3902,6 +4408,9 @@ DBC = {
   [442743] = {
     localName = "Temple Training",
     tokenName = "temple_training",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138177) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3929,6 +4438,9 @@ DBC = {
     localName = "Niuzao's Protection",
     tokenName = "niuzaos_protection",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1138182) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -3941,6 +4453,11 @@ DBC = {
   [442818] = {
     localName = "August Dynasty",
     tokenName = "august_dynasty",
+    cooldown = 8,
+    icd = 8,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138311) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): August Dynasty",
@@ -3954,6 +4471,10 @@ DBC = {
   [442850] = {
     localName = "August Dynasty",
     tokenName = "august_dynasty",
+    duration = 12,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138362) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -3980,6 +4501,9 @@ DBC = {
   [443059] = {
     localName = "Jade Sanctuary",
     tokenName = "jade_sanctuary",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138704) 
       label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 2 (12)",
@@ -4009,6 +4533,9 @@ DBC = {
     localName = "Courage of the White Tiger",
     tokenName = "courage_of_the_white_tiger",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1138752) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 15,
@@ -4029,6 +4556,9 @@ DBC = {
     localName = "Strength of the Black Ox",
     tokenName = "strength_of_the_black_ox",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1138782) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -4048,6 +4578,8 @@ DBC = {
   [443112] = {
     localName = "Strength of the Black Ox",
     tokenName = "strength_of_the_black_ox",
+    duration = 20,
+    max_stacks = 1,
 
     [1] = { -- (id=1138786) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Cast Time (10)",
@@ -4066,6 +4598,9 @@ DBC = {
     localName = "Flight of the Red Crane",
     tokenName = "flight_of_the_red_crane",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1139045) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -4079,6 +4614,9 @@ DBC = {
     localName = "Heart of the Jade Serpent",
     tokenName = "heart_of_the_jade_serpent",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1139104) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4091,6 +4629,12 @@ DBC = {
   [443424] = {
     localName = "Heart of the Jade Serpent",
     tokenName = "heart_of_the_jade_serpent",
+    duration = 60,
+    max_stacks = 30,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139306) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4105,6 +4649,9 @@ DBC = {
     localName = "Inner Compass",
     tokenName = "inner_compass",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1139581) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 3,
@@ -4117,6 +4664,10 @@ DBC = {
   [443572] = {
     localName = "Crane Stance",
     tokenName = "crane_stance",
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139585) 
       label = "Apply Aura (6) | Modify All Haste% (193)",
@@ -4130,6 +4681,10 @@ DBC = {
   [443574] = {
     localName = "Ox Stance",
     tokenName = "ox_stance",
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139588) 
       label = "Apply Aura (6) | Modify Versatility% (471)",
@@ -4143,6 +4698,10 @@ DBC = {
   [443575] = {
     localName = "Tiger Stance",
     tokenName = "tiger_stance",
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139589) 
       label = "Apply Aura (6) | Modify Critical Strike% (290)",
@@ -4156,6 +4715,10 @@ DBC = {
   [443576] = {
     localName = "Serpent Stance",
     tokenName = "serpent_stance",
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139590) 
       label = "Apply Aura (6) | Modify Mastery% (318)",
@@ -4170,6 +4733,9 @@ DBC = {
     localName = "Unity Within",
     tokenName = "unity_within",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1139615) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 200,
@@ -4182,6 +4748,11 @@ DBC = {
   [443616] = {
     localName = "Heart of the Jade Serpent",
     tokenName = "heart_of_the_jade_serpent",
+    duration = 8,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1139673) 
       label = "Summon (28)",
@@ -4231,6 +4802,9 @@ DBC = {
     localName = "Yu'lon's Knowledge",
     tokenName = "yulons_knowledge",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1139686) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Duration (1)",
       base_value = 4000,
@@ -4248,6 +4822,9 @@ DBC = {
     localName = "Chi Wave",
     tokenName = "chi_wave",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1150261) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 15 seconds",
       base_value = 0,
@@ -4260,6 +4837,9 @@ DBC = {
   [450426] = {
     localName = "Chi Proficiency",
     tokenName = "chi_proficiency",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1150317) 
       label = "Apply Aura (6) | Modify Damage Done% (79)",
@@ -4294,6 +4874,9 @@ DBC = {
     localName = "Pressure Points",
     tokenName = "pressure_points",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1150327) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 5,
@@ -4306,6 +4889,9 @@ DBC = {
   [450508] = {
     localName = "Aspect of Harmony",
     tokenName = "aspect_of_harmony",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1150447) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4355,6 +4941,9 @@ DBC = {
     localName = "Resonance",
     tokenName = "resonance",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1150502) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4367,6 +4956,9 @@ DBC = {
   [450615] = {
     localName = "Flurry Strikes",
     tokenName = "flurry_strikes",
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
 
     [1] = { -- (id=1150629) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4387,6 +4979,10 @@ DBC = {
   [450711] = {
     localName = "Aspect of Harmony",
     tokenName = "aspect_of_harmony",
+    duration = 10,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1150783) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4401,6 +4997,9 @@ DBC = {
     localName = "Purified Spirit",
     tokenName = "purified_spirit",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151062) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4414,6 +5013,9 @@ DBC = {
     localName = "Harmonic Gambit",
     tokenName = "harmonic_gambit",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151065) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4426,6 +5028,9 @@ DBC = {
   [450875] = {
     localName = "Manifestation",
     tokenName = "manifestation",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151074) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -4444,6 +5049,9 @@ DBC = {
     localName = "Balanced Stratagem",
     tokenName = "balanced_stratagem",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151110) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4456,6 +5064,9 @@ DBC = {
   [450892] = {
     localName = "Endless Draught",
     tokenName = "endless_draught",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151116) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4470,6 +5081,9 @@ DBC = {
     localName = "Path of Resurgence",
     tokenName = "path_of_resurgence",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151151) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 25,
@@ -4483,6 +5097,9 @@ DBC = {
     localName = "Way of a Thousand Strikes",
     tokenName = "way_of_a_thousand_strikes",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151234) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 50,
@@ -4495,6 +5112,9 @@ DBC = {
   [450979] = {
     localName = "Pride of Pandaria",
     tokenName = "pride_of_pandaria",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151259) 
       label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Critical Chance (7)",
@@ -4513,6 +5133,9 @@ DBC = {
     localName = "High Impact",
     tokenName = "high_impact",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151262) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4525,6 +5148,9 @@ DBC = {
   [450985] = {
     localName = "Lead from the Front",
     tokenName = "lead_from_the_front",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151267) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4539,6 +5165,9 @@ DBC = {
     localName = "Against All Odds",
     tokenName = "against_all_odds",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151268) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Against All Odds",
       base_value = 0,
@@ -4552,6 +5181,9 @@ DBC = {
     localName = "Veteran's Eye",
     tokenName = "veterans_eye",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151269) 
       label = "Apply Aura (6) | Proc Trigger Spell (42)",
       base_value = 0,
@@ -4564,6 +5196,9 @@ DBC = {
   [450988] = {
     localName = "One Versus Many",
     tokenName = "one_versus_many",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151270) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4597,6 +5232,9 @@ DBC = {
   [450989] = {
     localName = "Efficient Training",
     tokenName = "efficient_training",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151271) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -4649,6 +5287,9 @@ DBC = {
     localName = "Martial Precision",
     tokenName = "martial_precision",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151272) 
       label = "Apply Aura (6) | Unknown(280)",
       base_value = 10,
@@ -4661,6 +5302,9 @@ DBC = {
   [450993] = {
     localName = "Vigilant Watch",
     tokenName = "vigilant_watch",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151275) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
@@ -4679,6 +5323,9 @@ DBC = {
     localName = "Wisdom of the Wall",
     tokenName = "wisdom_of_the_wall",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151276) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 10,
@@ -4691,6 +5338,9 @@ DBC = {
   [451017] = {
     localName = "Clarity of Purpose",
     tokenName = "clarity_of_purpose",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151321) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4711,6 +5361,12 @@ DBC = {
   [451021] = {
     localName = "Flurry Charge",
     tokenName = "flurry_charge",
+    duration = 30,
+    max_stacks = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151328) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4725,6 +5381,9 @@ DBC = {
     localName = "Overwhelming Force",
     tokenName = "overwhelming_force",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151334) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -4738,6 +5397,9 @@ DBC = {
     localName = "Mantra of Tenacity",
     tokenName = "mantra_of_tenacity",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151343) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -4750,6 +5412,9 @@ DBC = {
   [451036] = {
     localName = "Mantra of Purity",
     tokenName = "mantra_of_purity",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151354) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -4777,6 +5442,11 @@ DBC = {
   [451061] = {
     localName = "Against All Odds",
     tokenName = "against_all_odds",
+    duration = 6,
+    max_stacks = 20,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151389) 
       label = "Apply Aura (6) | Modify Attribute% (80)",
@@ -4791,6 +5461,11 @@ DBC = {
   [451085] = {
     localName = "Veteran's Eye",
     tokenName = "veterans_eye",
+    duration = 10,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151429) 
       label = "Apply Aura (6) | Modify Combat Rating Multiplier (405)",
@@ -4805,6 +5480,10 @@ DBC = {
   [451233] = {
     localName = "Vigilant Watch",
     tokenName = "vigilant_watch",
+    duration = 30,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151693) 
       label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Direct Amount (0)",
@@ -4821,6 +5500,10 @@ DBC = {
   [451242] = {
     localName = "Wisdom of the Wall",
     tokenName = "wisdom_of_the_wall",
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
@@ -4870,6 +5553,9 @@ DBC = {
     localName = "Momentum Boost",
     tokenName = "momentum_boost",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1151789) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Momentum Boost",
       base_value = 100,
@@ -4879,9 +5565,34 @@ DBC = {
     },
   },
   -- Momentum Boost 
+  [451297] = {
+    localName = "Momentum Boost",
+    tokenName = "momentum_boost",
+    duration = 10,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151795) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        117418,
+      },
+    },
+  },
+  -- Momentum Boost 
   [451298] = {
     localName = "Momentum Boost",
     tokenName = "momentum_boost",
+    duration = 8,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151798) 
       label = "Apply Aura (6) | Modify Ranged and Melee Attack Speed% (342)",
@@ -4895,6 +5606,11 @@ DBC = {
   [451299] = {
     localName = "Chi Cocoon",
     tokenName = "chi_cocoon",
+    duration = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1151799) 
       label = "Apply Aura (6) | Absorb Damage (69)",
@@ -4917,6 +5633,9 @@ DBC = {
     localName = "Acclamation",
     tokenName = "acclamation",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152031) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Acclamation",
       base_value = 10,
@@ -4929,6 +5648,11 @@ DBC = {
   [451433] = {
     localName = "Acclamation",
     tokenName = "acclamation",
+    duration = 12,
+    max_stacks = 12,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152032) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster (270)",
@@ -4944,6 +5668,9 @@ DBC = {
     localName = "Martial Mixture",
     tokenName = "martial_mixture",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152065) 
       label = "Apply Aura (6) | Proc Trigger Spell (42): Martial Mixture",
       base_value = 100,
@@ -4956,6 +5683,11 @@ DBC = {
   [451457] = {
     localName = "Martial Mixture",
     tokenName = "martial_mixture",
+    duration = 15,
+    max_stacks = 12,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152068) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -4972,6 +5704,9 @@ DBC = {
   [451463] = {
     localName = "Ordered Elements",
     tokenName = "ordered_elements",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152077) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 5 (33)",
@@ -4996,6 +5731,9 @@ DBC = {
   [451485] = {
     localName = "Brawler's Intensity",
     tokenName = "brawlers_intensity",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152113) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)",
@@ -5024,6 +5762,9 @@ DBC = {
     localName = "Courageous Impulse",
     tokenName = "courageous_impulse",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152125) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 3 (23)",
       base_value = 175,
@@ -5040,6 +5781,9 @@ DBC = {
   [451498] = {
     localName = "Energy Burst",
     tokenName = "energy_burst",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152128) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -5061,6 +5805,9 @@ DBC = {
     localName = "Rushing Jade Wind",
     tokenName = "rushing_jade_wind",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152139) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 100,
@@ -5074,6 +5821,9 @@ DBC = {
     localName = "Sequenced Strikes",
     tokenName = "sequenced_strikes",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152152) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 100,
@@ -5086,6 +5836,11 @@ DBC = {
   [451524] = {
     localName = "Revolving Whirl",
     tokenName = "revolving_whirl",
+    cooldown = 3,
+    icd = 3,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152168) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -5099,6 +5854,11 @@ DBC = {
   [451529] = {
     localName = "Knowledge of the Broken Temple",
     tokenName = "knowledge_of_the_broken_temple",
+    cooldown = 2,
+    icd = 2,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152176) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -5140,6 +5900,9 @@ DBC = {
   [451573] = {
     localName = "Singularly Focused Jade",
     tokenName = "singularly_focused_jade",
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152257) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 1 (3)",
@@ -5186,6 +5949,9 @@ DBC = {
     localName = "Communion With Wind",
     tokenName = "communion_with_wind",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152266) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Cooldown (11)",
       base_value = -10000,
@@ -5213,6 +5979,9 @@ DBC = {
     localName = "Gale Force",
     tokenName = "gale_force",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152274) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 0,
@@ -5225,6 +5994,11 @@ DBC = {
   [451582] = {
     localName = "Gale Force",
     tokenName = "gale_force",
+    duration = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1152277) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -5253,6 +6027,9 @@ DBC = {
     localName = "Dual Threat",
     tokenName = "dual_threat",
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1152583) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 20,
@@ -5265,6 +6042,11 @@ DBC = {
   [451833] = {
     localName = "Dual Threat",
     tokenName = "dual_threat",
+    duration = 5,
+
+    may_miss = true,
+    may_crit = true,
+    pandemic = true,
 
     [1] = { -- (id=1152594) 
       label = "Apply Aura (6) | Modify Damage Done% (79)",
