@@ -54,18 +54,22 @@ function validVersion( dbc_version, dbc_build )
     return true
 end
 
+local PVP_ENABLED = false
 local UnitExists = UnitExists
 local UnitIsPlayer = UnitIsPlayer
 local UnitCanAttack = UnitCanAttack
+local TargetFrame = CreateFrame( "Frame" );
 
-local function playerIsPvP()
+TargetFrame:RegisterEvent( "PLAYER_TARGET_CHANGED" )
+TargetFrame:SetScript( "OnEvent",function( self, event, ... )
     if UnitExists( "target" ) and UnitIsPlayer( "target" ) then
         if UnitCanAttack( "player", "target" ) then
-            return true
+            PVP_ENABLED = true
         end
     end
-    return false
-end
+    PVP_ENABLED = false
+end)
+
 
 local find = string.find
 
@@ -109,8 +113,7 @@ function LibDBCache:find_spell( spellID, rank )
     spell.localName = spell.localName
     spell.tokenName = spell.tokenName
     
-    spell.gcd               = spell.gcd or 0
-    spell.cooldown          = spell.cooldown or 0
+    spell.gcd               = spell.gcd or 0 -- Execute Time
     spell.icd               = spell.icd or 0
     spell.duration          = spell.duration or 0
     spell.max_stacks        = spell.max_stacks or 1
@@ -176,7 +179,7 @@ function LibDBCache:find_spell( spellID, rank )
         local frameTime = GetTime()
         
         -- dynamic values
-        if effect and ( not effect.last_refresh or effect.last_refresh < frameTime - 0.2 ) then
+        if effect then
             
             -- talent values
             if rank then
@@ -192,7 +195,7 @@ function LibDBCache:find_spell( spellID, rank )
             local base_value = effect.base_value
             local pvp_coefficient = effect.pvp_coefficient
             
-            if playerIsPvP() then
+            if PVP_ENABLED then
                 if pvp_coefficient ~= 1 then
                     effect.base_value = base_value * pvp_coefficient
                     effect.scaled_value = effect.scaled_value * pvp_coefficient
