@@ -36,11 +36,14 @@
 325092 # Purified Chi (buff)
 216519 # Celestial Fortune
 158221 # Whirling Dragon Punch (tick)
+392983 # Strike of the Windlord
 395519 # Strike of the Windlord MH
 395521 # Strike of the Windlord OH
 148187 # Rushing Jade Wind (tick)
 395414 # Jadefire Brand (damage)
+123986 # Chi Burst
 148135 # Chi Burst
+115098 # Chi Wave
 132467 # Chi Wave
 123586 # Flying Serpent Kick (landing)
 393056 # Chi Explosion
@@ -51,6 +54,7 @@
 389541 # Claw of the White Tiger
 327264 # Faeline Stomp (WW Hit)
 388201 # Jadefire Stomp (WW Hit)
+228649 # Teachings of the Monastery
 
 124507 # Gift of the Ox
 393786 # Chi Surge DoT
@@ -197,6 +201,7 @@
 # Windwalker Abilities
 
 113656 # Fists of Fury
+107428 # Rising Sun Kick
 185099 # Rising Sun Kick
 101546 # Spinning Crane Kick
 100784 # Blackout Kick

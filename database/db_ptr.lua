@@ -134,6 +134,24 @@ DBC = {
       pct = 0.000,
     },
   },
+  -- Rising Sun Kick 
+  [107428] = {
+    localName = "Rising Sun Kick",
+    tokenName = "rising_sun_kick",
+    gcd = 1.5,
+    cooldown = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=118198) 
+      label = "Trigger Spell (64): Rising Sun Kick",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
   -- Fists of Fury 
   [113656] = {
     localName = "Fists of Fury",
@@ -192,6 +210,25 @@ DBC = {
       scaled_value = 54,
       pvp_coefficient = 1.00000,
       pct = 0.540,
+    },
+  },
+  -- Chi Wave 
+  [115098] = {
+    localName = "Chi Wave",
+    tokenName = "chi_wave",
+    gcd = 1.5,
+    cooldown = 15,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=128771) 
+      label = "Dummy (3)",
+      base_value = 7,
+      scaled_value = 7,
+      pvp_coefficient = 1.00000,
+      pct = 0.070,
     },
   },
   -- Breath of Fire 
@@ -497,6 +534,41 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = -0.050,
       misc_value = 0,
+    },
+  },
+  -- Chi Burst 
+  [123986] = {
+    localName = "Chi Burst",
+    tokenName = "chi_burst",
+    gcd = 1.5,
+    cooldown = 30,
+    duration = 1,
+
+    ignores_armor = true, -- Nature
+    may_crit = true,
+
+    [1] = { -- (id=156697) 
+      label = "Create Area Trigger (179)",
+      base_value = 6,
+      scaled_value = 6,
+      pvp_coefficient = 1.00000,
+      pct = 0.060,
+      misc_value = 1316,
+    },
+    [2] = { -- (id=201318) 
+      label = "Create Area Trigger (179)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 1315,
+    },
+    [3] = { -- (id=739870) 
+      label = "Dummy (3)",
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
     },
   },
   -- Gift of the Ox 
@@ -2278,6 +2350,23 @@ DBC = {
       },
     },
   },
+  -- Blackout Kick 
+  [228649] = {
+    localName = "Blackout Kick",
+    tokenName = "blackout_kick",
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=344387) 
+      label = "School Damage (2): physical",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.84700,
+      pvp_coefficient = 1.30000,
+      pct = 0.000,
+    },
+  },
   -- Improved Vivify 
   [231602] = {
     localName = "Improved Vivify",
@@ -3879,6 +3968,47 @@ DBC = {
       },
     },
   },
+  -- Strike of the Windlord 
+  [392983] = {
+    localName = "Strike of the Windlord",
+    tokenName = "strike_of_the_windlord",
+    gcd = 1,
+    cooldown = 40,
+    duration = 6,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1031600) 
+      label = "Dummy (3)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1031601) 
+      label = "Apply Aura (6) | Decrease Movement Speed% (33)",
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+    },
+    [3] = { -- (id=1031602) 
+      label = "Trigger Spell (64): Strike of the Windlord",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [4] = { -- (id=1031603) 
+      label = "Trigger Spell (64): Strike of the Windlord",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 500,
+    },
+  },
   -- Xuen's Battlegear 
   [392993] = {
     localName = "Xuen's Battlegear",
@@ -4556,19 +4686,19 @@ DBC = {
   },
   talentKeys = {
     418359,    397768,    394923,    393516,    393400,
-    393357,    393098,    392994,    392993,    392982,
-    392970,    392958,    392910,    392900,    391412,
-    391383,    391330,    389942,    389579,    389578,
-    388856,    388854,    388849,    388848,    388811,
-    388809,    388674,    388505,    388193,    387638,
-    387625,    387276,    387230,    387184,    387046,
-    386965,    386949,    386941,    386276,    383994,
-    383785,    383707,    383700,    383698,    383697,
-    325201,    325177,    325153,    323999,    322510,
-    322120,    322113,    231602,    220357,    196740,
-    196736,    196730,    195300,    152175,    122470,
-    122281,    121817,    121253,    116847,    116645,
-    115181,    113656,
+    393357,    393098,    392994,    392993,    392983,
+    392982,    392970,    392958,    392910,    392900,
+    391412,    391383,    391330,    389942,    389579,
+    389578,    388856,    388854,    388849,    388848,
+    388811,    388809,    388674,    388505,    388193,
+    387638,    387625,    387276,    387230,    387184,
+    387046,    386965,    386949,    386941,    386276,
+    383994,    383785,    383707,    383700,    383698,
+    383697,    325201,    325177,    325153,    323999,
+    322510,    322120,    322113,    231602,    220357,
+    196740,    196736,    196730,    195300,    152175,
+    123986,    122470,    122281,    121817,    121253,
+    116847,    116645,    115181,    115098,    113656,
   },
 }
 
