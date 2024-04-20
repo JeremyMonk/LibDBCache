@@ -4,6 +4,9 @@
 # Other
 134735 # PvP Rules Enabled
 
+# Items
+408836 # Ancient Lava (Djaruun the Elder Flame)
+
 # Monk Set Bonuses
 422886 # T31 Brewmaster Class Set 2pc
 422887 # T31 Brewmaster Class Set 4pc
@@ -239,7 +242,9 @@
 121253 # Keg Smash
 185099 # Rising Sun Kick
 101546 # Spinning Crane Kick
+322729 # Spinning Crane Kick
 100784 # Blackout Kick
+205523 # Blackout Kick
 116847 # Rushing Jade Wind
 100780 # Tiger Palm
 322101 # Expel Harm

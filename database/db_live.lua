@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-04-19 - World of Warcraft 10.2.6.53913
+-- Database generated from DBCache on 2024-04-20 - World of Warcraft 10.2.6.53913
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.6", 53913 ) then 
@@ -2120,6 +2120,31 @@ DBC = {
       pct = 0.010,
     },
   },
+  -- Blackout Kick 
+  [205523] = {
+    localName = "Blackout Kick",
+    tokenName = "blackout_kick",
+    gcd = 1.5,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=303663) 
+      label = "School Damage (2): physical",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.96000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=814935) 
+      label = "Dummy (3)",
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+    },
+  },
   -- Celestial Fortune 
   [216519] = {
     localName = "Celestial Fortune",
@@ -2404,6 +2429,44 @@ DBC = {
       scaled_value = 200,
       pvp_coefficient = 1.00000,
       pct = 2.000,
+    },
+  },
+  -- Spinning Crane Kick 
+  [322729] = {
+    localName = "Spinning Crane Kick",
+    tokenName = "spinning_crane_kick",
+    replaces = 101546,
+    gcd = 1.5,
+    duration = 1.5,
+
+    channeled = true,
+    duration_hasted = true,
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+    dot_hasted = true,
+    pandemic = true,
+
+    [1] = { -- (id=811180) 
+      label = "Apply Aura (6) | Periodic Trigger Spell (23): Spinning Crane Kick every 0.5 seconds",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=811181) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [3] = { -- (id=811182) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
     },
   },
   -- Empowered Tiger Lightning 
@@ -4240,6 +4303,30 @@ DBC = {
       },
     },
   },
+  -- Djaruun, Pillar of the Elder Flame 
+  [408836] = {
+    localName = "Djaruun, Pillar of the Elder Flame",
+    tokenName = "djaruun,_pillar_of_the_elder_flame",
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1073203) 
+      label = "School Damage (2): fire",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1073205) 
+      label = "Dummy (3)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Shadowflame Nova 
   [410139] = {
     localName = "Shadowflame Nova",
@@ -4262,6 +4349,7 @@ DBC = {
   [418359] = {
     localName = "Press the Advantage",
     tokenName = "press_the_advantage",
+    replaces = 100780,
 
     may_miss = true,
     may_crit = true,
