@@ -2477,7 +2477,7 @@ DBC = {
   -- Storm, Earth, and Fire: Fixate 
   [221771] = {
     localName = "Storm, Earth, and Fire: Fixate",
-    tokenName = "storm,_earth,_and_fire:_fixate",
+    tokenName = "storm_earth_and_fire_fixate",
     cooldown = 1,
 
     ignores_armor = true, -- Nature
@@ -4546,7 +4546,7 @@ DBC = {
   -- Djaruun, Pillar of the Elder Flame 
   [408836] = {
     localName = "Djaruun, Pillar of the Elder Flame",
-    tokenName = "djaruun,_pillar_of_the_elder_flame",
+    tokenName = "djaruun_pillar_of_the_elder_flame",
 
     ignores_armor = true, -- Fire
     may_miss = true,
