@@ -57,6 +57,12 @@
 228649 # Teachings of the Monastery
 122783 # Diffuse Magic
 388686 # White Tiger Statue
+224863 # Healing Sphere
+386959 # Charred Passions
+383701 # Gai Plin's Imperial Brew
+215479 # Stagger
+425299 # Charred Dreams Damage
+425298 # Charred Dreams Heal
 
 124507 # Gift of the Ox
 393786 # Chi Surge DoT

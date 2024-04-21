@@ -2395,6 +2395,42 @@ DBC = {
       pct = 0.030,
     },
   },
+  -- Shuffle 
+  [215479] = {
+    localName = "Shuffle",
+    tokenName = "shuffle",
+    duration = 5,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=320348) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Effect 1 (3)",
+      base_value = 230,
+      scaled_value = 230,
+      pvp_coefficient = 1.00000,
+      pct = 2.300,
+      misc_value = 3,
+      affected_spells = {
+        115069,        322120,
+      },
+    },
+    [2] = { -- (id=320349) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      misc_value = 4,
+    },
+    [3] = { -- (id=726759) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
   -- Celestial Fortune 
   [216519] = {
     localName = "Celestial Fortune",
@@ -2489,6 +2525,24 @@ DBC = {
       scaled_value = -55,
       pvp_coefficient = 1.00000,
       pct = -0.550,
+    },
+  },
+  -- Healing Sphere 
+  [224863] = {
+    localName = "Healing Sphere",
+    tokenName = "healing_sphere",
+    duration = 30,
+    max_stacks = 100,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=336744) 
+      label = "Apply Aura (6) | Unknown(408)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
     },
   },
   -- Blackout Combo 
@@ -3078,6 +3132,21 @@ DBC = {
       pct = 0.250,
     },
   },
+  -- Gai Plin's Imperial Brew 
+  [383701] = {
+    localName = "Gai Plin's Imperial Brew",
+    tokenName = "gai_plins_imperial_brew",
+
+    may_miss = true,
+
+    [1] = { -- (id=1015769) 
+      label = "Direct Heal (10)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Stormstout's Last Keg 
   [383707] = {
     localName = "Stormstout's Last Keg",
@@ -3252,6 +3321,22 @@ DBC = {
       scaled_value = 10000,
       pvp_coefficient = 1.00000,
       pct = 100.000,
+    },
+  },
+  -- Charred Passions 
+  [386959] = {
+    localName = "Charred Passions",
+    tokenName = "charred_passions",
+
+    ignores_armor = true, -- Fire
+    may_miss = true,
+
+    [1] = { -- (id=1021432) 
+      label = "School Damage (2): fire",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Charred Passions 
@@ -4793,6 +4878,38 @@ DBC = {
       affected_spells = {
         100784,        205523,        228649,
       },
+    },
+  },
+  -- Charred Dreams 
+  [425298] = {
+    localName = "Charred Dreams",
+    tokenName = "charred_dreams",
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+
+    [1] = { -- (id=1103015) 
+      label = "Direct Heal (10)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Charred Dreams 
+  [425299] = {
+    localName = "Charred Dreams",
+    tokenName = "charred_dreams",
+
+    ignores_armor = true, -- Shadowflame
+    may_miss = true,
+
+    [1] = { -- (id=1103018) 
+      label = "School Damage (2): shadowflame",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Xuen's Guidance 
