@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-04-20 - World of Warcraft 10.2.6.53877
+-- Database generated from DBCache on 2024-04-21 - World of Warcraft 10.2.6.53877
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.6", 53877 ) then 
@@ -78,6 +78,72 @@ DBC = {
       scaled_value = 1000,
       pvp_coefficient = 1.00000,
       pct = 10.000,
+    },
+  },
+  -- Flying Serpent Kick 
+  [101545] = {
+    localName = "Flying Serpent Kick",
+    tokenName = "flying_serpent_kick",
+    gcd = 1,
+    cooldown = 25,
+    duration = 1.5,
+
+    may_crit = true,
+
+    [1] = { -- (id=110001) 
+      label = "Apply Aura (6) | Unknown(373)",
+      base_value = 300,
+      scaled_value = 300,
+      pvp_coefficient = 1.00000,
+      pct = 3.000,
+    },
+    [2] = { -- (id=128685) 
+      label = "Apply Aura (6) | Override Action Spell (Misc /w Base) (332)",
+      base_value = 115057,
+      scaled_value = 115057,
+      pvp_coefficient = 1.00000,
+      pct = 1150.570,
+      affected_spells = {
+        101545,
+      },
+    },
+    [3] = { -- (id=140829) 
+      label = "Apply Aura (6) | Pacify Silence (60)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 127,
+    },
+    [5] = { -- (id=157598) 
+      label = "Apply Aura (6) | Modify Min Speed% (305)",
+      base_value = 400,
+      scaled_value = 400,
+      pvp_coefficient = 1.00000,
+      pct = 4.000,
+    },
+    [6] = { -- (id=172321) 
+      label = "Apply Aura (6) | Unknown(191)",
+      base_value = 36,
+      scaled_value = 36,
+      pvp_coefficient = 1.00000,
+      pct = 0.360,
+    },
+    [7] = { -- (id=254018) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 2156,
+    },
+    [8] = { -- (id=254019) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 388,
     },
   },
   -- Spinning Crane Kick 
@@ -251,6 +317,23 @@ DBC = {
       pct = 0.000,
     },
   },
+  -- Black Ox Brew 
+  [115399] = {
+    localName = "Black Ox Brew",
+    tokenName = "black_ox_brew",
+    cooldown = 120,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=129191) 
+      label = "Energize Power (30)",
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
+    },
+  },
   -- Teachings of the Monastery 
   [116645] = {
     localName = "Teachings of the Monastery",
@@ -299,6 +382,30 @@ DBC = {
       pct = 0.020,
     },
   },
+  -- Fists of Fury 
+  [117418] = {
+    localName = "Fists of Fury",
+    tokenName = "fists_of_fury",
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=133162) 
+      label = "School Damage (2): physical",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.50000,
+      pvp_coefficient = 1.06500,
+      pct = 0.000,
+    },
+    [2] = { -- (id=155264) 
+      label = "Trigger Spell (64): Fists of Fury Visual Target",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Crackling Jade Lightning 
   [117952] = {
     localName = "Crackling Jade Lightning",
@@ -329,6 +436,23 @@ DBC = {
       scaled_value = 200,
       pvp_coefficient = 1.00000,
       pct = 2.000,
+    },
+  },
+  -- Purifying Brew 
+  [119582] = {
+    localName = "Purifying Brew",
+    tokenName = "purifying_brew",
+    cooldown = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=137916) 
+      label = "Dummy (3)",
+      base_value = 50,
+      scaled_value = 50,
+      pvp_coefficient = 1.00000,
+      pct = 0.500,
     },
   },
   -- Keg Smash 
@@ -478,6 +602,27 @@ DBC = {
       scaled_value = 160,
       pvp_coefficient = 1.00000,
       pct = 1.600,
+    },
+  },
+  -- Diffuse Magic 
+  [122783] = {
+    localName = "Diffuse Magic",
+    tokenName = "diffuse_magic",
+    cooldown = 90,
+    duration = 6,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=154600) 
+      label = "Apply Aura (6) | Modify Damage Taken% (87)",
+      base_value = -60,
+      scaled_value = -60,
+      sp_coefficient = 0.25000,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      misc_value = 0,
     },
   },
   -- Flying Serpent Kick 
@@ -2294,6 +2439,23 @@ DBC = {
       pct = 0.000,
     },
   },
+  -- Storm, Earth, and Fire: Fixate 
+  [221771] = {
+    localName = "Storm, Earth, and Fire: Fixate",
+    tokenName = "storm,_earth,_and_fire:_fixate",
+    cooldown = 1,
+
+    ignores_armor = true, -- Nature
+    may_crit = true,
+
+    [1] = { -- (id=330906) 
+      label = "Dummy (3)",
+      base_value = -55,
+      scaled_value = -55,
+      pvp_coefficient = 1.00000,
+      pct = -0.550,
+    },
+  },
   -- Blackout Combo 
   [228563] = {
     localName = "Blackout Combo",
@@ -2502,6 +2664,36 @@ DBC = {
       scaled_value = 3,
       pvp_coefficient = 1.00000,
       pct = 0.030,
+    },
+  },
+  -- Celestial Brew 
+  [322507] = {
+    localName = "Celestial Brew",
+    tokenName = "celestial_brew",
+    gcd = 1,
+    cooldown = 45,
+    duration = 8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=810869) 
+      label = "Apply Aura (6) | Absorb Damage (69)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      misc_value = 0,
+    },
+    [2] = { -- (id=834949) 
+      label = "Apply Aura (6) | Modify Healing Taken% from Caster's Spells (283)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      affected_spells = {
+        116670,        322101,
+      },
     },
   },
   -- Improved Celestial Brew 
@@ -3424,6 +3616,33 @@ DBC = {
       scaled_value = 2,
       pvp_coefficient = 1.00000,
       pct = 0.020,
+    },
+  },
+  -- Summon White Tiger Statue 
+  [388686] = {
+    localName = "Summon White Tiger Statue",
+    tokenName = "summon_white_tiger_statue",
+    gcd = 1,
+    cooldown = 120,
+    duration = 30,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1024526) 
+      label = "Summon (28)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+      misc_value = 196581,
+    },
+    [2] = { -- (id=1024527) 
+      label = "None (0)",
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
     },
   },
   -- Fast Feet 
@@ -4690,15 +4909,17 @@ DBC = {
     392982,    392970,    392958,    392910,    392900,
     391412,    391383,    391330,    389942,    389579,
     389578,    388856,    388854,    388849,    388848,
-    388811,    388809,    388674,    388505,    388193,
-    387638,    387625,    387276,    387230,    387184,
-    387046,    386965,    386949,    386941,    386276,
-    383994,    383785,    383707,    383700,    383698,
-    383697,    325201,    325177,    325153,    323999,
-    322510,    322120,    322113,    231602,    220357,
-    196740,    196736,    196730,    195300,    152175,
-    123986,    122470,    122281,    121817,    121253,
-    116847,    116645,    115181,    115098,    113656,
+    388811,    388809,    388686,    388674,    388505,
+    388193,    387638,    387625,    387276,    387230,
+    387184,    387046,    386965,    386949,    386941,
+    386276,    383994,    383785,    383707,    383700,
+    383698,    383697,    325201,    325177,    325153,
+    323999,    322510,    322507,    322120,    322113,
+    231602,    220357,    196740,    196736,    196730,
+    195300,    152175,    123986,    122783,    122470,
+    122281,    121817,    121253,    119582,    116847,
+    116645,    115399,    115181,    115098,    113656,
+    101545,
   },
 }
 

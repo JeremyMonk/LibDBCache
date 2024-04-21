@@ -25,6 +25,7 @@ LibDBCache.Version = 2.1
 local GetBuildInfo = GetBuildInfo
 local gmatch = string.gmatch
 
+local valid_build = 0
 function validVersion( dbc_version, dbc_build )
     local versionAsInteger = function ( version )
         local mul = 1
@@ -44,14 +45,18 @@ function validVersion( dbc_version, dbc_build )
     if game_int < dbc_int then
         if not DBC then 
             print("[LibDBCache] Warning: ".. dbc_version .. "("..dbc_build..") is newer than your client version. Some values may be inaccurate." )
+            valid_build = dbc_build
             return true
         end
         return false
     elseif game_int == dbc_int then
-        return game_build >= dbc_build
+        if dbc_build >= valid_build and game_build >= dbc_build then
+            valid_build = dbc_build
+            return true
+        end
     end
-    
-    return true
+
+    return false
 end
 
 local PVP_ENABLED = false

@@ -55,6 +55,8 @@
 327264 # Faeline Stomp (WW Hit)
 388201 # Jadefire Stomp (WW Hit)
 228649 # Teachings of the Monastery
+122783 # Diffuse Magic
+388686 # White Tiger Statue
 
 124507 # Gift of the Ox
 393786 # Chi Surge DoT
@@ -164,6 +166,7 @@
 451498 # Energy Burst
 394923 # Fatal Flying Guillotine
 388854 # Flashing Fists
+101545 # Flying Serpent Kick
 393098 # Forbidden Technique
 451580 # Gale Force
 392958 # Glory of the Dawn
@@ -211,6 +214,8 @@
 322101 # Expel Harm
 117952 # Crackling Jade Lightning
 322109 # Touch of Death
+117418 # Fists of Fury
+221771 # Storm, Earth, and Fire: Fixate
 
 # Brewmaster Talents
 
@@ -244,10 +249,13 @@
 
 # Brewmaster Abilities
 
+115399 # Black Ox Brew
 121253 # Keg Smash
 185099 # Rising Sun Kick
 101546 # Spinning Crane Kick
 322729 # Spinning Crane Kick
+322507 # Celestial Brew
+119582 # Purifying Brew
 100784 # Blackout Kick
 205523 # Blackout Kick
 116847 # Rushing Jade Wind
