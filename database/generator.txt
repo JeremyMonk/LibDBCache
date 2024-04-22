@@ -36,6 +36,7 @@
 325092 # Purified Chi (buff)
 216519 # Celestial Fortune
 158221 # Whirling Dragon Punch (tick)
+451767 # Whirling Dragon Punch (primary tick)
 392983 # Strike of the Windlord
 395519 # Strike of the Windlord MH
 395521 # Strike of the Windlord OH
@@ -63,6 +64,11 @@
 215479 # Stagger
 425299 # Charred Dreams Damage
 425298 # Charred Dreams Heal
+129914 # Power Strikes / Combat Wisdom
+202090 # Teachings of the Monastery buff
+451968 # Combat Wisdom Expel Harm
+450380 # Chi Wave Buff
+124280 # Touch of Karma debuff
 
 124507 # Gift of the Ox
 393786 # Chi Surge DoT
@@ -73,7 +79,7 @@
 
 451297 # Momentum Boost Damage (Buff)
 451298 # Momentum Boost Speed (Buff)
-451433 # Acclamation (Buff)
+451433 # Acclamation (Debuff)
 451833 # Dual Threat (Buff)
 451457 # Martial Mixture (Buff)
 451582 # Gale Force (Debuff)
@@ -93,6 +99,7 @@
 387276 # Strength of Spirit
 389579 # Save them All
 392900 # Vigorous Expulsion
+450639 # White Tiger Statue
 
 # Shado-Pan Hero Tree
 
@@ -199,6 +206,7 @@
 116645 # Teachings of the Monastery
 122470 # Touch of Karma
 388856 # Touch of the Tiger
+392985 # Thunderfist
 195300 # Transfer the Power
 152175 # Whirling Dragon Punch
 392993 # Xuen's Battlegear

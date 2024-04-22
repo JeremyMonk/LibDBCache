@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-04-21 - World of Warcraft 10.2.6.53877
+-- Database generated from DBCache on 2024-04-22 - World of Warcraft 10.2.6.53877
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.6", 53877 ) then 
@@ -716,6 +716,24 @@ DBC = {
       pct = 0.020,
     },
   },
+  -- Touch of Karma 
+  [124280] = {
+    localName = "Touch of Karma",
+    tokenName = "touch_of_karma",
+    duration = 6,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    pandemic = true,
+
+    [1] = { -- (id=157266) 
+      label = "Apply Aura (6) | Periodic Damage (3): nature every 1 seconds",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
   -- Gift of the Ox 
   [124507] = {
     localName = "Gift of the Ox",
@@ -732,6 +750,34 @@ DBC = {
       ap_coefficient = 3.00000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+    },
+  },
+  -- Power Strikes 
+  [129914] = {
+    localName = "Power Strikes",
+    tokenName = "power_strikes",
+    duration = -1,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=166762) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=487652) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+      affected_spells = {
+        100780,
+      },
     },
   },
   -- Chi Wave 
@@ -2331,6 +2377,24 @@ DBC = {
     },
     [4] = { -- (id=874463) 
       label = "Apply Aura (6) | Modify Pet Damage Done% (429)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Teachings of the Monastery 
+  [202090] = {
+    localName = "Teachings of the Monastery",
+    tokenName = "teachings_of_the_monastery",
+    duration = 20,
+    max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=297830) 
+      label = "Apply Aura (6) | Dummy (4)",
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -4313,6 +4377,22 @@ DBC = {
       misc_value = 500,
     },
   },
+  -- Thunderfist 
+  [392985] = {
+    localName = "Thunderfist",
+    tokenName = "thunderfist",
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1031605) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Xuen's Battlegear 
   [392993] = {
     localName = "Xuen's Battlegear",
@@ -5022,21 +5102,21 @@ DBC = {
   },
   talentKeys = {
     418359,    397768,    394923,    393516,    393400,
-    393357,    393098,    392994,    392993,    392983,
-    392982,    392970,    392958,    392910,    392900,
-    391412,    391383,    391330,    389942,    389579,
-    389578,    388856,    388854,    388849,    388848,
-    388811,    388809,    388686,    388674,    388505,
-    388193,    387638,    387625,    387276,    387230,
-    387184,    387046,    386965,    386949,    386941,
-    386276,    383994,    383785,    383707,    383700,
-    383698,    383697,    325201,    325177,    325153,
-    323999,    322510,    322507,    322120,    322113,
-    231602,    220357,    196740,    196736,    196730,
-    195300,    152175,    123986,    122783,    122470,
-    122281,    121817,    121253,    119582,    116847,
-    116645,    115399,    115181,    115098,    113656,
-    101545,
+    393357,    393098,    392994,    392993,    392985,
+    392983,    392982,    392970,    392958,    392910,
+    392900,    391412,    391383,    391330,    389942,
+    389579,    389578,    388856,    388854,    388849,
+    388848,    388811,    388809,    388686,    388674,
+    388505,    388193,    387638,    387625,    387276,
+    387230,    387184,    387046,    386965,    386949,
+    386941,    386276,    383994,    383785,    383707,
+    383700,    383698,    383697,    325201,    325177,
+    325153,    323999,    322510,    322507,    322120,
+    322113,    231602,    220357,    196740,    196736,
+    196730,    195300,    152175,    123986,    122783,
+    122470,    122281,    121817,    121253,    119582,
+    116847,    116645,    115399,    115181,    115098,
+    113656,    101545,
   },
 }
 
