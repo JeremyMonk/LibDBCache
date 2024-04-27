@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-04-25 - World of Warcraft 11.0.0.54311
+-- Database generated from DBCache on 2024-04-27 - World of Warcraft 11.0.0.54361
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.0", 54311 ) then 
+if not validVersion( "11.0.0", 54361 ) then 
   return
 end
 
@@ -527,17 +527,17 @@ DBC = {
 
     [1] = { -- (id=153005) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 15 seconds",
-      base_value = 1,
-      scaled_value = 1,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.010,
+      pct = 0.020,
     },
     [2] = { -- (id=623380) 
       label = "Apply Aura (6) | Periodic Dummy (226): every 15 seconds",
-      base_value = 100,
-      scaled_value = 100,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 1.000,
+      pct = 0.300,
     },
   },
   -- Healing Elixir 
@@ -633,7 +633,7 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=155941) 
-      label = "School Damage (2): physical",
+      label = "Dummy (3)",
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.08789,
@@ -769,10 +769,10 @@ DBC = {
     },
     [2] = { -- (id=487652) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 100,
-      scaled_value = 100,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 1.000,
+      pct = 0.300,
       affected_spells = {
         100780,
       },
@@ -908,7 +908,8 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [2] = { -- (id=191108) 
@@ -927,7 +928,8 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [3] = { -- (id=191109) 
@@ -1348,7 +1350,8 @@ DBC = {
         297850,        311123,        322101,        325209,        328748,
         337268,        343737,        343819,        345727,        388044,
         388207,        388615,        388668,        399230,        399491,
-        407058,        425804,        443039,        443272,        451968,
+        407058,        425804,        443039,        443272,        451452,
+        451968,
       },
     },
     [2] = { -- (id=191104) 
@@ -1365,7 +1368,8 @@ DBC = {
         297850,        311123,        322101,        325209,        328748,
         337268,        343737,        343819,        345727,        388044,
         388207,        388615,        388668,        399230,        399491,
-        407058,        425804,        443039,        443272,        451968,
+        407058,        425804,        443039,        443272,        451452,
+        451968,
       },
     },
     [3] = { -- (id=191105) 
@@ -1599,7 +1603,7 @@ DBC = {
       pvp_coefficient = 0.00000,
       pct = 0.100,
       affected_spells = {
-        443088,        443263,
+        443088,        443263,        443611,
       },
     },
     [28] = { -- (id=1093854) 
@@ -1610,7 +1614,7 @@ DBC = {
       pct = 0.100,
       misc_value = 22,
       affected_spells = {
-        443088,        443263,
+        443088,        443263,        443611,
       },
     },
     [29] = { -- (id=1102395) 
@@ -1666,10 +1670,10 @@ DBC = {
 
     [1] = { -- (id=179709) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
@@ -1679,15 +1683,16 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [2] = { -- (id=191100) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       misc_value = 22,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
@@ -1698,15 +1703,16 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [3] = { -- (id=191101) 
-      label = "Apply Aura (6) | Dummy (4)",
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      label = "Apply Aura (6) | Periodic Dummy (226): every 3 seconds",
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
     [4] = { -- (id=191102) 
       label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 2 (12)",
@@ -1741,14 +1747,13 @@ DBC = {
       },
     },
     [7] = { -- (id=260818) 
-      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
-      base_value = 22,
-      scaled_value = 22,
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
+      base_value = 150,
+      scaled_value = 150,
       pvp_coefficient = 1.00000,
-      pct = 0.220,
-      misc_value = 22,
+      pct = 1.500,
       affected_spells = {
-        196608,
+        100780,
       },
     },
     [8] = { -- (id=260819) 
@@ -1944,20 +1949,20 @@ DBC = {
     },
     [16] = { -- (id=984572) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 36,
-      scaled_value = 36,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.360,
+      pct = 0.200,
       affected_spells = {
         107428,        185099,        392959,
       },
     },
     [17] = { -- (id=984590) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = 20,
-      scaled_value = 20,
-      pvp_coefficient = 0.00000,
-      pct = 0.200,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         100780,        100784,        205523,        228649,        261947,
         261977,        392983,        395519,        395521,
@@ -1971,14 +1976,12 @@ DBC = {
       pct = -0.110,
     },
     [19] = { -- (id=1003546) 
-      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      base_value = -5,
-      scaled_value = -5,
+      label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 1 (3)",
+      base_value = -10,
+      scaled_value = -10,
       pvp_coefficient = 1.00000,
-      pct = -0.050,
-      affected_spells = {
-        107270,
-      },
+      pct = -0.100,
+      misc_value = 3,
     },
     [20] = { -- (id=1040369) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
@@ -2193,7 +2196,7 @@ DBC = {
       label = "School Damage (2): physical",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.25000,
+      ap_coefficient = 1.75000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -2371,7 +2374,8 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [2] = { -- (id=479821) 
@@ -2390,7 +2394,8 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [3] = { -- (id=479888) 
@@ -2808,7 +2813,6 @@ DBC = {
     localName = "Celestial Brew",
     tokenName = "celestial_brew",
     gcd = 1,
-    cooldown = 45,
     duration = 8,
 
     may_miss = true,
@@ -3069,17 +3073,6 @@ DBC = {
         322101,        451968,
       },
     },
-    [2] = { -- (id=844368) 
-      label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 3 (23)",
-      base_value = 1,
-      scaled_value = 1,
-      pvp_coefficient = 1.00000,
-      pct = 0.010,
-      misc_value = 23,
-      affected_spells = {
-        322101,        451968,
-      },
-    },
   },
   -- Keefer's Skyreach 
   [344021] = {
@@ -3106,7 +3099,7 @@ DBC = {
         388207,        388609,        388867,        391400,        392959,
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
-        443263,        451767,        451839,
+        443263,        443611,        451767,        451839,        452130,
       },
     },
     [2] = { -- (id=884941) 
@@ -3843,11 +3836,22 @@ DBC = {
 
     [1] = { -- (id=1024786) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      ranks = { 15, 30, },
-      base_value = 10,
-      scaled_value = 10,
+      ranks = { 20, 30, },
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.200,
+      affected_spells = {
+        101546,        107270,        322729,
+      },
+    },
+    [2] = { -- (id=1155025) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Radius (6)",
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      misc_value = 6,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -3863,7 +3867,7 @@ DBC = {
 
     [1] = { -- (id=1024787) 
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Direct Amount (0)",
-      ranks = { 3, 6, },
+      ranks = { 6, 12, },
       base_value = 10,
       scaled_value = 10,
       pvp_coefficient = 1.00000,
@@ -4213,7 +4217,7 @@ DBC = {
       label = "School Damage (2): physical",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.50000,
+      ap_coefficient = 1.35000,
       pvp_coefficient = 0.72000,
       pct = 0.000,
     },
@@ -4389,7 +4393,7 @@ DBC = {
       label = "Apply Aura (6) | Add Percent Modifier (108): Spell Periodic Amount (22)",
       base_value = 100,
       scaled_value = 100,
-      pvp_coefficient = 0.50000,
+      pvp_coefficient = 1.00000,
       pct = 1.000,
       misc_value = 22,
       affected_spells = {
@@ -4520,8 +4524,8 @@ DBC = {
       label = "School Damage (2): nature",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 3.50000,
-      pvp_coefficient = 0.60000,
+      ap_coefficient = 2.00000,
+      pvp_coefficient = 1.00000,
       pct = 0.000,
     },
   },
@@ -4605,10 +4609,10 @@ DBC = {
 
     [1] = { -- (id=1035870) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster's Spells (271)",
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 8,
+      scaled_value = 8,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.080,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
@@ -4618,22 +4622,23 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [2] = { -- (id=1035871) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster Pet (381)",
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 8,
+      scaled_value = 8,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.080,
     },
     [3] = { -- (id=1035872) 
       label = "Apply Aura (6) | Modify Damage Taken% from Caster Guardian (380)",
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 8,
+      scaled_value = 8,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.080,
     },
   },
   -- Strike of the Windlord 
@@ -4827,7 +4832,8 @@ DBC = {
         345727,        388201,        388207,        388609,        388867,
         391400,        392959,        393056,        393400,        393566,
         393786,        395519,        395521,        418360,        443038,
-        443088,        443127,        443263,        451767,        451839,
+        443088,        443127,        443263,        443611,        451767,
+        451839,        452130,
       },
     },
     [2] = { -- (id=1090596) 
@@ -5383,10 +5389,10 @@ DBC = {
     },
     [2] = { -- (id=1139674) 
       label = "Apply Aura (6) | Modify Cooldown Recharge Rate% (286)",
-      base_value = 200,
-      scaled_value = 200,
+      base_value = 150,
+      scaled_value = 150,
       pvp_coefficient = 1.00000,
-      pct = 2.000,
+      pct = 1.500,
       affected_spells = {
         107428,        113656,        116680,        116849,        120086,
         152175,        158221,        185099,        392959,        392983,
@@ -5395,10 +5401,10 @@ DBC = {
     },
     [3] = { -- (id=1139675) 
       label = "Apply Aura (6) | Modify Cooldown Recharge Rate% (Category) (148)",
-      base_value = 200,
-      scaled_value = 200,
+      base_value = 150,
+      scaled_value = 150,
       pvp_coefficient = 1.00000,
-      pct = 2.000,
+      pct = 1.500,
       misc_value = 1517,
       affected_spells = {
         115151,
@@ -5406,10 +5412,10 @@ DBC = {
     },
     [4] = { -- (id=1142268) 
       label = "Apply Aura (6) | Modify Cooldown Recharge Rate% (Category) (148)",
-      base_value = 200,
-      scaled_value = 200,
+      base_value = 150,
+      scaled_value = 150,
       pvp_coefficient = 1.00000,
-      pct = 2.000,
+      pct = 1.500,
       misc_value = 2198,
       affected_spells = {
         116849,
@@ -5469,6 +5475,17 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
+    [2] = { -- (id=1154630) 
+      label = "Apply Aura (6) | Apply Percent Modifier w/ Label (218): Spell Duration (1)",
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      misc_value = 1,
+      affected_spells = {
+        451084,
+      },
+    },
   },
   -- Chi Proficiency 
   [450426] = {
@@ -5501,7 +5518,8 @@ DBC = {
         297850,        311123,        322101,        325209,        328748,
         337268,        343737,        343819,        345727,        388044,
         388207,        388615,        388668,        399230,        399491,
-        407058,        425804,        443039,        443272,        451968,
+        407058,        425804,        443039,        443272,        451452,
+        451968,
       },
     },
   },
@@ -5572,10 +5590,10 @@ DBC = {
       pct = 0.250,
     },
   },
-  -- Resonance 
+  -- Coalescence 
   [450529] = {
-    localName = "Resonance",
-    tokenName = "resonance",
+    localName = "Coalescence",
+    tokenName = "coalescence",
 
     may_miss = true,
     may_crit = true,
@@ -5586,6 +5604,17 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+    },
+    [2] = { -- (id=1153038) 
+      label = "Apply Aura (6) | Apply Flat Modifier w/ Label (219): Spell Effect 2 (12)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      misc_value = 12,
+      affected_spells = {
+        450763,
+      },
     },
   },
   -- Flurry Strikes 
@@ -5598,10 +5627,10 @@ DBC = {
 
     [1] = { -- (id=1150629) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 100,
+      scaled_value = 100,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 1.000,
     },
     [2] = { -- (id=1151332) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -5721,11 +5750,26 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=1151116) 
-      label = "Apply Aura (6) | Dummy (4)",
-      base_value = 0,
-      scaled_value = 0,
+      label = "Apply Aura (6) | Modify Cooldown Charge (Category) (411)",
+      base_value = 1,
+      scaled_value = 1,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.010,
+      misc_value = 2294,
+      affected_spells = {
+        116680,
+      },
+    },
+    [2] = { -- (id=1153986) 
+      label = "Apply Aura (6) | Modify Cooldown Charge (Category) (411)",
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+      misc_value = 2293,
+      affected_spells = {
+        322507,
+      },
     },
   },
   -- Path of Resurgence 
@@ -5737,7 +5781,7 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=1151151) 
-      label = "Apply Aura (6) | Dummy (4)",
+      label = "Apply Aura (6) | Proc Trigger Spell (42): Path of Resurgence",
       base_value = 25,
       scaled_value = 25,
       pvp_coefficient = 1.00000,
@@ -6038,10 +6082,17 @@ DBC = {
 
     [1] = { -- (id=1151334) 
       label = "Apply Aura (6) | Dummy (4)",
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1153571) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
     },
   },
   -- Mantra of Tenacity 
@@ -6069,11 +6120,15 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=1151354) 
-      label = "Apply Aura (6) | Dummy (4)",
+      label = "Apply Aura (6) | Add Flat Modifier (107): Spell Effect 1 (3)",
       base_value = 10,
       scaled_value = 10,
       pvp_coefficient = 1.00000,
       pct = 0.100,
+      misc_value = 3,
+      affected_spells = {
+        119582,
+      },
     },
     [2] = { -- (id=1151661) 
       label = "Apply Aura (6) | Dummy (4)",
@@ -6158,41 +6213,20 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=1151709) 
-      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
-      base_value = 30,
-      scaled_value = 30,
-      pvp_coefficient = 1.00000,
-      pct = 0.300,
-      misc_value = 15,
-      affected_spells = {
-        434774,        443038,        443039,        443088,        443127,
-        443263,        443272,        450342,        451767,        451839,
-        451968,
-      },
-    },
-    [2] = { -- (id=1151714) 
-      label = "Apply Aura (6) | Modify Combat Rating Multiplier (405)",
-      base_value = 25,
-      scaled_value = 25,
-      pvp_coefficient = 1.00000,
-      pct = 0.250,
-      misc_value = 33554432,
-    },
-    [3] = { -- (id=1151719) 
       label = "Apply Aura (6) | Modify Dodge% (49)",
       base_value = 0,
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
-    [4] = { -- (id=1151720) 
+    [2] = { -- (id=1151714) 
       label = "Apply Aura (6) | Modify Critical Strike% (290)",
       base_value = 0,
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
-    [5] = { -- (id=1151721) 
+    [3] = { -- (id=1151719) 
       label = "Apply Aura (6) | Dummy (4)",
       base_value = 25,
       scaled_value = 25,
@@ -6506,8 +6540,8 @@ DBC = {
   [451529] = {
     localName = "Knowledge of the Broken Temple",
     tokenName = "knowledge_of_the_broken_temple",
-    cooldown = 2,
-    icd = 2,
+    cooldown = 3,
+    icd = 3,
 
     may_miss = true,
     may_crit = true,
@@ -6687,7 +6721,7 @@ DBC = {
       label = "School Damage (2): physical",
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 2.30000,
+      ap_coefficient = 3.00000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -6752,37 +6786,128 @@ DBC = {
       pct = 0.100,
     },
   },
+  -- Flurry of Xuen 
+  [452130] = {
+    localName = "Flurry of Xuen",
+    tokenName = "flurry_of_xuen",
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1153059) 
+      label = "School Damage (2): physical",
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.30000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Flurry of Xuen 
+  [452137] = {
+    localName = "Flurry of Xuen",
+    tokenName = "flurry_of_xuen",
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1153070) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Wisdom of the Wall 
+  [452684] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154043) 
+      label = "Apply Aura (6) | Add Percent Modifier (108): Spell Critical Damage (15)",
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+      misc_value = 15,
+      affected_spells = {
+        434774,        443038,        443039,        443088,        443127,
+        443263,        443272,        443611,        450342,        451452,
+        451767,        451839,        451968,        452130,
+      },
+    },
+  },
+  -- Wisdom of the Wall 
+  [452685] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154044) 
+      label = "Apply Aura (6) | Modify Combat Rating Multiplier (405)",
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+      misc_value = 33554432,
+    },
+  },
+  -- Wisdom of the Wall 
+  [452688] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154047) 
+      label = "Apply Aura (6) | Dummy (4)",
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
   talentKeys = {
-    451823,    451580,    451576,    451573,    451529,
-    451524,    451515,    451505,    451498,    451495,
-    451485,    451463,    451454,    451432,    451294,
-    451036,    451029,    451024,    451017,    450994,
-    450993,    450990,    450989,    450988,    450987,
-    450986,    450985,    450982,    450979,    450965,
-    450912,    450892,    450889,    450875,    450870,
-    450867,    450639,    450615,    450529,    450508,
-    450432,    450426,    450391,    443625,    443589,
-    443571,    443294,    443255,    443110,    443087,
-    443059,    442818,    442747,    442743,    442719,
-    442687,    418359,    397768,    393516,    393400,
-    393357,    392994,    392993,    392985,    392983,
-    392982,    392958,    392910,    392900,    391412,
-    391383,    391330,    389942,    389579,    389578,
-    388856,    388849,    388848,    388811,    388809,
-    388505,    388193,    387638,    387625,    387276,
-    387230,    387184,    387046,    386965,    386949,
-    386941,    386276,    383994,    383785,    383707,
-    383700,    383698,    383697,    325201,    325177,
-    325153,    322510,    322507,    322120,    322113,
-    220357,    196740,    196736,    196730,    195300,
-    152175,    123986,    122783,    122281,    121817,
-    121253,    119582,    116847,    116645,    115399,
-    115181,    113656,    101545,
+    452137,    451823,    451580,    451576,    451573,
+    451529,    451524,    451515,    451505,    451498,
+    451495,    451485,    451463,    451454,    451432,
+    451294,    451036,    451029,    451024,    451017,
+    450994,    450993,    450990,    450989,    450988,
+    450987,    450986,    450985,    450982,    450979,
+    450965,    450912,    450892,    450889,    450875,
+    450870,    450867,    450639,    450615,    450529,
+    450508,    450432,    450426,    450391,    443625,
+    443589,    443571,    443294,    443255,    443110,
+    443087,    443059,    442818,    442747,    442743,
+    442719,    442687,    418359,    397768,    393516,
+    393400,    393357,    392994,    392993,    392985,
+    392983,    392982,    392958,    392910,    392900,
+    391412,    391383,    391330,    389942,    389579,
+    389578,    388856,    388849,    388848,    388811,
+    388809,    388505,    388193,    387638,    387625,
+    387276,    387230,    387184,    387046,    386965,
+    386949,    386941,    386276,    383994,    383785,
+    383707,    383700,    383698,    383697,    325201,
+    325177,    325153,    322510,    322507,    322120,
+    322113,    220357,    196740,    196736,    196730,
+    195300,    152175,    123986,    122783,    122281,
+    121817,    121253,    119582,    116847,    116645,
+    115399,    115181,    113656,    101545,
   },
 }
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.0"
-DBC_BUILD = 54311
+DBC_BUILD = 54361
 -- ------------------------------------------------------------------------------
 

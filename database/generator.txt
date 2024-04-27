@@ -119,6 +119,9 @@
 451233 # Vigilant Watch (Buff)
 450994 # Wisdom of the Wall
 451242 # Wisdom of the Wall (Buff)
+452684 # Wisdom of the Wall (Crit)
+452685 # Wisdom of the Wall (Mastery)
+452688 # Wisdom of the Wall (Shadow)
 
 # Conduit of the Celestials Tree
 
@@ -179,6 +182,7 @@
 451498 # Energy Burst
 394923 # Fatal Flying Guillotine
 388854 # Flashing Fists
+452137 # Flurry of Xuen
 101545 # Flying Serpent Kick
 393098 # Forbidden Technique
 451580 # Gale Force
@@ -230,6 +234,7 @@
 322109 # Touch of Death
 117418 # Fists of Fury
 221771 # Storm, Earth, and Fire: Fixate
+452130 # Flurry of Xuen
 
 # Brewmaster Talents
 
