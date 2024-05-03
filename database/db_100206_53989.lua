@@ -296,6 +296,26 @@ DBC = {
       pct = 0.540,
     },
   },
+  -- Mystic Touch 
+  [113746] = {
+    localName = "Mystic Touch",
+    tokenName = "mystic_touch",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=126739) 
+      type = 6, -- Apply Aura
+      subtype = 87, -- Modify Damage Taken Percent
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      school_mask = 0x1,
+    },
+  },
   -- Chi Wave 
   [115098] = {
     localName = "Chi Wave",

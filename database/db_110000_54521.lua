@@ -296,6 +296,26 @@ DBC = {
       pct = 0.540,
     },
   },
+  -- Mystic Touch 
+  [113746] = {
+    localName = "Mystic Touch",
+    tokenName = "mystic_touch",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=126739) 
+      type = 6, -- Apply Aura
+      subtype = 87, -- Modify Damage Taken Percent
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      school_mask = 0x1,
+    },
+  },
   -- Chi Wave 
   [115098] = {
     localName = "Chi Wave",
@@ -7666,8 +7686,47 @@ DBC = {
       pct = 0.300,
       affected_spells = {
         434774,        443038,        443039,        443088,        443127,
-        4,
+        443263,        443272,        443611,        450342,        451452,
+        451767,        451839,        451968,        452130,
       },
+    },
+  },
+  -- Wisdom of the Wall 
+  [452685] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154044) 
+      type = 6, -- Apply Aura
+      subtype = 405, -- Modify Combat Rating Multiplier
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Wisdom of the Wall 
+  [452688] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154047) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
     },
   },
   talentKeys = {
