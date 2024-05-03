@@ -5,7 +5,7 @@
 -- Provides DBCache as Lua table and facilitates use for JeremyUI
 -- ------------------------------------------------------------------------------
 
-local LibDBCache = LibStub:NewLibrary("LibDBCache-1.0", 1)
+local LibDBCache = LibStub:NewLibrary( "LibDBCache-1.0", 1 )
 
 if not LibDBCache then 
     return
@@ -134,23 +134,6 @@ function LibDBCache:find_spell( spellID, rank )
     spell.tick_zero         = spell.tick_zero or false
     spell.dot_hasted        = spell.dot_hasted or false
     spell.pandemic          = spell.pandemic or false
-    
-    spell.affected_by_effect = function( e )
-        if not e or type( e ) ~= "table" then
-            print( "[LibDBCache] affected_by_effect: invalid effect")
-            return false
-        end
-        
-        if e.affected_spells then
-            return e.affected_spells[ spellID ]
-        end
-        
-        if e.school_mask then
-            return bit.band( school, e.school_mask ) == school
-        end
-        
-        return false
-    end
     
     spell.effectN = function( n )
 
@@ -331,7 +314,18 @@ function LibDBCache:initialize_talents()
 end
 
 function LibDBCache:spell_affected_by_effect( spellID, effect )
-    local spell = LibDBCache:find_spell( spellID )
+
+    if not e or type( e ) ~= "table" then
+        return false
+    end
     
-    return spell.affected_by_effect( effect )
+    if e.affected_spells then
+        return e.affected_spells[ spellID ]
+    end
+    
+    if e.school_mask then
+        return bit.band( school, e.school_mask ) == school
+    end
+    
+    return false
 end
