@@ -6,6 +6,7 @@
 
 # Items
 408836 # Ancient Lava (Djaruun the Elder Flame)
+426553 # Annihilating Flame (Augury of the Primal Flame)
 
 # Monk Set Bonuses
 422886 # T31 Brewmaster Class Set 2pc
@@ -69,13 +70,14 @@
 451968 # Combat Wisdom Expel Harm
 450380 # Chi Wave Buff
 124280 # Touch of Karma debuff
-
 124507 # Gift of the Ox
 393786 # Chi Surge DoT
 196733 # Special Delivery
 387621 # Dragonfire
 418360 # Press the Advantage Melee Swing
 424454 # Blackout Reinforcement
+389684 # Close to Heart
+390105 # Save them All
 
 451297 # Momentum Boost Damage (Buff)
 451298 # Momentum Boost Speed (Buff)
@@ -83,6 +85,7 @@
 451833 # Dual Threat (Buff)
 451457 # Martial Mixture (Buff)
 451582 # Gale Force (Debuff)
+451462 # Ordered Elements (Buff)
 
 # Monk Class Tree
 
@@ -226,7 +229,7 @@
 185099 # Rising Sun Kick
 101546 # Spinning Crane Kick
 100784 # Blackout Kick
-116847 # Rushing Jade Wind
+116847 # Rushing Jade Wind (Tick)
 388207 # Jadefire Stomp
 100780 # Tiger Palm
 322101 # Expel Harm

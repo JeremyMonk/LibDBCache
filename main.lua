@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 2.1
+LibDBCache.Version = 2.2
 
 -- ------------------------------------------------------------------------------
 
@@ -92,11 +92,10 @@ function LibDBCache:find_spell( spellID, rank )
     
     if not spell then
         return  {
-            id = 0,
+            id = spellID,
             found = false,
             effectN = function( n )
                 return {
-                    label = "Spell not found!",
                     base_value = 0,
                     scaled_value = 0,
                     pvp_coefficient = 1,
@@ -118,6 +117,7 @@ function LibDBCache:find_spell( spellID, rank )
     spell.localName = spell.localName
     spell.tokenName = spell.tokenName
     
+    spell.school            = spell.school or 0x1
     spell.gcd               = spell.gcd or 0 -- Execute Time
     spell.icd               = spell.icd or 0
     spell.duration          = spell.duration or 0
@@ -134,6 +134,23 @@ function LibDBCache:find_spell( spellID, rank )
     spell.dot_hasted        = spell.dot_hasted or false
     spell.pandemic          = spell.pandemic or false
     
+    spell.affected_by_effect = function( e )
+        if not e or type( e ) ~= "table" then
+            print( "[LibDBCache] affected_by_effect: invalid effect")
+            return false
+        end
+        
+        if e.affected_spells then
+            return e.affected_spells[ spellID ]
+        end
+        
+        if e.school_mask then
+            return ( school & e.school_mask ) == school
+        end
+        
+        return false
+    end
+    
     spell.effectN = function( n )
 
         if not spell[ n ] then
@@ -143,16 +160,15 @@ function LibDBCache:find_spell( spellID, rank )
         local effect = spell[ n ]
  
          -- default values
-        effect.label = effect.label or "None"
         effect.pvp_coefficient = effect.pvp_coefficient or 1       
         
-        -- parse label
-        local label = effect.label
-        
         effect.properties = effect.properties or {
-            add_percent_modifier    = find( label, "Add Percent Modifier") or find( label, "Apply Percent Modifier" ),
-            spell_direct_amount     = find( label, "Spell Direct Amount"),
-            spell_periodic_amount   = find( label, "Spell Periodic Amount"),
+            
+            add_percent_modifier = effect.subtype 
+                and ( effect.subtype == EFFECT_SUBTYPE[ "ADD_PERCENT_MODIFIER" ] or effect.subtype == EFFECT_SUBTYPE[ "APPLY_PERCENT_MODIFIER" ] ),
+                
+            spell_direct_amount     = effect.property and effect.property == MODIFIER_PROPERTY[ "SPELL_DIRECT_AMOUNT" ],
+            spell_periodic_amount   = effect.property and effect.property == MODIFIER_PROPERTY[ "SPELL_PERIODIC_AMOUNT" ],
         }        
     
         -- key affected spells list
@@ -168,7 +184,6 @@ function LibDBCache:find_spell( spellID, rank )
          end       
             
         effect = {
-            label = effect.label,
             properties = effect.properties,
             base_value = effect.base_value,
             affected_spells = effect.affected_spells,
@@ -180,8 +195,6 @@ function LibDBCache:find_spell( spellID, rank )
             sp_coefficient = effect.sp_coefficient,
             last_refresh = effect.last_refresh, -- for dynamic values
         }
-        
-        local frameTime = GetTime()
         
         -- dynamic values
         if effect then
@@ -221,7 +234,6 @@ function LibDBCache:find_spell( spellID, rank )
             effect.roll = pct
             effect.mod = 1 + pct
             effect.seconds = base_value / 1000
-            effect.last_refresh = frameTime
         end
         
         return effect
@@ -313,4 +325,10 @@ function LibDBCache:initialize_talents()
     end    
     
     return talents
+end
+
+function LibDBCache::spell_affected_by_effect( spellID, effect )
+    local spell = LibDBCache::find_spell( spellID )
+    
+    return spell.affected_by_effect( effect )
 end
