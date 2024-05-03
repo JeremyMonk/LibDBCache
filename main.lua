@@ -162,6 +162,7 @@ function LibDBCache:find_spell( spellID, rank )
          -- default values
         effect.pvp_coefficient = effect.pvp_coefficient or 1       
         effect.is_periodic = ( effect.type and effect.type == EFFECT_TYPE[ "APPLY_AURA"] ) and ( effect.subtype and effect.subtype == EFFECT_SUBTYPE[ "DAMAGE_PERIODIC" ] )
+        effect.is_heal = effect.type and ( effect.type == EFFECT_TYPE[ "DIRECT_HEAL" ] or effect.type == EFFECT_TYPE[ "DIRECT_HEAL_PERCENT" ] )
         
         effect.properties = effect.properties or {
             
