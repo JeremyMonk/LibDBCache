@@ -77,6 +77,7 @@ end)
 
 
 local find = string.find
+local bit = bit
 
 function LibDBCache:find_spell( spellID, rank )
 
@@ -145,7 +146,7 @@ function LibDBCache:find_spell( spellID, rank )
         end
         
         if e.school_mask then
-            return ( school & e.school_mask ) == school
+            return bit.band( school, e.school_mask ) == school
         end
         
         return false
@@ -329,8 +330,8 @@ function LibDBCache:initialize_talents()
     return talents
 end
 
-function LibDBCache::spell_affected_by_effect( spellID, effect )
-    local spell = LibDBCache::find_spell( spellID )
+function LibDBCache:spell_affected_by_effect( spellID, effect )
+    local spell = LibDBCache:find_spell( spellID )
     
     return spell.affected_by_effect( effect )
 end
