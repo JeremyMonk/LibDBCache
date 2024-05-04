@@ -99,6 +99,7 @@
 388811 # Grace of the Crane
 322113 # Improved Touch of Death
 231602 # Improved Vivify
+450427 # Martial Instincts
 450432 # Pressure Points
 392910 # Profound Rebuttal
 389578 # Resonant Fists
