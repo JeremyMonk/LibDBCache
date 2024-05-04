@@ -393,6 +393,53 @@ DBC = {
       pct = 0.120,
     },
   },
+  -- Blackout Kick! 
+  [116768] = {
+    localName = "Blackout Kick!",
+    tokenName = "blackout_kick!",
+    school = 0x01,
+    duration = 15,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=131945) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -100,
+      scaled_value = -100,
+      pvp_coefficient = 1.00000,
+      pct = -1.000,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+    [2] = { -- (id=135586) 
+      type = 6, -- Apply Aura
+      subtype = 262, -- Unknown
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+    [3] = { -- (id=196421) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+  },
   -- Rushing Jade Wind 
   [116847] = {
     localName = "Rushing Jade Wind",
