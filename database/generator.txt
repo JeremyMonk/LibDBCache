@@ -80,6 +80,7 @@
 390105 # Save them All
 113746 # Mystic Touch (Debuff)
 116768 # Blackout Kick!
+325202 # Dance of Chiji buff
 
 451297 # Momentum Boost Damage (Buff)
 451298 # Momentum Boost Speed (Buff)

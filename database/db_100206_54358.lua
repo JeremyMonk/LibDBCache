@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-05-03 - World of Warcraft 10.2.6.54358
+-- Database generated from DBCache on 2024-05-04 - World of Warcraft 10.2.6.54358
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.6", 54358 ) then 
@@ -3332,6 +3332,30 @@ DBC = {
       scaled_value = 300,
       pvp_coefficient = 0.75000,
       pct = 3.000,
+    },
+  },
+  -- Dance of Chi-Ji 
+  [325202] = {
+    localName = "Dance of Chi-Ji",
+    tokenName = "dance_of_chiji",
+    school = 0x08,
+    duration = 15,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=815343) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -2,
+      scaled_value = -2,
+      pvp_coefficient = 1.00000,
+      pct = -0.020,
+      affected_spells = {
+        101546,        322729,
+      },
     },
   },
   -- Faeline Stomp 
