@@ -7714,31 +7714,231 @@ DBC = {
       pct = 0.250,
     },
   },
+  -- August Blessing 
+  [454483] = {
+    localName = "August Blessing",
+    tokenName = "august_blessing",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157053) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 1.00000,
+      pct = 0.400,
+    },
+  },
+  -- One With the Wind 
+  [454484] = {
+    localName = "One With the Wind",
+    tokenName = "one_with_the_wind",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157059) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Memory of the Monastery 
+  [454969] = {
+    localName = "Memory of the Monastery",
+    tokenName = "memory_of_the_monastery",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157993) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 3, -- Spell Effect 1
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      affected_spells = {
+        137384,
+      },
+    },
+  },
+  -- Memory of the Monastery 
+  [454970] = {
+    localName = "Memory of the Monastery",
+    tokenName = "memory_of_the_monastery",
+    school = 0x01,
+    duration = 5,
+    max_stacks = 8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157994) 
+      type = 6, -- Apply Aura
+      subtype = 193, -- Modify All Haste Percent
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Strike At Dawn 
+  [455043] = {
+    localName = "Strike At Dawn",
+    tokenName = "strike_at_dawn",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158164) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Ox Stance 
+  [455068] = {
+    localName = "Ox Stance",
+    tokenName = "ox_stance",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158212) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 60,
+      scaled_value = 60,
+      pvp_coefficient = 1.00000,
+      pct = 0.600,
+    },
+    [2] = { -- (id=1158249) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 60,
+      scaled_value = 60,
+      pvp_coefficient = 1.00000,
+      pct = 0.600,
+    },
+  },
+  -- Black Ox Adept 
+  [455079] = {
+    localName = "Black Ox Adept",
+    tokenName = "black_ox_adept",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158241) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Heightened Guard 
+  [455081] = {
+    localName = "Heightened Guard",
+    tokenName = "heightened_guard",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158247) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -10,
+      scaled_value = -10,
+      pvp_coefficient = 1.00000,
+      pct = -0.100,
+      affected_spells = {
+        455068,
+      },
+    },
+  },
+  -- Elixir of Determination 
+  [455139] = {
+    localName = "Elixir of Determination",
+    tokenName = "elixir_of_determination",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158360) 
+      type = 6, -- Apply Aura
+      subtype = 468, -- Trigger Spell Based on Health Percent
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 1.00000,
+      pct = 0.400,
+    },
+    [2] = { -- (id=1158361) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [3] = { -- (id=1158362) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+    },
+  },
   talentKeys = {
-    452137,    451823,    451580,    451576,    451573,
-    451529,    451524,    451515,    451505,    451498,
-    451495,    451485,    451463,    451454,    451432,
-    451294,    451036,    451029,    451024,    451017,
-    450994,    450993,    450990,    450989,    450988,
-    450987,    450986,    450985,    450982,    450979,
-    450965,    450912,    450892,    450889,    450875,
-    450870,    450867,    450639,    450615,    450529,
-    450508,    450432,    450427,    450426,    450391,
-    443625,    443589,    443571,    443294,    443255,
-    443110,    443087,    443059,    442818,    442747,
-    442743,    442719,    442687,    418359,    397768,
-    393516,    393400,    393357,    392994,    392993,
-    392985,    392983,    392982,    392958,    392910,
-    392900,    391412,    391383,    391330,    389942,
-    389579,    388856,    388849,    388848,    388811,
-    388809,    388674,    388505,    388193,    387638,
-    387625,    387276,    387230,    387184,    387046,
-    386965,    383994,    383785,    383707,    383700,
-    383698,    383697,    325201,    325177,    325153,
-    322510,    322507,    322120,    322113,    220357,
-    196740,    196736,    196730,    195300,    152175,
-    123986,    122783,    121817,    121253,    119582,
-    116847,    116645,    115399,    115181,    113656,
+    455139,    455081,    455079,    455068,    455043,
+    454969,    454484,    454483,    452137,    451823,
+    451580,    451576,    451573,    451529,    451524,
+    451515,    451505,    451498,    451495,    451485,
+    451463,    451454,    451432,    451294,    451036,
+    451029,    451024,    451017,    450994,    450993,
+    450990,    450989,    450988,    450987,    450986,
+    450985,    450982,    450979,    450965,    450912,
+    450892,    450889,    450875,    450870,    450867,
+    450639,    450615,    450529,    450508,    450432,
+    450427,    450426,    450391,    443625,    443589,
+    443571,    443294,    443255,    443110,    443087,
+    443059,    442818,    442747,    442743,    442719,
+    442687,    418359,    397768,    393516,    393400,
+    393357,    392994,    392993,    392985,    392983,
+    392982,    392958,    392910,    392900,    391412,
+    391383,    391330,    389942,    389579,    388856,
+    388849,    388848,    388811,    388809,    388674,
+    388505,    388193,    387638,    387625,    387276,
+    387230,    387184,    387046,    386965,    383994,
+    383785,    383707,    383700,    383698,    383697,
+    325201,    325177,    325153,    322510,    322507,
+    322120,    322113,    220357,    196740,    196736,
+    196730,    195300,    152175,    123986,    122783,
+    121817,    121253,    119582,    116847,    116645,
+    115399,    115181,    113656,
   },
 }
 

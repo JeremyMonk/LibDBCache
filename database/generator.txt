@@ -89,6 +89,8 @@
 451457 # Martial Mixture (Buff)
 451582 # Gale Force (Debuff)
 451462 # Ordered Elements (Buff)
+455071 # Ox Stance (Buff)
+454970 # Memory of the Monastery (Buff)
 
 # Monk Class Tree
 
@@ -202,6 +204,7 @@
 451529 # Knowledge of the Broken Temple
 220357 # Mark of the Crane
 451454 # Martial Mixture
+454969 # Memory of the Monastery
 391330 # Meridian Strikes
 451294 # Momentum Boost
 392970 # Open Palm Strikes
@@ -245,7 +248,9 @@
 
 # Brewmaster Talents
 
+454483 # August Blessing
 196736 # Blackout Combo
+455079 # Black Ox Adept
 386949 # Bountiful Brew
 115181 # Breath of Fire
 325177 # Celestial Flames
@@ -253,13 +258,17 @@
 393400 # Chi Surge
 383785 # Counterstrike
 383994 # Dragonfire Brew
+455139 # Elixir of Determination
 387046 # Elusive Footwork
 325153 # Exploding Keg
 389942 # Face Palm
 387230 # Fluidity of Motion
 383700 # Gai Plin's Imperial Brew
 122281 # Healing Elixir
+455081 # Heightend Guard
 322510 # Improved Celestial Brew
+454484 # One with the Wind
+455068 # Ox Stance
 418359 # Press the Advantage
 393516 # Pretense of Instability
 388505 # Quick Sip
@@ -269,6 +278,7 @@
 322120 # Shuffle
 196730 # Special Delivery
 387625 # Staggering Strikes
+455043 # Strike at Dawn
 383707 # Stormstout's Last Keg
 393357 # Tranquil Spirit
 387184 # Weapons of Order
