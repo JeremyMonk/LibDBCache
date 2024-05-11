@@ -5,7 +5,7 @@
 ## Notes: Provides DBCache as a Lua database for JeremyUI and facilitates use
 ## DefaultState: Enabled
 ## LoadOnDemand: 0
-## Dependencies: Ace3
+## Dependencies: WeakAuras
 definitions.lua
 main.lua
 database/db_100206_54499.lua
