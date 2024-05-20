@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-05-11 - World of Warcraft 10.2.7.54577
+-- Database generated from DBCache on 2024-05-20 - World of Warcraft 10.2.7.54577
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.7", 54577 ) then 
@@ -14,6 +14,7 @@ DBC = {
     school = 0x01,
     gcd = 1.5,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -55,6 +56,7 @@ DBC = {
     gcd = 1.5,
     cooldown = 3,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -220,6 +222,7 @@ DBC = {
     gcd = 1.5,
     cooldown = 10,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -240,6 +243,7 @@ DBC = {
     cooldown = 24,
     duration = 4,
 
+    starts_combat = true,
     channeled = true,
     duration_hasted = true,
     may_miss = true,
@@ -344,6 +348,7 @@ DBC = {
     gcd = 1,
     cooldown = 15,
 
+    starts_combat = true,
     ignores_armor = true, -- Fire
     may_miss = true,
     may_crit = true,
@@ -560,6 +565,7 @@ DBC = {
     cooldown = 1,
     duration = 15,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -669,6 +675,7 @@ DBC = {
     cooldown = 90,
     duration = 10,
 
+    starts_combat = true,
     may_miss = true,
 
     [1] = { -- (id=154179) 
@@ -2438,6 +2445,7 @@ DBC = {
     tokenName = "rising_sun_kick",
     school = 0x01,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -2692,6 +2700,7 @@ DBC = {
     school = 0x01,
     gcd = 1.5,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -2943,6 +2952,7 @@ DBC = {
     tokenName = "blackout_kick",
     school = 0x01,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -3034,6 +3044,7 @@ DBC = {
     gcd = 1.5,
     cooldown = 180,
 
+    starts_combat = true,
     may_miss = true,
 
     [1] = { -- (id=810250) 
@@ -3364,6 +3375,7 @@ DBC = {
     tokenName = "faeline_stomp",
     school = 0x08,
 
+    starts_combat = true,
     ignores_armor = true, -- Nature
     may_miss = true,
     may_crit = true,
@@ -3987,6 +3999,7 @@ DBC = {
     tokenName = "dragonfire_brew",
     school = 0x04,
 
+    starts_combat = true,
     ignores_armor = true, -- Fire
     may_miss = true,
     may_crit = true,
@@ -4073,6 +4086,7 @@ DBC = {
     icd = 0.5,
     duration = 30,
 
+    starts_combat = true,
     ignores_armor = true, -- Nature
     may_miss = true,
     may_crit = true,
@@ -4107,6 +4121,7 @@ DBC = {
     tokenName = "jadefire_stomp",
     school = 0x08,
 
+    starts_combat = true,
     ignores_armor = true, -- Nature
     may_miss = true,
     may_crit = true,
@@ -4800,6 +4815,7 @@ DBC = {
     tokenName = "glory_of_the_dawn",
     school = 0x01,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -5369,6 +5385,7 @@ DBC = {
     tokenName = "strike_of_the_windlord",
     school = 0x01,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
@@ -5387,6 +5404,7 @@ DBC = {
     tokenName = "strike_of_the_windlord",
     school = 0x01,
 
+    starts_combat = true,
     may_miss = true,
     may_crit = true,
 
