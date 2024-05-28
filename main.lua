@@ -313,7 +313,7 @@ function LibDBCache:initialize_talents()
     return talents
 end
 
-function LibDBCache:spell_affected_by_effect( spellID, effect )
+function LibDBCache:spell_affected_by_effect( spellID, e )
 
     if not e or type( e ) ~= "table" then
         return false
