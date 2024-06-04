@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-05-20 - World of Warcraft 11.0.0.54709
+-- Database generated from DBCache on 2024-06-04 - World of Warcraft 11.0.0.54709
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 54709 ) then 
@@ -1714,7 +1714,7 @@ DBC = {
     },
     [17] = { -- (id=777114) 
       type = 6, -- Apply Aura
-      subtype = 320, -- Modify Ranged Attack Speed Percent
+      subtype = 320, -- Unknown
       base_value = 100,
       scaled_value = 100,
       pvp_coefficient = 1.00000,
@@ -7078,7 +7078,7 @@ DBC = {
 
     [1] = { -- (id=1151798) 
       type = 6, -- Apply Aura
-      subtype = 342, -- Modify Ranged and Melee Attack Speed Percent
+      subtype = 342, -- Modify Ranged and Melee Auto Attack Speed Percent
       base_value = 60,
       scaled_value = 60,
       pvp_coefficient = 1.00000,
@@ -7648,6 +7648,24 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.050,
       school_mask = 0x7f,
+    },
+  },
+  -- Dual Threat 
+  [451839] = {
+    localName = "Dual Threat",
+    tokenName = "dual_threat",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152602) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.80000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Expel Harm 
