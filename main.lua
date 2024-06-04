@@ -295,13 +295,15 @@ function LibDBCache:initialize_talents()
                         end
                         
                         local lDefinitionID = lEntryInfo[ "definitionID" ]
-                        local lDefinitionInfo = GetDefinitionInfo( lDefinitionID )
-                        local spellID = lDefinitionInfo[ "spellID" ]
-                        
-                        if spellID then
-                            local talentData = LibDBCache:find_talent( spellID, activeRank )
-                            if talentData and talentData.found then
-                                talents [ talentData.tokenName ] = talentData
+                        if lDefinitionID then
+                            local lDefinitionInfo = GetDefinitionInfo( lDefinitionID )
+                            local spellID = lDefinitionInfo[ "spellID" ]
+                            
+                            if spellID then
+                                local talentData = LibDBCache:find_talent( spellID, activeRank )
+                                if talentData and talentData.found then
+                                    talents [ talentData.tokenName ] = talentData
+                                end
                             end
                         end
                     end

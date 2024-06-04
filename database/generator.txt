@@ -86,6 +86,7 @@
 451298 # Momentum Boost Speed (Buff)
 451433 # Acclamation (Debuff)
 451833 # Dual Threat (Buff)
+451839 # Dual Threat (Proc)
 451457 # Martial Mixture (Buff)
 451582 # Gale Force (Debuff)
 451462 # Ordered Elements (Buff)
@@ -199,6 +200,7 @@
 391383 # Hardened Soles
 196740 # Hit Combo
 397768 # Inner Peace
+457974 # Jadefire Fists
 388193 # Jadefire Stomp
 391412 # Jadefire Harmony
 451529 # Knowledge of the Broken Temple
