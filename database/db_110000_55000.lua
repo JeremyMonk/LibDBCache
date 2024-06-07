@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-04 - World of Warcraft 11.0.0.54709
+-- Database generated from DBCache on 2024-06-07 - World of Warcraft 11.0.0.55000
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.0", 54709 ) then 
+if not validVersion( "11.0.0", 55000 ) then 
   return
 end
 
@@ -1052,6 +1052,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=191108) 
@@ -1073,6 +1074,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [3] = { -- (id=191109) 
@@ -1528,10 +1530,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 4,
-      scaled_value = 4,
-      pvp_coefficient = 2.00000,
-      pct = 0.040,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
         130654,        132463,        162530,        191840,        191894,
@@ -1541,17 +1543,18 @@ DBC = {
         343737,        343819,        344006,        345727,        358560,
         387995,        388044,        388207,        388514,        388615,
         388668,        399230,        399491,        407058,        425804,
-        443039,        443272,        448430,        451452,        451968,
+        443039,        443272,        443614,        448430,        451452,
+        451968,
       },
     },
     [2] = { -- (id=191104) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 4,
-      scaled_value = 4,
-      pvp_coefficient = 2.00000,
-      pct = 0.040,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
         130654,        132463,        162530,        191840,        191894,
@@ -1561,7 +1564,8 @@ DBC = {
         343737,        343819,        344006,        345727,        358560,
         387995,        388044,        388207,        388514,        388615,
         388668,        399230,        399491,        407058,        425804,
-        443039,        443272,        448430,        451452,        451968,
+        443039,        443272,        443614,        448430,        451452,
+        451968,
       },
     },
     [3] = { -- (id=191105) 
@@ -1819,7 +1823,7 @@ DBC = {
       pvp_coefficient = 0.00000,
       pct = 0.100,
       affected_spells = {
-        443088,        443263,        443611,
+        443088,        443263,        443611,        457917,
       },
     },
     [28] = { -- (id=1093854) 
@@ -1831,7 +1835,7 @@ DBC = {
       pvp_coefficient = 0.00000,
       pct = 0.100,
       affected_spells = {
-        443088,        443263,        443611,
+        443088,        443263,        443611,        457917,
       },
     },
     [29] = { -- (id=1102395) 
@@ -1911,6 +1915,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=191100) 
@@ -1932,6 +1937,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [3] = { -- (id=191101) 
@@ -2017,7 +2023,7 @@ DBC = {
     },
     [10] = { -- (id=260821) 
       type = 6, -- Apply Aura
-      subtype = 35, -- Increase Energy
+      subtype = 35, -- Increase Resource
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -2216,14 +2222,14 @@ DBC = {
     },
     [17] = { -- (id=984590) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 1, -- Spell Duration
-      base_value = 0,
-      scaled_value = 0,
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.200,
       affected_spells = {
-        101546,        322729,
+        392883,
       },
     },
     [18] = { -- (id=1003545) 
@@ -2681,6 +2687,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=479821) 
@@ -2702,6 +2709,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [3] = { -- (id=479888) 
@@ -2805,6 +2813,14 @@ DBC = {
       scaled_value = 100,
       pvp_coefficient = 1.00000,
       pct = 1.000,
+    },
+    [4] = { -- (id=1162067) 
+      type = 6, -- Apply Aura
+      subtype = 101, -- Modify Armor Percent
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Celestial Fortune 
@@ -3504,7 +3520,7 @@ DBC = {
         388609,        388867,        392959,        393056,        393400,
         393566,        393786,        395519,        395521,        418360,
         443038,        443088,        443127,        443263,        443611,
-        451767,        451839,        452130,
+        451767,        451839,        452130,        457917,
       },
     },
     [2] = { -- (id=884941) 
@@ -3775,7 +3791,6 @@ DBC = {
     },
     [2] = { -- (id=1021575) 
       type = 3, -- Dummy
-      ranks = { 1, 2, },
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -3785,7 +3800,6 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 5, 10, },
       base_value = 5,
       scaled_value = 5,
       pvp_coefficient = 0.50000,
@@ -4268,7 +4282,6 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 20, 30, },
       base_value = 20,
       scaled_value = 20,
       pvp_coefficient = 1.00000,
@@ -4484,7 +4497,8 @@ DBC = {
         343737,        343819,        344006,        345727,        358560,
         387995,        388044,        388207,        388514,        388615,
         388668,        399230,        399491,        407058,        425804,
-        443039,        443272,        448430,        451452,        451968,
+        443039,        443272,        443614,        448430,        451452,
+        451968,
       },
     },
     [2] = { -- (id=1041529) 
@@ -4504,7 +4518,8 @@ DBC = {
         343737,        343819,        344006,        345727,        358560,
         387995,        388044,        388207,        388514,        388615,
         388668,        399230,        399491,        407058,        425804,
-        443039,        443272,        448430,        451452,        451968,
+        443039,        443272,        443614,        448430,        451452,
+        451968,
       },
     },
   },
@@ -4666,7 +4681,7 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = 0,
-      scaled_value = 189427,
+      scaled_value = 194471,
       pvp_coefficient = 0.50000,
       pct = 0.000,
     },
@@ -4930,7 +4945,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.85000,
+      ap_coefficient = 1.27500,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5040,7 +5055,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 2.00000,
+      ap_coefficient = 1.75000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5149,6 +5164,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=1035871) 
@@ -5378,6 +5394,7 @@ DBC = {
         393056,        393400,        393566,        393786,        395519,
         395521,        418360,        443038,        443088,        443127,
         443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=1090596) 
@@ -5597,10 +5614,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 30,
-      scaled_value = 30,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.300,
+      pct = 0.150,
       affected_spells = {
         100780,        331433,
       },
@@ -5655,6 +5672,18 @@ DBC = {
       pct = 0.100,
       affected_spells = {
         107270,        117418,
+      },
+    },
+    [3] = { -- (id=1164522) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        116670,        124682,        325209,        358560,
       },
     },
   },
@@ -5816,13 +5845,21 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.050,
     },
+    [3] = { -- (id=1162170) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
   },
   -- Strength of the Black Ox 
   [443112] = {
     localName = "Strength of the Black Ox",
     tokenName = "strength_of_the_black_ox",
     school = 0x01,
-    duration = 20,
+    duration = 30,
     max_stacks = 1,
 
     [1] = { -- (id=1138786) 
@@ -5880,7 +5917,7 @@ DBC = {
     tokenName = "heart_of_the_jade_serpent",
     school = 0x08,
     duration = 60,
-    max_stacks = 30,
+    max_stacks = 45,
 
     ignores_armor = true, -- Nature
     may_miss = true,
@@ -6084,6 +6121,17 @@ DBC = {
         113656,        120086,        232055,
       },
     },
+    [7] = { -- (id=1166053) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 1.00000,
+      pct = 1.500,
+      affected_spells = {
+        116680,
+      },
+    },
   },
   -- Yu'lon's Knowledge 
   [443625] = {
@@ -6194,7 +6242,8 @@ DBC = {
         343737,        343819,        344006,        345727,        358560,
         387995,        388044,        388207,        388514,        388615,
         388668,        399230,        399491,        407058,        425804,
-        443039,        443272,        448430,        451452,        451968,
+        443039,        443272,        443614,        448430,        451452,
+        451968,
       },
     },
   },
@@ -6329,7 +6378,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.100,
       affected_spells = {
-        450763,
+        450763,        450769,
       },
     },
   },
@@ -7373,8 +7422,8 @@ DBC = {
     localName = "Revolving Whirl",
     tokenName = "revolving_whirl",
     school = 0x01,
-    cooldown = 3,
-    icd = 3,
+    cooldown = 2,
+    icd = 2,
 
     may_miss = true,
     may_crit = true,
@@ -7623,6 +7672,7 @@ DBC = {
     [1] = { -- (id=1152583) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
+      ranks = { 20, 30, },
       base_value = 20,
       scaled_value = 20,
       pvp_coefficient = 1.00000,
@@ -7663,7 +7713,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.80000,
+      ap_coefficient = 1.75000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -7707,7 +7757,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.30000,
+      ap_coefficient = 0.20000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -7758,9 +7808,10 @@ DBC = {
       pct = 0.300,
       affected_spells = {
         434774,        443038,        443039,        443088,        443127,
-        443263,        443272,        443611,        448430,        449891,
-        450342,        451452,        451500,        451754,        451767,
-        451839,        451968,        452130,        453334,
+        443263,        443272,        443611,        443614,        448430,
+        449891,        450342,        451452,        451500,        451754,
+        451767,        451839,        451968,        452130,        453334,
+        457917,
       },
     },
   },
@@ -7802,6 +7853,104 @@ DBC = {
       pct = 0.250,
     },
   },
+  -- Monk Brewmaster 11.0 Class Set 2pc 
+  [453623] = {
+    localName = "Monk Brewmaster 11.0 Class Set 2pc",
+    tokenName = "monk_brewmaster_11.0_class_set_2pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155622) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 0.50000,
+      pct = 0.200,
+      affected_spells = {
+        100784,        121253,        205523,        228649,
+      },
+    },
+    [2] = { -- (id=1162060) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 32, -- Spell Effect 4
+      base_value = -3,
+      scaled_value = -3,
+      pvp_coefficient = 0.50000,
+      pct = -0.030,
+      affected_spells = {
+        215479,
+      },
+    },
+  },
+  -- Monk Brewmaster 11.0 Class Set 4pc 
+  [453624] = {
+    localName = "Monk Brewmaster 11.0 Class Set 4pc",
+    tokenName = "monk_brewmaster_11.0_class_set_4pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155623) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 4pc 
+  [453625] = {
+    localName = "Monk Windwalker 11.0 Class Set 4pc",
+    tokenName = "monk_windwalker_11.0_class_set_4pc",
+    school = 0x01,
+    cooldown = 0.8,
+    icd = 0.8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155624) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1162918) 
+      type = 6, -- Apply Aura
+      subtype = 285, -- Unknown
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 2pc 
+  [453626] = {
+    localName = "Monk Windwalker 11.0 Class Set 2pc",
+    tokenName = "monk_windwalker_11.0_class_set_2pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155625) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+  },
   -- August Blessing 
   [454483] = {
     localName = "August Blessing",
@@ -7837,6 +7986,81 @@ DBC = {
       scaled_value = 10,
       pvp_coefficient = 1.00000,
       pct = 0.100,
+    },
+  },
+  -- Tiger Strikes 
+  [454485] = {
+    localName = "Tiger Strikes",
+    tokenName = "tiger_strikes",
+    school = 0x01,
+    duration = -1,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157060) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 0.50000,
+      pct = 0.050,
+      affected_spells = {
+        100784,        107428,        185099,        205523,        228649,
+        392959,
+      },
+    },
+  },
+  -- Tiger's Ferocity 
+  [454502] = {
+    localName = "Tiger's Ferocity",
+    tokenName = "tigers_ferocity",
+    school = 0x01,
+    duration = -1,
+    max_stacks = 6,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157096) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 0.50000,
+      pct = 0.250,
+      affected_spells = {
+        100780,        331433,
+      },
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 4pc 
+  [454505] = {
+    localName = "Monk Windwalker 11.0 Class Set 4pc",
+    tokenName = "monk_windwalker_11.0_class_set_4pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157099) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 0.50000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1157100) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
     },
   },
   -- Memory of the Monastery 
@@ -8017,38 +8241,89 @@ DBC = {
       pct = 0.200,
     },
   },
+  -- Flow of Battle 
+  [457257] = {
+    localName = "Flow of Battle",
+    tokenName = "flow_of_battle",
+    school = 0x01,
+    duration = 15,
+    max_stacks = 3,
+
+    [1] = { -- (id=1162132) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 0.50000,
+      pct = 0.010,
+      affected_spells = {
+        100780,        100784,        107270,        113656,        115181,
+        117418,        117952,        121253,        123586,        124081,
+        132467,        148135,        148187,        158221,        185099,
+        196608,        196733,        205523,        228649,        261947,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
+      },
+    },
+  },
+  -- Jadefire Fists 
+  [457974] = {
+    localName = "Jadefire Fists",
+    tokenName = "jadefire_fists",
+    school = 0x08,
+
+    starts_combat = true,
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1163633) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
   talentKeys = {
-    455139,    455081,    455079,    455068,    455043,
-    454969,    454484,    454483,    452137,    451823,
-    451580,    451576,    451573,    451529,    451524,
-    451515,    451505,    451498,    451495,    451485,
-    451463,    451454,    451432,    451294,    451036,
-    451029,    451024,    451017,    450994,    450993,
-    450990,    450989,    450988,    450987,    450986,
-    450985,    450982,    450979,    450965,    450912,
-    450892,    450889,    450875,    450870,    450867,
-    450639,    450615,    450529,    450508,    450432,
-    450427,    450426,    450391,    443625,    443589,
-    443571,    443294,    443255,    443110,    443087,
-    443059,    442818,    442747,    442743,    442719,
-    442687,    418359,    397768,    393516,    393400,
-    393357,    392994,    392993,    392985,    392983,
-    392982,    392958,    392910,    392900,    391412,
-    391383,    391330,    389942,    389579,    388856,
-    388849,    388848,    388811,    388809,    388674,
-    388505,    388193,    387638,    387625,    387276,
-    387230,    387184,    387046,    386965,    383994,
-    383785,    383707,    383700,    383698,    383697,
-    325201,    325177,    325153,    322510,    322507,
-    322120,    322113,    220357,    196740,    196736,
-    196730,    195300,    152175,    123986,    122783,
-    121817,    121253,    119582,    116847,    116645,
-    115399,    115181,    113656,
+    457974,    455139,    455081,    455079,    455068,
+    455043,    454969,    454484,    454483,    452137,
+    451823,    451580,    451576,    451573,    451529,
+    451524,    451515,    451505,    451498,    451495,
+    451485,    451463,    451454,    451432,    451294,
+    451036,    451029,    451024,    451017,    450994,
+    450993,    450990,    450989,    450988,    450987,
+    450986,    450985,    450982,    450979,    450965,
+    450912,    450892,    450889,    450875,    450870,
+    450867,    450639,    450615,    450529,    450508,
+    450432,    450427,    450426,    450391,    443625,
+    443589,    443571,    443294,    443255,    443110,
+    443087,    443059,    442818,    442747,    442743,
+    442719,    442687,    418359,    397768,    393516,
+    393400,    393357,    392994,    392993,    392985,
+    392983,    392982,    392958,    392910,    392900,
+    391412,    391383,    391330,    389942,    389579,
+    388856,    388849,    388848,    388811,    388809,
+    388674,    388505,    388193,    387638,    387625,
+    387276,    387230,    387184,    387046,    386965,
+    383994,    383785,    383707,    383700,    383698,
+    383697,    325201,    325177,    325153,    322507,
+    322120,    322113,    196740,    196736,    196730,
+    195300,    152175,    123986,    122783,    121817,
+    121253,    119582,    116847,    116645,    115399,
+    115181,    113656,
   },
 }
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.0"
-DBC_BUILD = 54709
+DBC_BUILD = 55000
 -- ------------------------------------------------------------------------------
 

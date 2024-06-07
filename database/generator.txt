@@ -16,6 +16,15 @@
 394944 # Kicks of Flowing Momentum
 394949 # Fists of Flowing Momentum
 
+453623 # T33 Brewmaster Class Set 2pc
+453624 # T33 Brewmaster Class Set 4pc
+453626 # T33 Windwalker Class Set 2pc
+453625 # T33 Windwalker Class Set 4pc
+454485 # Tiger Strikes (Windwalker T32 Set)
+454502 # Tiger's Ferocity (Windwalker T32 Set)
+454505 # T33 Windwalker AoE
+457257 # Flow of Battle (Brewmaster T32 Set)
+
 # Monk Spells
 
 137025 # Windwalker Monk
