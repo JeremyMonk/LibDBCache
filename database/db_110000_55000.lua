@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-07 - World of Warcraft 11.0.0.55000
+-- Database generated from DBCache on 2024-06-08 - World of Warcraft 11.0.0.55000
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 55000 ) then 
@@ -7,6 +7,33 @@ if not validVersion( "11.0.0", 55000 ) then
 end
 
 DBC = {
+  -- Arcane Torrent 
+  [28730] = {
+    localName = "Arcane Torrent",
+    tokenName = "arcane_torrent",
+    school = 0x40,
+    gcd = 1.5,
+    cooldown = 120,
+
+    ignores_armor = true, -- Arcane
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=18193) 
+      type = 38, -- Dispel
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=18194) 
+      type = 137, -- Energize Power Percent
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+    },
+  },
   -- Tiger Palm 
   [100780] = {
     localName = "Tiger Palm",
@@ -5051,6 +5078,10 @@ DBC = {
     tokenName = "thunderfist",
     school = 0x08,
 
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1032621) 
       type = 2, -- School Damage
       base_value = 0,
@@ -5861,6 +5892,9 @@ DBC = {
     school = 0x01,
     duration = 30,
     max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1138786) 
       type = 6, -- Apply Aura
@@ -8157,6 +8191,9 @@ DBC = {
     duration = 15,
     max_stacks = 10,
 
+    may_miss = true,
+    may_crit = true,
+
     [1] = { -- (id=1158229) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
@@ -8248,6 +8285,9 @@ DBC = {
     school = 0x01,
     duration = 15,
     max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
 
     [1] = { -- (id=1162132) 
       type = 6, -- Apply Aura

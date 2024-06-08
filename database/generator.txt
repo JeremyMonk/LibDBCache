@@ -4,6 +4,9 @@
 # Other
 134735 # PvP Rules Enabled
 
+# Racials
+28730 # Arcane Torrent
+
 # Items
 408836 # Ancient Lava (Djaruun the Elder Flame)
 426553 # Annihilating Flame (Augury of the Primal Flame)
@@ -24,6 +27,7 @@
 454502 # Tiger's Ferocity (Windwalker T32 Set)
 454505 # T33 Windwalker AoE
 457257 # Flow of Battle (Brewmaster T32 Set)
+457271 # Flow of Battle Reset (Brewmaster T32 Set)
 
 # Monk Spells
 
