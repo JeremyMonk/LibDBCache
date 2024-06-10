@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 2.2
+LibDBCache.Version = 2.3
 
 -- ------------------------------------------------------------------------------
 
@@ -326,7 +326,8 @@ function LibDBCache:spell_affected_by_effect( spellID, e )
     end
     
     if e.school_mask then
-        return bit.band( school, e.school_mask ) == school
+        local spell = LibDBCache:find_spell( spellID )    
+        return bit.band( spell.school, e.school_mask ) == spell.school
     end
     
     return false
