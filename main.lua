@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 2.3
+LibDBCache.Version = 2.4
 
 -- ------------------------------------------------------------------------------
 

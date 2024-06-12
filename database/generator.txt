@@ -200,6 +200,7 @@
 451576 # Communion with the Wind
 451495 # Courageous Impulse
 325201 # Dance of Chi-Ji
+459839 # Darting Hurricane
 451823 # Dual Threat
 323999 # Empowered Tiger Lightning
 451498 # Energy Burst
@@ -225,6 +226,7 @@
 392970 # Open Palm Strikes
 451463 # Ordered Elements
 392994 # Path of Jade
+459809 # Power of the Thunderking
 121817 # Power Strikes
 451524 # Revolving Wind
 388849 # Rising Star
@@ -239,6 +241,7 @@
 195300 # Transfer the Power
 152175 # Whirling Dragon Punch
 392993 # Xuen's Battlegear
+
 
 # Windwalker PvP Talents
 

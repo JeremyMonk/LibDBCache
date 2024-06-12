@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-08 - World of Warcraft 11.0.0.55000
+-- Database generated from DBCache on 2024-06-12 - World of Warcraft 11.0.0.55087
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.0", 55000 ) then 
+if not validVersion( "11.0.0", 55087 ) then 
   return
 end
 
@@ -555,6 +555,14 @@ DBC = {
       pct = 0.000,
     },
     [2] = { -- (id=225417) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
+    },
+    [3] = { -- (id=1166995) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = 200,
@@ -2340,10 +2348,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 30,
-      scaled_value = 30,
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.300,
+      pct = 0.100,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -2690,7 +2698,7 @@ DBC = {
     tokenName = "hit_combo",
     school = 0x01,
     duration = 10,
-    max_stacks = 6,
+    max_stacks = 5,
 
     may_miss = true,
     may_crit = true,
@@ -4937,10 +4945,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 100,
-      scaled_value = 100,
+      base_value = 200,
+      scaled_value = 200,
       pvp_coefficient = 1.00000,
-      pct = 1.000,
+      pct = 2.000,
       affected_spells = {
         117952,
       },
@@ -6441,6 +6449,30 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 4.000,
     },
+    [3] = { -- (id=1167368) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [4] = { -- (id=1167369) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [5] = { -- (id=1167370) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 350,
+      scaled_value = 350,
+      pvp_coefficient = 1.00000,
+      pct = 3.500,
+    },
   },
   -- Summon White Tiger Statue 
   [450639] = {
@@ -6543,6 +6575,8 @@ DBC = {
     localName = "Balanced Stratagem",
     tokenName = "balanced_stratagem",
     school = 0x01,
+    cooldown = 0.1,
+    icd = 0.1,
 
     may_miss = true,
     may_crit = true,
@@ -6593,6 +6627,8 @@ DBC = {
     localName = "Path of Resurgence",
     tokenName = "path_of_resurgence",
     school = 0x01,
+    cooldown = 0.1,
+    icd = 0.1,
 
     may_miss = true,
     may_crit = true,
@@ -6600,10 +6636,10 @@ DBC = {
     [1] = { -- (id=1151151) 
       type = 6, -- Apply Aura
       subtype = 42, -- Proc Trigger Spell
-      base_value = 25,
-      scaled_value = 25,
+      base_value = 0,
+      scaled_value = 0,
       pvp_coefficient = 1.00000,
-      pct = 0.250,
+      pct = 0.000,
     },
   },
   -- Way of a Thousand Strikes 
@@ -7747,7 +7783,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.75000,
+      ap_coefficient = 1.35000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -8312,6 +8348,29 @@ DBC = {
       },
     },
   },
+  -- Flow of Battle 
+  [457271] = {
+    localName = "Flow of Battle",
+    tokenName = "flow_of_battle",
+    school = 0x01,
+    duration = 15,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1162153) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -100,
+      scaled_value = -100,
+      pvp_coefficient = 0.50000,
+      pct = -1.000,
+      affected_spells = {
+        121253,
+      },
+    },
+  },
   -- Jadefire Fists 
   [457974] = {
     localName = "Jadefire Fists",
@@ -8332,38 +8391,110 @@ DBC = {
       pct = 0.250,
     },
   },
+  -- Power of the Thunder King 
+  [459809] = {
+    localName = "Power of the Thunder King",
+    tokenName = "power_of_the_thunder_king",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166886) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 17, -- Spell Targets
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+      affected_spells = {
+        117952,
+      },
+    },
+    [2] = { -- (id=1166887) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        117952,
+      },
+    },
+    [3] = { -- (id=1166888) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 19, -- Spell Tick Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        117952,
+      },
+    },
+  },
+  -- Darting Hurricane 
+  [459839] = {
+    localName = "Darting Hurricane",
+    tokenName = "darting_hurricane",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166943) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=1166968) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
   talentKeys = {
-    457974,    455139,    455081,    455079,    455068,
-    455043,    454969,    454484,    454483,    452137,
-    451823,    451580,    451576,    451573,    451529,
-    451524,    451515,    451505,    451498,    451495,
-    451485,    451463,    451454,    451432,    451294,
-    451036,    451029,    451024,    451017,    450994,
-    450993,    450990,    450989,    450988,    450987,
-    450986,    450985,    450982,    450979,    450965,
-    450912,    450892,    450889,    450875,    450870,
-    450867,    450639,    450615,    450529,    450508,
-    450432,    450427,    450426,    450391,    443625,
-    443589,    443571,    443294,    443255,    443110,
-    443087,    443059,    442818,    442747,    442743,
-    442719,    442687,    418359,    397768,    393516,
-    393400,    393357,    392994,    392993,    392985,
-    392983,    392982,    392958,    392910,    392900,
-    391412,    391383,    391330,    389942,    389579,
-    388856,    388849,    388848,    388811,    388809,
-    388674,    388505,    388193,    387638,    387625,
-    387276,    387230,    387184,    387046,    386965,
-    383994,    383785,    383707,    383700,    383698,
-    383697,    325201,    325177,    325153,    322507,
-    322120,    322113,    196740,    196736,    196730,
-    195300,    152175,    123986,    122783,    121817,
-    121253,    119582,    116847,    116645,    115399,
-    115181,    113656,
+    459839,    459809,    457974,    455139,    455081,
+    455079,    455068,    455043,    454969,    454484,
+    454483,    452137,    451823,    451580,    451576,
+    451573,    451529,    451524,    451515,    451505,
+    451498,    451495,    451485,    451463,    451454,
+    451432,    451294,    451036,    451029,    451024,
+    451017,    450994,    450993,    450990,    450989,
+    450988,    450987,    450986,    450985,    450982,
+    450979,    450965,    450912,    450892,    450889,
+    450875,    450870,    450867,    450639,    450615,
+    450529,    450508,    450432,    450427,    450426,
+    450391,    443625,    443589,    443571,    443294,
+    443255,    443110,    443087,    443059,    442818,
+    442747,    442743,    442719,    442687,    418359,
+    397768,    393516,    393400,    393357,    392994,
+    392993,    392985,    392983,    392982,    392958,
+    392910,    392900,    391412,    391383,    391330,
+    389942,    389579,    388856,    388849,    388848,
+    388811,    388809,    388674,    388505,    388193,
+    387638,    387625,    387276,    387230,    387184,
+    387046,    386965,    383994,    383785,    383707,
+    383700,    383698,    383697,    325201,    325177,
+    325153,    322507,    322120,    322113,    196740,
+    196736,    196730,    195300,    152175,    123986,
+    122783,    121817,    121253,    119582,    116847,
+    116645,    115399,    115181,    113656,
   },
 }
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.0"
-DBC_BUILD = 55000
+DBC_BUILD = 55087
 -- ------------------------------------------------------------------------------
 
