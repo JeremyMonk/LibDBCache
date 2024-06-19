@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-12 - World of Warcraft 10.2.6.54499
+-- Database generated from DBCache on 2024-06-19 - World of Warcraft 10.2.7.55165
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.6", 54499 ) then 
+if not validVersion( "10.2.7", 55165 ) then 
   return
 end
 
@@ -607,7 +607,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.90000,
+      ap_coefficient = 0.81000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -897,7 +897,7 @@ DBC = {
       type = 10, -- Direct Heal
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 3.00000,
+      ap_coefficient = 3.30000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -1444,10 +1444,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -5,
-      scaled_value = -5,
+      base_value = -15,
+      scaled_value = -15,
       pvp_coefficient = 1.00000,
-      pct = -0.050,
+      pct = -0.150,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -1523,6 +1523,18 @@ DBC = {
       pct = 0.200,
       affected_spells = {
         100784,        205523,        228649,
+      },
+    },
+    [31] = { -- (id=1151385) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -30,
+      scaled_value = -30,
+      pvp_coefficient = 1.00000,
+      pct = -0.300,
+      affected_spells = {
+        389541,
       },
     },
   },
@@ -5838,7 +5850,7 @@ DBC = {
 }
 
 -- ------------------------------------------------------------------------------
-DBC_VERSION = "10.2.6"
-DBC_BUILD = 54499
+DBC_VERSION = "10.2.7"
+DBC_BUILD = 55165
 -- ------------------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-12 - World of Warcraft 11.0.0.55087
+-- Database generated from DBCache on 2024-06-19 - World of Warcraft 11.0.0.55185
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.0", 55087 ) then 
+if not validVersion( "11.0.0", 55185 ) then 
   return
 end
 
@@ -125,6 +125,7 @@ DBC = {
     [1] = { -- (id=110001) 
       type = 6, -- Apply Aura
       subtype = 373, -- Unknown
+      property = 8, -- Uncontrolled No Backwards
       base_value = 300,
       scaled_value = 300,
       pvp_coefficient = 1.00000,
@@ -380,6 +381,8 @@ DBC = {
 
     [1] = { -- (id=128879) 
       type = 2, -- School Damage
+      subtype = 11, -- Add Target
+      property = 17, -- Combat Reach to AOE
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.48000,
@@ -694,6 +697,7 @@ DBC = {
 
     [1] = { -- (id=153853) 
       type = 136, -- Direct Heal Percent
+      subtype = 6, -- Suppress Points Stacking
       base_value = 15,
       scaled_value = 15,
       pvp_coefficient = 1.00000,
@@ -840,7 +844,6 @@ DBC = {
     tokenName = "chi_burst",
     school = 0x08,
     gcd = 1.5,
-    cooldown = 30,
     duration = 1,
 
     ignores_armor = true, -- Nature
@@ -849,13 +852,15 @@ DBC = {
 
     [1] = { -- (id=156697) 
       type = 179, -- Create Area Trigger
-      base_value = 6,
-      scaled_value = 6,
+      subtype = 1, -- Position is facing relative
+      base_value = 5,
+      scaled_value = 5,
       pvp_coefficient = 1.00000,
-      pct = 0.060,
+      pct = 0.050,
     },
     [2] = { -- (id=201318) 
       type = 179, -- Create Area Trigger
+      subtype = 1, -- Position is facing relative
       base_value = 0,
       scaled_value = 0,
       pvp_coefficient = 1.00000,
@@ -2004,8 +2009,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.260,
       affected_spells = {
-        100780,        100784,        107428,        185099,        205523,
-        228649,        331433,        392959,
+        100780,        107428,        185099,        331433,        392959,
       },
     },
     [6] = { -- (id=260817) 
@@ -2348,10 +2352,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.200,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -2384,10 +2388,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 107, -- Add Flat Modifier
       property = 1, -- Spell Duration
-      base_value = 4000,
-      scaled_value = 4000,
+      base_value = 7000,
+      scaled_value = 7000,
       pvp_coefficient = 1.00000,
-      pct = 40.000,
+      pct = 70.000,
       affected_spells = {
         116847,        196725,
       },
@@ -2454,8 +2458,8 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.20000,
-      pvp_coefficient = 1.00000,
+      ap_coefficient = 2.80000,
+      pvp_coefficient = 1.40000,
       pct = 0.000,
     },
   },
@@ -2697,7 +2701,7 @@ DBC = {
     localName = "Hit Combo",
     tokenName = "hit_combo",
     school = 0x01,
-    duration = 10,
+    duration = 30,
     max_stacks = 5,
 
     may_miss = true,
@@ -3378,6 +3382,7 @@ DBC = {
     [3] = { -- (id=815256) 
       type = 6, -- Apply Aura
       subtype = 54, -- Modify Hit Percent
+      property = 14, -- Players Only
       base_value = -100,
       scaled_value = -100,
       pvp_coefficient = 1.00000,
@@ -3475,6 +3480,7 @@ DBC = {
 
     [1] = { -- (id=818673) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.65000,
@@ -4003,6 +4009,7 @@ DBC = {
 
     [1] = { -- (id=1022525) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.20000,
@@ -4132,6 +4139,7 @@ DBC = {
 
     [1] = { -- (id=1023725) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.65000,
@@ -4151,6 +4159,7 @@ DBC = {
 
     [1] = { -- (id=1023731) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.40000,
@@ -4159,6 +4168,7 @@ DBC = {
     },
     [2] = { -- (id=1023732) 
       type = 10, -- Direct Heal
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       sp_coefficient = 0.91000,
@@ -4804,10 +4814,10 @@ DBC = {
     [3] = { -- (id=1155573) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 80,
-      scaled_value = 80,
+      base_value = 70,
+      scaled_value = 70,
       pvp_coefficient = 1.00000,
-      pct = 0.800,
+      pct = 0.700,
     },
   },
   -- Strike of the Windlord 
@@ -4892,7 +4902,7 @@ DBC = {
       subtype = 4, -- Dummy
       base_value = 4000,
       scaled_value = 4000,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.50000,
       pct = 40.000,
     },
     [3] = { -- (id=1031620) 
@@ -4978,9 +4988,10 @@ DBC = {
 
     [1] = { -- (id=1031743) 
       type = 2, -- School Damage
+      subtype = 11, -- Add Target
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.27500,
+      ap_coefficient = 1.45000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5092,6 +5103,7 @@ DBC = {
 
     [1] = { -- (id=1032621) 
       type = 2, -- School Damage
+      subtype = 6, -- Suppress Points Stacking
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 1.75000,
@@ -6099,6 +6111,7 @@ DBC = {
 
     [1] = { -- (id=1139673) 
       type = 28, -- Summon
+      subtype = 1, -- Position is facing relative
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -6393,6 +6406,22 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.250,
     },
+    [7] = { -- (id=1168114) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 0.50000,
+      pct = 1.000,
+    },
+    [8] = { -- (id=1168900) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 1.00000,
+      pct = 0.080,
+    },
   },
   -- Coalescence 
   [450529] = {
@@ -6528,6 +6557,14 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
+    [2] = { -- (id=1168907) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+    },
   },
   -- Harmonic Gambit 
   [450870] = {
@@ -6627,8 +6664,8 @@ DBC = {
     localName = "Path of Resurgence",
     tokenName = "path_of_resurgence",
     school = 0x01,
-    cooldown = 0.1,
-    icd = 0.1,
+    cooldown = 0.75,
+    icd = 0.75,
 
     may_miss = true,
     may_crit = true,
@@ -7226,10 +7263,10 @@ DBC = {
     },
     [2] = { -- (id=1151800) 
       type = 3, -- Dummy
-      base_value = 16,
-      scaled_value = 16,
+      base_value = 12,
+      scaled_value = 12,
       pvp_coefficient = 1.00000,
-      pct = 0.160,
+      pct = 0.120,
     },
   },
   -- Acclamation 
@@ -7418,7 +7455,7 @@ DBC = {
       property = 23, -- Spell Effect 3
       base_value = 125,
       scaled_value = 125,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.60000,
       pct = 1.250,
       affected_spells = {
         116768,
@@ -7535,7 +7572,7 @@ DBC = {
       subtype = 4, -- Dummy
       base_value = 4,
       scaled_value = 4,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.75000,
       pct = 0.040,
     },
     [2] = { -- (id=1152177) 
@@ -7556,7 +7593,7 @@ DBC = {
       property = 37, -- Spell Max Stacks
       base_value = 4,
       scaled_value = 4,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.50000,
       pct = 0.040,
       affected_spells = {
         202090,
@@ -7567,7 +7604,7 @@ DBC = {
       subtype = 4, -- Dummy
       base_value = 8,
       scaled_value = 8,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.75000,
       pct = 0.080,
     },
   },
@@ -7881,7 +7918,7 @@ DBC = {
         443263,        443272,        443611,        443614,        448430,
         449891,        450342,        451452,        451500,        451754,
         451767,        451839,        451968,        452130,        453334,
-        457917,
+        457917,        460478,
       },
     },
   },
@@ -8224,7 +8261,7 @@ DBC = {
     localName = "Ox Stance",
     tokenName = "ox_stance",
     school = 0x01,
-    duration = 15,
+    duration = 30,
     max_stacks = 10,
 
     may_miss = true,
@@ -8270,10 +8307,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
-      base_value = -10,
-      scaled_value = -10,
+      base_value = -20,
+      scaled_value = -20,
       pvp_coefficient = 1.00000,
-      pct = -0.100,
+      pct = -0.200,
       affected_spells = {
         455068,
       },
@@ -8487,14 +8524,14 @@ DBC = {
     387046,    386965,    383994,    383785,    383707,
     383700,    383698,    383697,    325201,    325177,
     325153,    322507,    322120,    322113,    196740,
-    196736,    196730,    195300,    152175,    123986,
-    122783,    121817,    121253,    119582,    116847,
-    116645,    115399,    115181,    113656,
+    196736,    196730,    195300,    152175,    122783,
+    121817,    121253,    119582,    116847,    116645,
+    115399,    115181,    113656,
   },
 }
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.0"
-DBC_BUILD = 55087
+DBC_BUILD = 55185
 -- ------------------------------------------------------------------------------
 
