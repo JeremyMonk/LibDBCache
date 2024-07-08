@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 2.4
+LibDBCache.Version = 2.5
 
 -- ------------------------------------------------------------------------------
 
@@ -170,6 +170,9 @@ function LibDBCache:find_spell( spellID, rank )
          end       
             
         effect = {
+            type = effect.type,
+            subtype = effect.subtype,
+            property = effect.property,
             properties = effect.properties,
             base_value = effect.base_value,
             affected_spells = effect.affected_spells,

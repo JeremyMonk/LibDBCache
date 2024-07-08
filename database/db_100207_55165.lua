@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-06-19 - World of Warcraft 10.2.7.55165
+-- Database generated from DBCache on 2024-07-08 - World of Warcraft 10.2.7.55165
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.7", 55165 ) then 
