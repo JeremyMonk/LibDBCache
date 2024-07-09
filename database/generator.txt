@@ -94,6 +94,7 @@
 113746 # Mystic Touch (Debuff)
 116768 # Blackout Kick!
 325202 # Dance of Chiji buff
+195321 # Transfer the Power (Buff)
 
 451297 # Momentum Boost Damage (Buff)
 451298 # Momentum Boost Speed (Buff)

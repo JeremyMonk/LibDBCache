@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-08 - World of Warcraft 10.2.7.54577
+-- Database generated from DBCache on 2024-07-09 - World of Warcraft 10.2.7.54577
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.7", 54577 ) then 
@@ -2495,6 +2495,26 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=286702) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+    },
+  },
+  -- Transfer the Power 
+  [195321] = {
+    localName = "Transfer the Power",
+    tokenName = "transfer_the_power",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=286727) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = 3,
