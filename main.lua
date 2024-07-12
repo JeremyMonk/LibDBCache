@@ -126,6 +126,7 @@ function LibDBCache:find_spell( spellID, rank )
     spell.initial_stacks    = spell.initial_stacks or spell.max_stacks
     spell.trigger_rate      = spell.trigger_rate or 1
     
+    spell.frontal           = spell.frontal or false
     spell.channeled         = spell.channeled or false
     spell.duration_hasted   = spell.duration_hasted or false
     spell.ignores_armor     = spell.ignores_armor or false

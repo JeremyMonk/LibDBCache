@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-10 - World of Warcraft 10.2.7.55261
+-- Database generated from DBCache on 2024-07-12 - World of Warcraft 10.2.7.55261
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.7", 55261 ) then 
@@ -376,6 +376,7 @@ DBC = {
     cooldown = 15,
 
     starts_combat = true,
+    frontal = true,
     ignores_armor = true, -- Fire
     may_miss = true,
     may_crit = true,
@@ -511,6 +512,7 @@ DBC = {
     tokenName = "fists_of_fury",
     school = 0x01,
 
+    frontal = true,
     may_miss = true,
     may_crit = true,
 
@@ -4059,6 +4061,7 @@ DBC = {
     school = 0x04,
 
     starts_combat = true,
+    frontal = true,
     ignores_armor = true, -- Fire
     may_miss = true,
     may_crit = true,
@@ -4988,6 +4991,7 @@ DBC = {
     cooldown = 40,
     duration = 6,
 
+    frontal = true,
     may_miss = true,
     may_crit = true,
 
@@ -5449,6 +5453,7 @@ DBC = {
     school = 0x01,
 
     starts_combat = true,
+    frontal = true,
     may_miss = true,
     may_crit = true,
 
@@ -5468,6 +5473,7 @@ DBC = {
     school = 0x01,
 
     starts_combat = true,
+    frontal = true,
     may_miss = true,
     may_crit = true,
 
@@ -5516,6 +5522,7 @@ DBC = {
     tokenName = "djaruun_pillar_of_the_elder_flame",
     school = 0x04,
 
+    frontal = true,
     ignores_armor = true, -- Fire
     may_miss = true,
     may_crit = true,
