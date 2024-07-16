@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-12 - World of Warcraft 10.2.7.55261
+-- Database generated from DBCache on 2024-07-16 - World of Warcraft 10.2.7.55261
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "10.2.7", 55261 ) then 
@@ -197,6 +197,7 @@ DBC = {
     tick_zero = true,
     dot_hasted = true,
     pandemic = true,
+    delay_auto_attack = true,
 
     [1] = { -- (id=110004) 
       type = 6, -- Apply Aura
@@ -548,6 +549,7 @@ DBC = {
     tick_zero = true,
     dot_hasted = true,
     pandemic = true,
+    delay_auto_attack = true,
 
     [1] = { -- (id=134063) 
       type = 6, -- Apply Aura
@@ -3243,6 +3245,7 @@ DBC = {
     tick_zero = true,
     dot_hasted = true,
     pandemic = true,
+    delay_auto_attack = true,
 
     [1] = { -- (id=811180) 
       type = 6, -- Apply Aura
