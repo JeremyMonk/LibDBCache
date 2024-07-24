@@ -1,4 +1,4 @@
-## Interface: 100207, 110002
+## Interface: 100207, 110000, 110002
 ## Title: LibDBCache
 ## Author: Jeremy
 ## Version: 1.0
@@ -8,7 +8,6 @@
 ## Dependencies: WeakAuras
 definitions.lua
 main.lua
-database/db_100207_54577.lua
-database/db_100207_55165.lua
 database/db_100207_55261.lua
-database/db_110002_55522.lua
+database/db_110000_55818.lua
+database/db_110002_55763.lua

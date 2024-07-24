@@ -106,6 +106,7 @@
 451462 # Ordered Elements (Buff)
 455071 # Ox Stance (Buff)
 454970 # Memory of the Monastery (Buff)
+450832 # Fatal Touch (Buff)
 
 # Monk Class Tree
 
