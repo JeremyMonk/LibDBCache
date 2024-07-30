@@ -95,6 +95,7 @@
 116768 # Blackout Kick!
 325202 # Dance of Chiji buff
 195321 # Transfer the Power (Buff)
+323999 # Empowered Tiger Lightning
 
 451297 # Momentum Boost Damage (Buff)
 451298 # Momentum Boost Speed (Buff)
@@ -204,7 +205,6 @@
 325201 # Dance of Chi-Ji
 459839 # Darting Hurricane
 451823 # Dual Threat
-323999 # Empowered Tiger Lightning
 451498 # Energy Burst
 394923 # Fatal Flying Guillotine
 388854 # Flashing Fists
@@ -236,6 +236,7 @@
 451515 # Sequenced Strikes
 392982 # Shadowboxing Treads
 451573 # Singularly Focused Jade
+137639 # Storm, Earth, and Fire
 116645 # Teachings of the Monastery
 122470 # Touch of Karma
 388856 # Touch of the Tiger

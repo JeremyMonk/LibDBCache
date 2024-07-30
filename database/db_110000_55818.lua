@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-24 - World of Warcraft 11.0.0.55818
+-- Database generated from DBCache on 2024-07-30 - World of Warcraft 11.0.0.55818
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 55818 ) then 
@@ -2464,6 +2464,113 @@ DBC = {
       pct = -150.000,
       affected_spells = {
         327104,        388193,
+      },
+    },
+  },
+  -- Storm, Earth, and Fire 
+  [137639] = {
+    localName = "Storm, Earth, and Fire",
+    tokenName = "storm_earth_and_fire",
+    school = 0x08,
+    cooldown = 16,
+    duration = 15,
+    max_stacks = 2,
+
+    ignores_armor = true, -- Nature
+    may_crit = true,
+
+    [1] = { -- (id=180816) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        100780,        100784,        107270,        107428,        116847,
+        117418,        117952,        132463,        132466,        132467,
+        148187,        152175,        158221,        185099,        205523,
+        228649,        261947,        261977,        331433,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [2] = { -- (id=181516) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        100780,        100784,        107270,        107428,        116847,
+        117418,        117952,        132463,        132466,        132467,
+        148187,        152175,        158221,        185099,        205523,
+        228649,        261947,        261977,        331433,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [3] = { -- (id=181626) 
+      type = 6, -- Apply Aura
+      subtype = 344, -- Modify Auto Attack Damage Done Percent
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+    },
+    [4] = { -- (id=289040) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+    },
+    [5] = { -- (id=330909) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 23, -- Spell Effect 3
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+    [6] = { -- (id=1152083) 
+      type = 6, -- Apply Aura
+      subtype = 332, -- Override Action Spell
+      base_value = 221771,
+      scaled_value = 221771,
+      pvp_coefficient = 1.00000,
+      pct = 2217.710,
+      affected_spells = {
+        137639,        221771,      },
+    },
+    [7] = { -- (id=1157075) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        443038,
+      },
+    },
+    [8] = { -- (id=1157076) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        443039,
       },
     },
   },
@@ -8660,9 +8767,9 @@ DBC = {
     387046,    386965,    383994,    383785,    383707,
     383700,    383698,    383697,    325201,    325177,
     325153,    322507,    322120,    322113,    196740,
-    196736,    196730,    195300,    152175,    123986,
-    122783,    121817,    121253,    119582,    116847,
-    116645,    115399,    115181,    113656,
+    196736,    196730,    195300,    152175,    137639,
+    123986,    122783,    121817,    121253,    119582,
+    116847,    116645,    115399,    115181,    113656,
   },
 }
 
