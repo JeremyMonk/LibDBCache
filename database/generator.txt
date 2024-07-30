@@ -219,6 +219,7 @@
 457974 # Jadefire Fists
 388193 # Jadefire Stomp
 391412 # Jadefire Harmony
+392979 # Jade Ignition
 451529 # Knowledge of the Broken Temple
 220357 # Mark of the Crane
 451454 # Martial Mixture
