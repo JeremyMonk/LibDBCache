@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-30 - World of Warcraft 11.0.0.55818
+-- Database generated from DBCache on 2024-08-01 - World of Warcraft 11.0.0.55818
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 55818 ) then 
@@ -2916,6 +2916,25 @@ DBC = {
       scaled_value = 1,
       pvp_coefficient = 1.00000,
       pct = 0.010,
+    },
+  },
+  -- Whirling Dragon Punch 
+  [196742] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+    school = 0x01,
+    duration = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=288847) 
+      type = 6, -- Apply Aura
+      subtype = 226, -- Periodic Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Teachings of the Monastery 

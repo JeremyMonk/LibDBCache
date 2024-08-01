@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-30 - World of Warcraft 11.0.2.55763
+-- Database generated from DBCache on 2024-07-31 - World of Warcraft 11.0.2.55789
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.2", 55763 ) then 
+if not validVersion( "11.0.2", 55789 ) then 
   return
 end
 
@@ -2610,6 +2610,25 @@ DBC = {
       pct = 0.010,
     },
   },
+  -- Whirling Dragon Punch 
+  [196742] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+    school = 0x01,
+    duration = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=288847) 
+      type = 6, -- Apply Aura
+      subtype = 226, -- Periodic Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Teachings of the Monastery 
   [202090] = {
     localName = "Teachings of the Monastery",
@@ -2671,10 +2690,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 3, -- Spell Effect 1
-      base_value = 255,
-      scaled_value = 255,
+      base_value = 243,
+      scaled_value = 243,
       pvp_coefficient = 1.00000,
-      pct = 2.550,
+      pct = 2.430,
       affected_spells = {
         115069,        322120,
       },
@@ -4869,7 +4888,7 @@ DBC = {
       subtype = 11, -- Add Target
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.45000,
+      ap_coefficient = 1.80000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -7030,7 +7049,7 @@ DBC = {
 
     [1] = { -- (id=1151389) 
       type = 6, -- Apply Aura
-      subtype = 80, -- Modify Attribute Percent
+      subtype = 137, -- Modify Total Stat Percent
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -8503,6 +8522,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.2"
-DBC_BUILD = 55763
+DBC_BUILD = 55789
 -- ------------------------------------------------------------------------------
 

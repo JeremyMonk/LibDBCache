@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-23 - World of Warcraft 10.2.7.55261
+-- Database generated from DBCache on 2024-08-01 - World of Warcraft 11.0.2.55959
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "10.2.7", 55261 ) then 
+if not validVersion( "11.0.2", 55959 ) then 
   return
 end
 
@@ -117,7 +117,7 @@ DBC = {
     tokenName = "flying_serpent_kick",
     school = 0x01,
     gcd = 1,
-    cooldown = 25,
+    cooldown = 30,
     duration = 1.5,
 
     may_crit = true,
@@ -125,6 +125,7 @@ DBC = {
     [1] = { -- (id=110001) 
       type = 6, -- Apply Aura
       subtype = 373, -- Unknown
+      property = 8, -- Uncontrolled No Backwards
       base_value = 300,
       scaled_value = 300,
       pvp_coefficient = 1.00000,
@@ -197,7 +198,6 @@ DBC = {
     tick_zero = true,
     dot_hasted = true,
     pandemic = true,
-    delay_auto_attack = true,
 
     [1] = { -- (id=110004) 
       type = 6, -- Apply Aura
@@ -353,8 +353,6 @@ DBC = {
     localName = "Chi Wave",
     tokenName = "chi_wave",
     school = 0x08,
-    gcd = 1.5,
-    cooldown = 15,
 
     ignores_armor = true, -- Nature
     may_miss = true,
@@ -384,9 +382,11 @@ DBC = {
 
     [1] = { -- (id=128879) 
       type = 2, -- School Damage
+      subtype = 11, -- Add Target
+      property = 17, -- Combat Reach to AOE
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.48000,
+      ap_coefficient = 0.53280,
       pvp_coefficient = 1.35000,
       pct = 0.000,
     },
@@ -521,8 +521,8 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 1.50000,
-      pvp_coefficient = 1.06500,
+      ap_coefficient = 1.15000,
+      pvp_coefficient = 1.00000,
       pct = 0.000,
     },
     [2] = { -- (id=155264) 
@@ -561,6 +561,14 @@ DBC = {
       pct = 0.000,
     },
     [2] = { -- (id=225417) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
+    },
+    [3] = { -- (id=1166995) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = 200,
@@ -611,7 +619,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.81000,
+      ap_coefficient = 0.99900,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -653,10 +661,10 @@ DBC = {
       pct = 0.050,
     },
   },
-  -- Power Strikes 
+  -- Combat Wisdom 
   [121817] = {
-    localName = "Power Strikes",
-    tokenName = "power_strikes",
+    localName = "Combat Wisdom",
+    tokenName = "combat_wisdom",
     school = 0x01,
 
     may_miss = true,
@@ -667,18 +675,18 @@ DBC = {
     [1] = { -- (id=153005) 
       type = 6, -- Apply Aura
       subtype = 226, -- Periodic Dummy
-      base_value = 1,
-      scaled_value = 1,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.010,
+      pct = 0.020,
     },
     [2] = { -- (id=623380) 
       type = 6, -- Apply Aura
       subtype = 226, -- Periodic Dummy
-      base_value = 100,
-      scaled_value = 100,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 1.000,
+      pct = 0.300,
     },
   },
   -- Healing Elixir 
@@ -692,10 +700,11 @@ DBC = {
 
     [1] = { -- (id=153853) 
       type = 136, -- Direct Heal Percent
-      base_value = 15,
-      scaled_value = 15,
+      subtype = 6, -- Suppress Points Stacking
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.100,
     },
   },
   -- Touch of Karma 
@@ -782,7 +791,7 @@ DBC = {
     may_crit = true,
 
     [1] = { -- (id=155941) 
-      type = 2, -- School Damage
+      type = 3, -- Dummy
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.08789,
@@ -847,13 +856,15 @@ DBC = {
 
     [1] = { -- (id=156697) 
       type = 179, -- Create Area Trigger
-      base_value = 6,
-      scaled_value = 6,
+      subtype = 1, -- Position is facing relative
+      base_value = 5,
+      scaled_value = 5,
       pvp_coefficient = 1.00000,
-      pct = 0.060,
+      pct = 0.050,
     },
     [2] = { -- (id=201318) 
       type = 179, -- Create Area Trigger
+      subtype = 1, -- Position is facing relative
       base_value = 0,
       scaled_value = 0,
       pvp_coefficient = 1.00000,
@@ -906,10 +917,10 @@ DBC = {
       pct = 0.000,
     },
   },
-  -- Power Strikes 
+  -- Combat Wisdom 
   [129914] = {
-    localName = "Power Strikes",
-    tokenName = "power_strikes",
+    localName = "Combat Wisdom",
+    tokenName = "combat_wisdom",
     school = 0x01,
     duration = -1,
     max_stacks = 1,
@@ -929,12 +940,12 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 100,
-      scaled_value = 100,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 1.000,
+      pct = 0.300,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
   },
@@ -953,7 +964,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.14202,
+      ap_coefficient = 0.20000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -1070,49 +1081,53 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 11,
-      scaled_value = 11,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.110,
+      pct = 0.150,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=191108) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 11,
-      scaled_value = 11,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.110,
+      pct = 0.150,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
-        117418,        117952,        121253,        123586,        124081,
-        132467,        148135,        148187,        158221,        185099,
-        196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
+        117418,        117952,        121253,        123586,        123725,
+        124081,        132467,        148135,        148187,        158221,
+        185099,        196608,        196733,        205523,        228649,
+        261947,        261977,        275673,        288636,        325153,
+        327264,        330903,        330911,        331433,        337342,
         345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        392959,        393056,        393400,        393566,        393786,
+        395519,        395521,        418360,        443038,        443088,
+        443127,        443263,        443611,        451767,        451839,
+        452130,        457917,
       },
     },
     [3] = { -- (id=191109) 
       type = 6, -- Apply Aura
       subtype = 429, -- Modify Pet Damage Done Percent
-      base_value = 50,
-      scaled_value = 50,
+      base_value = 72,
+      scaled_value = 72,
       pvp_coefficient = 1.00000,
-      pct = 0.500,
+      pct = 0.720,
     },
     [4] = { -- (id=191110) 
       type = 6, -- Apply Aura
@@ -1140,10 +1155,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -44,
-      scaled_value = -44,
+      base_value = -38,
+      scaled_value = -38,
       pvp_coefficient = 1.00000,
-      pct = -0.440,
+      pct = -0.380,
       affected_spells = {
         116847,        148187,
       },
@@ -1152,12 +1167,12 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 115,
-      scaled_value = 115,
+      base_value = 139,
+      scaled_value = 139,
       pvp_coefficient = 1.00000,
-      pct = 1.150,
+      pct = 1.390,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [8] = { -- (id=260839) 
@@ -1228,9 +1243,11 @@ DBC = {
         100780,        100784,        101546,        101643,        107428,
         115078,        115098,        115450,        116095,        116841,
         116844,        116847,        117952,        119381,        123986,
-        130654,        148135,        185099,        196725,        198898,
-        205523,        218164,        228649,        261682,        280184,
-        310454,        322101,        322109,        322729,        387184,
+        130654,        148135,        185099,        196725,        205523,
+        218164,        228649,        261682,        280184,        310454,
+        322101,        322109,        322111,        322729,        331433,
+        387184,        392959,        434774,        450342,        451968,
+        461404,
       },
     },
     [15] = { -- (id=260846) 
@@ -1263,7 +1280,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = -0.500,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [18] = { -- (id=733911) 
@@ -1288,151 +1305,13 @@ DBC = {
     },
     [20] = { -- (id=743520) 
       type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
-      property = 3, -- Spell Effect 1
-      base_value = -60,
-      scaled_value = -60,
+      subtype = 531, -- Modify Guardian Damage Done Percent
+      base_value = 72,
+      scaled_value = 72,
       pvp_coefficient = 1.00000,
-      pct = -0.600,
-      affected_spells = {
-        278577,
-      },
+      pct = 0.720,
     },
     [21] = { -- (id=745150) 
-      type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
-      property = 21, -- Spell Global Cooldown
-      base_value = -33,
-      scaled_value = -33,
-      pvp_coefficient = 1.00000,
-      pct = -0.330,
-      affected_spells = {
-        285933,        293019,        293030,        293031,        293032,
-        294650,        294653,        294655,        294668,        294685,
-        294687,        294688,        294689,        294906,        294907,
-        294908,        294909,        294910,        294912,        294919,
-        294920,        294922,        294926,        294945,        294946,
-        294951,        294964,        294966,        294969,        294970,
-        294972,        295046,        295047,        295048,        295078,
-        295098,        295114,        295119,        295129,        295137,
-        295160,        295164,        295165,        295166,        295186,
-        295206,        295208,        295209,        295210,        295246,
-        295248,        295251,        295252,        295253,        295258,
-        295261,        295262,        295263,        295264,        295293,
-        295305,        295306,        295307,        295308,        295309,
-        295310,        295333,        295337,        295338,        295339,
-        295349,        295351,        295352,        295353,        295354,
-        295358,        295363,        295364,        295365,        295366,
-        295367,        295368,        295369,        295372,        295373,
-        295374,        295376,        295377,        295379,        295380,
-        295381,        295746,        295747,        295748,        295749,
-        295750,        295834,        295835,        295836,        295837,
-        295838,        295839,        295840,        295841,        295842,
-        295843,        295844,        295845,        295846,        295855,
-        295856,        295872,        295883,        295892,        296004,
-        296031,        296032,        296036,        296038,        296050,
-        296059,        296061,        296062,        296067,        296072,
-        296074,        296075,        296081,        296086,        296089,
-        296091,        296094,        296101,        296102,        296103,
-        296104,        296136,        296192,        296193,        296197,
-        296200,        296201,        296203,        296207,        296211,
-        296213,        296214,        296220,        296221,        296230,
-        296231,        296232,        296320,        296321,        296322,
-        296324,        296325,        296326,        296328,        296330,
-        297108,        297120,        297122,        297126,        297147,
-        297162,        297168,        297177,        297178,        297365,
-        297375,        297384,        297411,        297412,        297542,
-        297544,        297546,        297547,        297736,        297737,
-        297738,        297739,        297745,        297866,        297868,
-        297869,        297961,        297964,        297965,        297969,
-        297970,        297971,        298080,        298081,        298082,
-        298083,        298084,        298168,        298169,        298174,
-        298182,        298183,        298184,        298185,        298186,
-        298193,        298197,        298204,        298268,        298273,
-        298274,        298275,        298277,        298278,        298279,
-        298280,        298281,        298282,        298284,        298286,
-        298287,        298288,        298292,        298302,        298304,
-        298309,        298312,        298337,        298339,        298343,
-        298351,        298352,        298353,        298357,        298373,
-        298376,        298377,        298404,        298405,        298407,
-        298409,        298412,        298414,        298415,        298416,
-        298418,        298419,        298420,        298448,        298449,
-        298450,        298452,        298453,        298455,        298456,
-        298457,        298601,        298603,        298604,        298605,
-        298606,        298607,        298609,        298611,        298618,
-        298620,        298621,        298623,        298627,        298628,
-        299039,        299149,        299237,        299238,        299239,
-        299240,        299273,        299274,        299275,        299277,
-        299296,        299297,        299298,        299299,        299300,
-        299302,        299304,        299306,        299307,        299309,
-        299310,        299312,        299313,        299314,        299315,
-        299316,        299317,        299318,        299320,        299321,
-        299322,        299323,        299324,        299333,        299334,
-        299335,        299336,        299337,        299338,        299343,
-        299345,        299346,        299347,        299348,        299349,
-        299350,        299353,        299354,        299355,        299357,
-        299358,        299367,        299368,        299369,        299370,
-        299371,        299372,        299373,        299374,        299375,
-        299376,        299377,        299378,        299396,        299506,
-        299507,        299508,        299509,        299510,        299511,
-        299512,        299513,        299514,        299515,        299516,
-        299517,        299518,        299519,        299520,        299521,
-        299522,        299523,        299524,        299526,        299527,
-        299528,        299529,        299530,        299538,        299539,
-        299540,        299541,        299542,        299544,        299550,
-        299551,        299552,        299554,        299559,        299560,
-        299624,        299875,        299876,        299878,        299879,
-        299882,        299883,        299885,        299887,        299932,
-        299933,        299935,        299936,        299939,        299940,
-        299943,        299944,        299958,        299959,        299984,
-        299988,        299989,        299991,        300002,        300003,
-        300004,        300005,        300009,        300010,        300012,
-        300013,        300015,        300016,        300018,        300020,
-        300091,        300573,        300575,        300576,        300577,
-        300949,        302555,        302656,        302731,        302778,
-        302780,        302864,        302910,        302916,        302917,
-        302932,        302952,        302953,        302957,        302961,
-        302962,        302982,        302983,        302984,        302985,
-        303342,        303344,        303347,        303349,        303351,
-        303399,        303412,        303448,        303460,        303463,
-        303472,        303474,        303476,        303823,        303824,
-        303834,        303835,        303836,        303837,        303868,
-        303892,        303894,        303897,        304014,        304015,
-        304016,        304017,        304018,        304019,        304020,
-        304021,        304022,        304023,        304038,        304055,
-        304056,        304081,        304086,        304088,        304089,
-        304121,        304123,        304125,        304375,        304533,
-        304633,        304693,        304720,        304722,        304724,
-        304775,        305148,        305350,        305352,        305500,
-        305694,        305723,        310422,        310425,        310426,
-        310442,        310479,        310530,        310592,        310595,
-        310597,        310599,        310600,        310601,        310602,
-        310603,        310605,        310606,        310607,        310608,
-        310609,        310690,        310705,        310710,        310711,
-        310712,        311166,        311167,        311177,        311185,
-        311186,        311187,        311188,        311192,        311194,
-        311195,        311197,        311198,        311201,        311202,
-        311203,        311206,        311207,        311209,        311210,
-        311211,        311212,        311213,        311214,        311215,
-        311216,        311217,        311302,        311303,        311304,
-        311306,        311308,        311309,        311310,        311311,
-        311947,        312130,        312725,        312734,        312764,
-        312768,        312770,        312771,        312773,        312774,
-        312775,        312793,        312794,        312795,        312796,
-        312915,        312920,        312922,        312927,        312928,
-        313310,        313643,        313917,        313918,        313919,
-        313920,        313921,        313922,
-      },
-    },
-    [22] = { -- (id=1032358) 
-      type = 6, -- Apply Aura
-      subtype = 531, -- Modify Guardian Damage Done Percent
-      base_value = 50,
-      scaled_value = 50,
-      pvp_coefficient = 1.00000,
-      pct = 0.500,
-    },
-    [23] = { -- (id=1047416) 
       type = 6, -- Apply Aura
       subtype = 218, -- Apply Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1440,23 +1319,20 @@ DBC = {
       scaled_value = -45,
       pvp_coefficient = 1.00000,
       pct = -0.450,
-      affected_spells = {
-        389578,        391400,
-      },
     },
-    [24] = { -- (id=1047427) 
+    [22] = { -- (id=1032358) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -15,
-      scaled_value = -15,
+      base_value = 11,
+      scaled_value = 11,
       pvp_coefficient = 1.00000,
-      pct = -0.150,
+      pct = 0.110,
       affected_spells = {
         101546,        107270,        322729,
       },
     },
-    [25] = { -- (id=1080995) 
+    [23] = { -- (id=1047416) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1468,7 +1344,7 @@ DBC = {
         116670,
       },
     },
-    [26] = { -- (id=1080996) 
+    [24] = { -- (id=1047427) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1480,7 +1356,7 @@ DBC = {
         130654,        132463,
       },
     },
-    [27] = { -- (id=1080997) 
+    [25] = { -- (id=1080995) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
@@ -1492,32 +1368,32 @@ DBC = {
         115175,        209525,
       },
     },
-    [28] = { -- (id=1090002) 
+    [26] = { -- (id=1080996) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 32,
-      scaled_value = 32,
+      base_value = 47,
+      scaled_value = 47,
       pvp_coefficient = 1.00000,
-      pct = 0.320,
+      pct = 0.470,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
-    [29] = { -- (id=1090003) 
+    [27] = { -- (id=1080997) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 0,
+      scaled_value = 0,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.000,
       affected_spells = {
         123986,        130654,        132466,        132467,        148135,
-        198898,        261682,
+        261682,        461404,
       },
     },
-    [30] = { -- (id=1097796) 
+    [28] = { -- (id=1090002) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1529,16 +1405,16 @@ DBC = {
         100784,        205523,        228649,
       },
     },
-    [31] = { -- (id=1151385) 
+    [29] = { -- (id=1090003) 
       type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
+      subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
-      base_value = -30,
-      scaled_value = -30,
+      base_value = -90000,
+      scaled_value = -90000,
       pvp_coefficient = 1.00000,
-      pct = -0.300,
+      pct = -900.000,
       affected_spells = {
-        389541,
+        388813,
       },
     },
   },
@@ -1555,38 +1431,40 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 4,
-      scaled_value = 4,
-      pvp_coefficient = 2.00000,
-      pct = 0.040,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
-        130654,        132463,        162530,        191840,        191894,
-        198487,        198533,        227344,        274062,        274774,
-        274912,        297850,        311123,        322101,        325209,
-        325212,        328283,        328748,        337268,        343737,
-        343819,        344008,        345727,        388044,        388207,
-        388615,        388668,        399230,        399491,        407058,
-        425804,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
       },
     },
     [2] = { -- (id=191104) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 4,
-      scaled_value = 4,
-      pvp_coefficient = 2.00000,
-      pct = 0.040,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
-        130654,        132463,        162530,        191840,        191894,
-        198487,        198533,        227344,        274062,        274774,
-        274912,        297850,        311123,        322101,        325209,
-        325212,        328283,        328748,        337268,        343737,
-        343819,        344008,        345727,        388044,        388207,
-        388615,        388668,        399230,        399491,        407058,
-        425804,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
       },
     },
     [3] = { -- (id=191105) 
@@ -1625,7 +1503,8 @@ DBC = {
         100780,        100784,        101546,        101643,        107428,
         115078,        116095,        116847,        119381,        185099,
         196725,        205523,        228649,        280184,        322109,
-        322729,
+        322111,        322729,        331433,        392959,        434774,
+        450342,
       },
     },
     [7] = { -- (id=260828) 
@@ -1637,7 +1516,7 @@ DBC = {
       pct = 1.000,
       affected_spells = {
         100780,        100784,        101546,        205523,        228649,
-        322729,
+        322729,        331433,
       },
     },
     [8] = { -- (id=260829) 
@@ -1665,7 +1544,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 20.000,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
     [11] = { -- (id=260832) 
@@ -1677,7 +1556,7 @@ DBC = {
       pvp_coefficient = 0.62000,
       pct = 0.790,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
     [12] = { -- (id=260833) 
@@ -1686,7 +1565,7 @@ DBC = {
       property = 0, -- Spell Direct Amount
       base_value = 4,
       scaled_value = 4,
-      pvp_coefficient = 0.86700,
+      pvp_coefficient = 1.00000,
       pct = 0.040,
       affected_spells = {
         100784,        205523,        228649,
@@ -1701,7 +1580,7 @@ DBC = {
       pvp_coefficient = 0.34300,
       pct = 2.450,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [14] = { -- (id=260835) 
@@ -1730,26 +1609,6 @@ DBC = {
     },
     [16] = { -- (id=745151) 
       type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
-      property = 3, -- Spell Effect 1
-      base_value = -28,
-      scaled_value = -28,
-      pvp_coefficient = 1.00000,
-      pct = -0.280,
-      affected_spells = {
-        278577,
-      },
-    },
-    [17] = { -- (id=777114) 
-      type = 6, -- Apply Aura
-      subtype = 320, -- Modify Ranged Attack Speed Percent
-      base_value = 100,
-      scaled_value = 100,
-      pvp_coefficient = 1.00000,
-      pct = 1.000,
-    },
-    [18] = { -- (id=869541) 
-      type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 14, -- Spell Resource Cost
       base_value = -100,
@@ -1757,10 +1616,10 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = -1.000,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
-    [19] = { -- (id=1032359) 
+    [17] = { -- (id=777114) 
       type = 6, -- Apply Aura
       subtype = 429, -- Modify Pet Damage Done Percent
       base_value = 0,
@@ -1768,7 +1627,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
-    [20] = { -- (id=1032360) 
+    [18] = { -- (id=869541) 
       type = 6, -- Apply Aura
       subtype = 531, -- Modify Guardian Damage Done Percent
       base_value = 0,
@@ -1776,7 +1635,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
-    [21] = { -- (id=1041449) 
+    [19] = { -- (id=1032359) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
@@ -1788,19 +1647,19 @@ DBC = {
         116645,
       },
     },
-    [22] = { -- (id=1041505) 
+    [20] = { -- (id=1032360) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -8,
-      scaled_value = -8,
+      base_value = 0,
+      scaled_value = 0,
       pvp_coefficient = 1.00000,
-      pct = -0.080,
+      pct = 0.000,
       affected_spells = {
         116670,
       },
     },
-    [23] = { -- (id=1042524) 
+    [21] = { -- (id=1041449) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
@@ -1808,22 +1667,19 @@ DBC = {
       scaled_value = 10,
       pvp_coefficient = 1.00000,
       pct = 0.100,
-      affected_spells = {
-        386276,
-      },
     },
-    [24] = { -- (id=1078912) 
+    [22] = { -- (id=1041505) 
       type = 6, -- Apply Aura
       subtype = 453, -- Modify Recharge Time
-      base_value = -10000,
-      scaled_value = -10000,
+      base_value = -15000,
+      scaled_value = -15000,
       pvp_coefficient = 1.00000,
-      pct = -100.000,
+      pct = -150.000,
       affected_spells = {
         327104,        388193,
       },
     },
-    [25] = { -- (id=1081588) 
+    [23] = { -- (id=1042524) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
@@ -1832,7 +1688,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.030,
     },
-    [26] = { -- (id=1081589) 
+    [24] = { -- (id=1078912) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 12, -- Spell Effect 2
@@ -1841,7 +1697,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.050,
     },
-    [27] = { -- (id=1093851) 
+    [25] = { -- (id=1081588) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1849,8 +1705,11 @@ DBC = {
       scaled_value = 10,
       pvp_coefficient = 0.00000,
       pct = 0.100,
+      affected_spells = {
+        443088,        443263,        443611,        457917,
+      },
     },
-    [28] = { -- (id=1093854) 
+    [26] = { -- (id=1081589) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
@@ -1858,44 +1717,47 @@ DBC = {
       scaled_value = 10,
       pvp_coefficient = 0.00000,
       pct = 0.100,
+      affected_spells = {
+        443088,        443263,        443611,        457917,
+      },
     },
-    [29] = { -- (id=1102395) 
+    [27] = { -- (id=1093851) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
-      base_value = 10,
-      scaled_value = 10,
-      pvp_coefficient = 0.00000,
-      pct = 0.100,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         414131,
       },
     },
-    [30] = { -- (id=1102396) 
+    [28] = { -- (id=1093854) 
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 12, -- Spell Effect 2
-      base_value = 5,
-      scaled_value = 5,
+      base_value = 0,
+      scaled_value = 0,
       pvp_coefficient = 1.00000,
-      pct = 0.050,
+      pct = 0.000,
       affected_spells = {
         414131,
       },
     },
-    [31] = { -- (id=1103899) 
+    [29] = { -- (id=1102395) 
       type = 6, -- Apply Aura
       subtype = 218, -- Apply Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -12,
-      scaled_value = -12,
+      base_value = 0,
+      scaled_value = 0,
       pvp_coefficient = 1.00000,
-      pct = -0.120,
+      pct = 0.000,
       affected_spells = {
         425804,
       },
     },
-    [32] = { -- (id=1108334) 
+    [30] = { -- (id=1102396) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -1904,7 +1766,7 @@ DBC = {
       pvp_coefficient = 0.52800,
       pct = 5.890,
       affected_spells = {
-        322101,
+        322101,        451968,
       },
     },
   },
@@ -1921,49 +1783,53 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=191100) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [3] = { -- (id=191101) 
       type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 3,
-      scaled_value = 3,
-      pvp_coefficient = 1.57143,
-      pct = 0.030,
+      subtype = 226, -- Periodic Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
     [4] = { -- (id=191102) 
       type = 6, -- Apply Aura
@@ -1974,54 +1840,53 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.020,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [5] = { -- (id=191103) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 26,
-      scaled_value = 26,
+      base_value = -20,
+      scaled_value = -20,
       pvp_coefficient = 1.00000,
-      pct = 0.260,
+      pct = -0.200,
       affected_spells = {
-        100780,        100784,        107428,        185099,        205523,
-        228649,
+        123986,        130654,        148135,        261682,        461404,
       },
     },
     [6] = { -- (id=260817) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 22,
-      scaled_value = 22,
+      base_value = 46,
+      scaled_value = 46,
       pvp_coefficient = 1.00000,
-      pct = 0.220,
+      pct = 0.460,
       affected_spells = {
-        116847,        132466,        132467,        148187,
+        116847,        148187,
       },
     },
     [7] = { -- (id=260818) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
-      property = 22, -- Spell Periodic Amount
-      base_value = 22,
-      scaled_value = 22,
+      property = 0, -- Spell Direct Amount
+      base_value = 159,
+      scaled_value = 159,
       pvp_coefficient = 1.00000,
-      pct = 0.220,
+      pct = 1.590,
       affected_spells = {
-        196608,
+        100780,        331433,
       },
     },
     [8] = { -- (id=260819) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 140,
-      scaled_value = 140,
+      base_value = 165,
+      scaled_value = 165,
       pvp_coefficient = 1.00000,
-      pct = 1.400,
+      pct = 1.650,
       affected_spells = {
         107270,
       },
@@ -2040,7 +1905,7 @@ DBC = {
     },
     [10] = { -- (id=260821) 
       type = 6, -- Apply Aura
-      subtype = 35, -- Increase Energy
+      subtype = 35, -- Increase Resource
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -2066,9 +1931,11 @@ DBC = {
         100780,        100784,        101546,        101643,        107428,
         115078,        115098,        115450,        116095,        116841,
         116844,        116847,        117952,        119381,        123986,
-        130654,        148135,        185099,        196725,        198898,
-        205523,        218164,        228649,        261682,        280184,
-        310454,        322101,        322109,        322729,        387184,
+        130654,        148135,        185099,        196725,        205523,
+        218164,        228649,        261682,        280184,        310454,
+        322101,        322109,        322111,        322729,        331433,
+        387184,        392959,        434774,        450342,        451968,
+        461404,
       },
     },
     [13] = { -- (id=739336) 
@@ -2081,132 +1948,6 @@ DBC = {
     },
     [14] = { -- (id=739337) 
       type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
-      property = 21, -- Spell Global Cooldown
-      base_value = -33,
-      scaled_value = -33,
-      pvp_coefficient = 1.00000,
-      pct = -0.330,
-      affected_spells = {
-        285933,        293019,        293030,        293031,        293032,
-        294650,        294653,        294655,        294668,        294685,
-        294687,        294688,        294689,        294906,        294907,
-        294908,        294909,        294910,        294912,        294919,
-        294920,        294922,        294926,        294945,        294946,
-        294951,        294964,        294966,        294969,        294970,
-        294972,        295046,        295047,        295048,        295078,
-        295098,        295114,        295119,        295129,        295137,
-        295160,        295164,        295165,        295166,        295186,
-        295206,        295208,        295209,        295210,        295246,
-        295248,        295251,        295252,        295253,        295258,
-        295261,        295262,        295263,        295264,        295293,
-        295305,        295306,        295307,        295308,        295309,
-        295310,        295333,        295337,        295338,        295339,
-        295349,        295351,        295352,        295353,        295354,
-        295358,        295363,        295364,        295365,        295366,
-        295367,        295368,        295369,        295372,        295373,
-        295374,        295376,        295377,        295379,        295380,
-        295381,        295746,        295747,        295748,        295749,
-        295750,        295834,        295835,        295836,        295837,
-        295838,        295839,        295840,        295841,        295842,
-        295843,        295844,        295845,        295846,        295855,
-        295856,        295872,        295883,        295892,        296004,
-        296031,        296032,        296036,        296038,        296050,
-        296059,        296061,        296062,        296067,        296072,
-        296074,        296075,        296081,        296086,        296089,
-        296091,        296094,        296101,        296102,        296103,
-        296104,        296136,        296192,        296193,        296197,
-        296200,        296201,        296203,        296207,        296211,
-        296213,        296214,        296220,        296221,        296230,
-        296231,        296232,        296320,        296321,        296322,
-        296324,        296325,        296326,        296328,        296330,
-        297108,        297120,        297122,        297126,        297147,
-        297162,        297168,        297177,        297178,        297365,
-        297375,        297384,        297411,        297412,        297542,
-        297544,        297546,        297547,        297736,        297737,
-        297738,        297739,        297745,        297866,        297868,
-        297869,        297961,        297964,        297965,        297969,
-        297970,        297971,        298080,        298081,        298082,
-        298083,        298084,        298168,        298169,        298174,
-        298182,        298183,        298184,        298185,        298186,
-        298193,        298197,        298204,        298268,        298273,
-        298274,        298275,        298277,        298278,        298279,
-        298280,        298281,        298282,        298284,        298286,
-        298287,        298288,        298292,        298302,        298304,
-        298309,        298312,        298337,        298339,        298343,
-        298351,        298352,        298353,        298357,        298373,
-        298376,        298377,        298404,        298405,        298407,
-        298409,        298412,        298414,        298415,        298416,
-        298418,        298419,        298420,        298448,        298449,
-        298450,        298452,        298453,        298455,        298456,
-        298457,        298601,        298603,        298604,        298605,
-        298606,        298607,        298609,        298611,        298618,
-        298620,        298621,        298623,        298627,        298628,
-        299039,        299149,        299237,        299238,        299239,
-        299240,        299273,        299274,        299275,        299277,
-        299296,        299297,        299298,        299299,        299300,
-        299302,        299304,        299306,        299307,        299309,
-        299310,        299312,        299313,        299314,        299315,
-        299316,        299317,        299318,        299320,        299321,
-        299322,        299323,        299324,        299333,        299334,
-        299335,        299336,        299337,        299338,        299343,
-        299345,        299346,        299347,        299348,        299349,
-        299350,        299353,        299354,        299355,        299357,
-        299358,        299367,        299368,        299369,        299370,
-        299371,        299372,        299373,        299374,        299375,
-        299376,        299377,        299378,        299396,        299506,
-        299507,        299508,        299509,        299510,        299511,
-        299512,        299513,        299514,        299515,        299516,
-        299517,        299518,        299519,        299520,        299521,
-        299522,        299523,        299524,        299526,        299527,
-        299528,        299529,        299530,        299538,        299539,
-        299540,        299541,        299542,        299544,        299550,
-        299551,        299552,        299554,        299559,        299560,
-        299624,        299875,        299876,        299878,        299879,
-        299882,        299883,        299885,        299887,        299932,
-        299933,        299935,        299936,        299939,        299940,
-        299943,        299944,        299958,        299959,        299984,
-        299988,        299989,        299991,        300002,        300003,
-        300004,        300005,        300009,        300010,        300012,
-        300013,        300015,        300016,        300018,        300020,
-        300091,        300573,        300575,        300576,        300577,
-        300949,        302555,        302656,        302731,        302778,
-        302780,        302864,        302910,        302916,        302917,
-        302932,        302952,        302953,        302957,        302961,
-        302962,        302982,        302983,        302984,        302985,
-        303342,        303344,        303347,        303349,        303351,
-        303399,        303412,        303448,        303460,        303463,
-        303472,        303474,        303476,        303823,        303824,
-        303834,        303835,        303836,        303837,        303868,
-        303892,        303894,        303897,        304014,        304015,
-        304016,        304017,        304018,        304019,        304020,
-        304021,        304022,        304023,        304038,        304055,
-        304056,        304081,        304086,        304088,        304089,
-        304121,        304123,        304125,        304375,        304533,
-        304633,        304693,        304720,        304722,        304724,
-        304775,        305148,        305350,        305352,        305500,
-        305694,        305723,        310422,        310425,        310426,
-        310442,        310479,        310530,        310592,        310595,
-        310597,        310599,        310600,        310601,        310602,
-        310603,        310605,        310606,        310607,        310608,
-        310609,        310690,        310705,        310710,        310711,
-        310712,        311166,        311167,        311177,        311185,
-        311186,        311187,        311188,        311192,        311194,
-        311195,        311197,        311198,        311201,        311202,
-        311203,        311206,        311207,        311209,        311210,
-        311211,        311212,        311213,        311214,        311215,
-        311216,        311217,        311302,        311303,        311304,
-        311306,        311308,        311309,        311310,        311311,
-        311947,        312130,        312725,        312734,        312764,
-        312768,        312770,        312771,        312773,        312774,
-        312775,        312793,        312794,        312795,        312796,
-        312915,        312920,        312922,        312927,        312928,
-        313310,        313643,        313917,        313918,        313919,
-        313920,        313921,        313922,
-      },
-    },
-    [15] = { -- (id=739777) 
-      type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
       base_value = 26,
@@ -2214,36 +1955,35 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.260,
       affected_spells = {
-        100780,        261947,        261977,        392983,        395519,
-        395521,
+        100780,        261947,        261977,        331433,        392983,
+        395519,        395521,
+      },
+    },
+    [15] = { -- (id=739777) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 61,
+      scaled_value = 61,
+      pvp_coefficient = 1.00000,
+      pct = 0.610,
+      affected_spells = {
+        107428,        185099,        392959,
       },
     },
     [16] = { -- (id=984572) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 36,
-      scaled_value = 36,
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.360,
+      pct = 0.200,
       affected_spells = {
-        107428,        185099,
+        392883,
       },
     },
     [17] = { -- (id=984590) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 20,
-      scaled_value = 20,
-      pvp_coefficient = 0.00000,
-      pct = 0.200,
-      affected_spells = {
-        100780,        100784,        205523,        228649,        261947,
-        261977,        392983,        395519,        395521,
-      },
-    },
-    [18] = { -- (id=1003545) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = -11,
@@ -2251,43 +1991,43 @@ DBC = {
       pvp_coefficient = 0.00000,
       pct = -0.110,
     },
+    [18] = { -- (id=1003545) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = -75,
+      scaled_value = -75,
+      pvp_coefficient = 1.00000,
+      pct = -0.750,
+      affected_spells = {
+        443087,
+      },
+    },
     [19] = { -- (id=1003546) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = -5,
-      scaled_value = -5,
+      subtype = 219, -- Apply Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -4,
+      scaled_value = -4,
       pvp_coefficient = 1.00000,
-      pct = -0.050,
+      pct = -0.040,
       affected_spells = {
-        107270,
+        414131,
       },
     },
     [20] = { -- (id=1040369) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = -10,
-      scaled_value = -10,
-      pvp_coefficient = 1.00000,
-      pct = -0.100,
-      affected_spells = {
-        116847,        148187,        196725,
-      },
-    },
-    [21] = { -- (id=1080990) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 92,
-      scaled_value = 92,
-      pvp_coefficient = 1.00000,
-      pct = 0.920,
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 0.34000,
+      pct = 1.500,
       affected_spells = {
         116670,
       },
     },
-    [22] = { -- (id=1080991) 
+    [21] = { -- (id=1080990) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -2299,7 +2039,7 @@ DBC = {
         130654,        132463,
       },
     },
-    [23] = { -- (id=1080992) 
+    [22] = { -- (id=1080991) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
@@ -2308,92 +2048,233 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.750,
       affected_spells = {
-        322101,
+        322101,        451968,
+      },
+    },
+    [23] = { -- (id=1080992) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = -4,
+      scaled_value = -4,
+      pvp_coefficient = 1.00000,
+      pct = -0.040,
+      affected_spells = {
+        414131,
       },
     },
     [24] = { -- (id=1080993) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
-      property = 22, -- Spell Periodic Amount
-      base_value = 25,
-      scaled_value = 25,
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.250,
+      pct = 0.100,
       affected_spells = {
-        115175,        209525,
+        100784,        205523,        228649,
       },
     },
     [25] = { -- (id=1082767) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
+      subtype = 218, -- Apply Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 8,
-      scaled_value = 8,
+      base_value = -90,
+      scaled_value = -90,
       pvp_coefficient = 1.00000,
-      pct = 0.080,
+      pct = -0.900,
       affected_spells = {
-        100784,        205523,        228649,
+        443039,
       },
     },
     [26] = { -- (id=1097975) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      subtype = 107, -- Add Flat Modifier
+      property = 11, -- Spell Cooldown
+      base_value = -240000,
+      scaled_value = -240000,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = -2400.000,
       affected_spells = {
-        100784,        107428,        117418,        185099,        205523,
-        228649,
+        115203,
       },
     },
     [27] = { -- (id=1097976) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      subtype = 107, -- Add Flat Modifier
+      property = 1, -- Spell Duration
+      base_value = 7000,
+      scaled_value = 7000,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 70.000,
       affected_spells = {
-        100780,
+        116847,        196725,
       },
     },
     [28] = { -- (id=1126386) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 20,
-      scaled_value = 20,
+      subtype = 107, -- Add Flat Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.200,
+      pct = 0.100,
       affected_spells = {
-        107270,
+        100780,        331433,
       },
     },
-    [29] = { -- (id=1126387) 
+    [29] = { -- (id=1152161) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
-      pvp_coefficient = 0.00000,
-      pct = 0.100,
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+      affected_spells = {
+        322101,        451968,
+      },
+    },
+    [30] = { -- (id=1152180) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -18,
+      scaled_value = -18,
+      pvp_coefficient = 1.00000,
+      pct = -0.180,
+      affected_spells = {
+        388663,
+      },
+    },
+    [31] = { -- (id=1152232) 
+      type = 6, -- Apply Aura
+      subtype = 453, -- Modify Recharge Time
+      base_value = -15000,
+      scaled_value = -15000,
+      pvp_coefficient = 1.00000,
+      pct = -150.000,
+      affected_spells = {
+        327104,        388193,
+      },
+    },
+    [32] = { -- (id=1176969) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 80,
+      scaled_value = 80,
+      pvp_coefficient = 1.00000,
+      pct = 0.800,
+      affected_spells = {
+        132466,        132467,
+      },
+    },
+  },
+  -- Storm, Earth, and Fire 
+  [137639] = {
+    localName = "Storm, Earth, and Fire",
+    tokenName = "storm_earth_and_fire",
+    school = 0x08,
+    cooldown = 16,
+    duration = 15,
+    max_stacks = 2,
+
+    ignores_armor = true, -- Nature
+    may_crit = true,
+
+    [1] = { -- (id=180816) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        100780,        100784,        107270,        107428,        116847,
+        117418,        117952,        132463,        132466,        132467,
+        148187,        152175,        158221,        185099,        205523,
+        228649,        261947,        261977,        331433,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [2] = { -- (id=181516) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        100780,        100784,        107270,        107428,        116847,
+        117418,        117952,        132463,        132466,        132467,
+        148187,        152175,        158221,        185099,        205523,
+        228649,        261947,        261977,        331433,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [3] = { -- (id=181626) 
+      type = 6, -- Apply Aura
+      subtype = 344, -- Modify Auto Attack Damage Done Percent
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+    },
+    [4] = { -- (id=289040) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+    },
+    [5] = { -- (id=330909) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 23, -- Spell Effect 3
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
       affected_spells = {
         100784,        205523,        228649,
       },
     },
-    [30] = { -- (id=1126388) 
+    [6] = { -- (id=1152083) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 8,
-      scaled_value = 8,
-      pvp_coefficient = 0.00000,
-      pct = 0.080,
+      subtype = 332, -- Override Action Spell
+      base_value = 221771,
+      scaled_value = 221771,
+      pvp_coefficient = 1.00000,
+      pct = 2217.710,
       affected_spells = {
-        107428,        185099,
+        137639,        221771,      },
+    },
+    [7] = { -- (id=1157075) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        443038,
+      },
+    },
+    [8] = { -- (id=1157076) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = -60,
+      scaled_value = -60,
+      pvp_coefficient = 1.00000,
+      pct = -0.600,
+      affected_spells = {
+        443039,
       },
     },
   },
@@ -2411,8 +2292,8 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.46000,
-      pvp_coefficient = 1.00000,
+      ap_coefficient = 2.80000,
+      pvp_coefficient = 1.40000,
       pct = 0.000,
     },
   },
@@ -2440,7 +2321,8 @@ DBC = {
     tokenName = "whirling_dragon_punch",
     school = 0x01,
     gcd = 1,
-    cooldown = 24,
+    cooldown = 30,
+    icd = 3,
     duration = 1,
 
     may_miss = true,
@@ -2450,10 +2332,10 @@ DBC = {
     [1] = { -- (id=210680) 
       type = 6, -- Apply Aura
       subtype = 226, -- Periodic Dummy
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 5,
+      scaled_value = 5,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.050,
     },
     [2] = { -- (id=288846) 
       type = 144, -- Unknown
@@ -2477,8 +2359,8 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.82103,
-      pvp_coefficient = 2.20000,
+      ap_coefficient = 1.61000,
+      pvp_coefficient = 1.00000,
       pct = 0.000,
     },
   },
@@ -2571,7 +2453,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.65520,
+      ap_coefficient = 0.72727,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -2673,8 +2555,8 @@ DBC = {
     localName = "Hit Combo",
     tokenName = "hit_combo",
     school = 0x01,
-    duration = 10,
-    max_stacks = 6,
+    duration = 30,
+    max_stacks = 5,
 
     may_miss = true,
     may_crit = true,
@@ -2692,11 +2574,13 @@ DBC = {
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=479821) 
@@ -2712,11 +2596,13 @@ DBC = {
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [3] = { -- (id=479888) 
@@ -2736,13 +2622,32 @@ DBC = {
       pct = 0.010,
     },
   },
+  -- Whirling Dragon Punch 
+  [196742] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+    school = 0x01,
+    duration = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=288847) 
+      type = 6, -- Apply Aura
+      subtype = 226, -- Periodic Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Teachings of the Monastery 
   [202090] = {
     localName = "Teachings of the Monastery",
     tokenName = "teachings_of_the_monastery",
     school = 0x01,
     duration = 20,
-    max_stacks = 3,
+    max_stacks = 4,
 
     may_miss = true,
     may_crit = true,
@@ -2771,7 +2676,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.96000,
+      ap_coefficient = 1.06560,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -2797,10 +2702,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 3, -- Spell Effect 1
-      base_value = 230,
-      scaled_value = 230,
+      base_value = 243,
+      scaled_value = 243,
       pvp_coefficient = 1.00000,
-      pct = 2.300,
+      pct = 2.430,
       affected_spells = {
         115069,        322120,
       },
@@ -2821,6 +2726,15 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 1.000,
     },
+    [4] = { -- (id=1162067) 
+      type = 6, -- Apply Aura
+      subtype = 87, -- Modify Damage Taken Percent
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      school_mask = 0x7f,
+    },
   },
   -- Celestial Fortune 
   [216519] = {
@@ -2835,10 +2749,10 @@ DBC = {
     [1] = { -- (id=322186) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 80,
-      scaled_value = 80,
+      base_value = 70,
+      scaled_value = 70,
       pvp_coefficient = 1.00000,
-      pct = 0.800,
+      pct = 0.700,
     },
     [2] = { -- (id=345172) 
       type = 6, -- Apply Aura
@@ -2854,6 +2768,8 @@ DBC = {
     localName = "Mark of the Crane",
     tokenName = "mark_of_the_crane",
     school = 0x01,
+    cooldown = 0.1,
+    icd = 0.1,
 
     may_miss = true,
     may_crit = true,
@@ -2965,7 +2881,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 1.000,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [2] = { -- (id=344192) 
@@ -3042,7 +2958,6 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 20, 40, },
       base_value = 40,
       scaled_value = 40,
       pvp_coefficient = 1.00000,
@@ -3090,13 +3005,6 @@ DBC = {
       scaled_value = 10,
       pvp_coefficient = 1.00000,
       pct = 0.100,
-    },
-    [3] = { -- (id=810247) 
-      type = 30, -- Energize Power
-      base_value = 0,
-      scaled_value = 0,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
     },
   },
   -- Touch of Death 
@@ -3184,7 +3092,6 @@ DBC = {
     tokenName = "celestial_brew",
     school = 0x01,
     gcd = 1,
-    cooldown = 45,
     duration = 8,
 
     may_miss = true,
@@ -3207,7 +3114,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.000,
       affected_spells = {
-        116670,        322101,
+        116670,        163212,        322101,        451968,
       },
     },
   },
@@ -3292,10 +3199,10 @@ DBC = {
     [2] = { -- (id=813291) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 8,
+      scaled_value = 8,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.080,
     },
   },
   -- Purified Chi 
@@ -3335,7 +3242,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 2.58000,
+      ap_coefficient = 2.86380,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -3350,6 +3257,7 @@ DBC = {
     [3] = { -- (id=815256) 
       type = 6, -- Apply Aura
       subtype = 54, -- Modify Hit Percent
+      property = 14, -- Players Only
       base_value = -100,
       scaled_value = -100,
       pvp_coefficient = 1.00000,
@@ -3403,10 +3311,10 @@ DBC = {
     [1] = { -- (id=815341) 
       type = 6, -- Apply Aura
       subtype = 42, -- Proc Trigger Spell
-      base_value = 300,
-      scaled_value = 300,
-      pvp_coefficient = 0.75000,
-      pct = 3.000,
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
     },
   },
   -- Dance of Chi-Ji 
@@ -3415,6 +3323,7 @@ DBC = {
     tokenName = "dance_of_chiji",
     school = 0x08,
     duration = 15,
+    max_stacks = 2,
 
     ignores_armor = true, -- Nature
     may_miss = true,
@@ -3446,6 +3355,7 @@ DBC = {
 
     [1] = { -- (id=818673) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.65000,
@@ -3472,7 +3382,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.400,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
   },
@@ -3494,19 +3404,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.300,
       affected_spells = {
-        322101,
-      },
-    },
-    [2] = { -- (id=844368) 
-      type = 6, -- Apply Aura
-      subtype = 107, -- Add Flat Modifier
-      property = 23, -- Spell Effect 3
-      base_value = 1,
-      scaled_value = 1,
-      pvp_coefficient = 1.00000,
-      pct = 0.010,
-      affected_spells = {
-        322101,
+        322101,        451968,
       },
     },
   },
@@ -3532,12 +3430,13 @@ DBC = {
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        325216,        325217,
-        327264,        330901,        330903,        330907,        330911,
-        337342,        345714,        345727,        386276,        388201,
-        388207,        388609,        388867,        391400,        392959,
-        393056,        393400,        393566,        393786,        395519,
-        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        325216,
+        325217,        327264,        330903,        330911,        331433,
+        337342,        345727,        386275,        388201,        388207,
+        388609,        388867,        392959,        393056,        393400,
+        393566,        393786,        395519,        395521,        418360,
+        443038,        443088,        443127,        443263,        443611,
+        451767,        451839,        452130,        457917,
       },
     },
     [2] = { -- (id=884941) 
@@ -3716,7 +3615,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 1.000,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
     [2] = { -- (id=1015952) 
@@ -3752,89 +3651,6 @@ DBC = {
       scaled_value = 100,
       pvp_coefficient = 1.00000,
       pct = 1.000,
-    },
-  },
-  -- Bonedust Brew 
-  [386276] = {
-    localName = "Bonedust Brew",
-    tokenName = "bonedust_brew",
-    school = 0x20,
-    gcd = 1,
-    cooldown = 60,
-    duration = 10,
-    trigger_rate = 0.5,
-
-    ignores_armor = true, -- Shadow
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1020234) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 40,
-      scaled_value = 40,
-      pvp_coefficient = 1.00000,
-      pct = 0.400,
-    },
-    [2] = { -- (id=1020235) 
-      type = 3, -- Dummy
-      base_value = 35,
-      scaled_value = 35,
-      pvp_coefficient = 1.00000,
-      pct = 0.350,
-    },
-    [3] = { -- (id=1020236) 
-      type = 3, -- Dummy
-      base_value = 1,
-      scaled_value = 1,
-      pvp_coefficient = 1.00000,
-      pct = 0.010,
-    },
-  },
-  -- Attenuation 
-  [386941] = {
-    localName = "Attenuation",
-    tokenName = "attenuation",
-    school = 0x01,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1021400) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 20,
-      scaled_value = 20,
-      pvp_coefficient = 1.00000,
-      pct = 0.200,
-    },
-    [2] = { -- (id=1021401) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = -500,
-      scaled_value = -500,
-      pvp_coefficient = 1.00000,
-      pct = -5.000,
-    },
-  },
-  -- Bountiful Brew 
-  [386949] = {
-    localName = "Bountiful Brew",
-    tokenName = "bountiful_brew",
-    school = 0x01,
-    cooldown = 0.5,
-    icd = 0.5,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1021413) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 10000,
-      scaled_value = 10000,
-      pvp_coefficient = 1.00000,
-      pct = 100.000,
     },
   },
   -- Charred Passions 
@@ -3891,7 +3707,6 @@ DBC = {
     },
     [2] = { -- (id=1021575) 
       type = 3, -- Dummy
-      ranks = { 1, 2, },
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
@@ -3901,10 +3716,9 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 5, 10, },
       base_value = 5,
       scaled_value = 5,
-      pvp_coefficient = 0.50000,
+      pvp_coefficient = 1.00000,
       pct = 0.050,
       affected_spells = {
         100784,        205523,        228649,
@@ -4071,6 +3885,7 @@ DBC = {
 
     [1] = { -- (id=1022525) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.20000,
@@ -4099,11 +3914,11 @@ DBC = {
     [2] = { -- (id=1024490) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 125,
-      scaled_value = 125,
+      base_value = 90,
+      scaled_value = 90,
       ap_coefficient = 1.00000,
       pvp_coefficient = 1.00000,
-      pct = 1.250,
+      pct = 0.900,
     },
   },
   -- Shadowboxing Treads 
@@ -4158,10 +3973,10 @@ DBC = {
 
     [1] = { -- (id=1023715) 
       type = 3, -- Dummy
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 5,
+      scaled_value = 5,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.050,
     },
     [2] = { -- (id=1023716) 
       type = 6, -- Apply Aura
@@ -4174,6 +3989,13 @@ DBC = {
     [3] = { -- (id=1023717) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+    [4] = { -- (id=1152252) 
+      type = 3, -- Dummy
       base_value = 5,
       scaled_value = 5,
       pvp_coefficient = 1.00000,
@@ -4193,6 +4015,7 @@ DBC = {
 
     [1] = { -- (id=1023725) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.65000,
@@ -4212,6 +4035,7 @@ DBC = {
 
     [1] = { -- (id=1023731) 
       type = 2, -- School Damage
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 0.40000,
@@ -4220,6 +4044,7 @@ DBC = {
     },
     [2] = { -- (id=1023732) 
       type = 10, -- Direct Heal
+      subtype = 17, -- Area Effects Use Target Radius
       base_value = 0,
       scaled_value = 0,
       sp_coefficient = 0.91000,
@@ -4264,7 +4089,6 @@ DBC = {
     [1] = { -- (id=1024507) 
       type = 6, -- Apply Aura
       subtype = 79, -- Modify Damage Done Percent
-      ranks = { 2, 4, },
       base_value = 2,
       scaled_value = 2,
       pvp_coefficient = 1.00000,
@@ -4293,9 +4117,7 @@ DBC = {
     localName = "Summon White Tiger Statue",
     tokenName = "summon_white_tiger_statue",
     school = 0x01,
-    gcd = 1,
-    cooldown = 120,
-    duration = 30,
+    duration = 10,
 
     may_miss = true,
     may_crit = true,
@@ -4328,20 +4150,18 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 35, 70, },
       base_value = 70,
       scaled_value = 70,
       pvp_coefficient = 1.00000,
       pct = 0.700,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
     [2] = { -- (id=1024728) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 5, 10, },
       base_value = 10,
       scaled_value = 10,
       pvp_coefficient = 1.00000,
@@ -4364,10 +4184,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 118, -- Modify Healing Received Percent
       ranks = { 4, 8, },
-      base_value = 2,
-      scaled_value = 2,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.020,
+      pct = 0.060,
     },
   },
   -- Crane Vortex 
@@ -4383,11 +4203,22 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 10, 20, },
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.300,
+      affected_spells = {
+        101546,        107270,        322729,
+      },
+    },
+    [2] = { -- (id=1155025) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 6, -- Spell Radius
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -4406,49 +4237,26 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 3, 6, },
-      base_value = 10,
-      scaled_value = 10,
+      ranks = { 10, 12, },
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.150,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
     [2] = { -- (id=1054746) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 15, -- Spell Critical Damage
-      ranks = { 8, 16, },
-      base_value = 10,
-      scaled_value = 10,
-      pvp_coefficient = 0.50000,
-      pct = 0.100,
-      affected_spells = {
-        107428,        185099,
-      },
-    },
-  },
-  -- Flashing Fists 
-  [388854] = {
-    localName = "Flashing Fists",
-    tokenName = "flashing_fists",
-    school = 0x01,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1024794) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      ranks = { 10, 20, },
+      ranks = { 12, 16, },
       base_value = 10,
       scaled_value = 10,
       pvp_coefficient = 1.00000,
       pct = 0.100,
       affected_spells = {
-        113656,        117418,        120086,
+        107428,        185099,        392959,
       },
     },
   },
@@ -4465,13 +4273,12 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 15, 30, },
-      base_value = 25,
-      scaled_value = 25,
+      base_value = 40,
+      scaled_value = 40,
       pvp_coefficient = 1.00000,
-      pct = 0.250,
+      pct = 0.400,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
   },
@@ -4490,50 +4297,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.25000,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
-    },
-  },
-  -- Resonant Fists 
-  [389578] = {
-    localName = "Resonant Fists",
-    tokenName = "resonant_fists",
-    school = 0x01,
-    cooldown = 1,
-    icd = 1,
-    trigger_rate = 0.1,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1025905) 
-      type = 6, -- Apply Aura
-      subtype = 218, -- Apply Percent Modifier
-      property = 0, -- Spell Direct Amount
-      ranks = { 0, 100, },
-      base_value = 0,
-      scaled_value = 0,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
-      affected_spells = {
-        389578,        391400,
-      },
-    },
-    [2] = { -- (id=1037093) 
-      type = 6, -- Apply Aura
-      subtype = 42, -- Proc Trigger Spell
-      base_value = 0,
-      scaled_value = 0,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
-    },
-    [3] = { -- (id=1037106) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 0,
-      scaled_value = 0,
-      ap_coefficient = 0.15000,
+      ap_coefficient = 0.50000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -4647,13 +4411,14 @@ DBC = {
       pct = 0.100,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
-        130654,        132463,        162530,        191840,        191894,
-        198487,        198533,        227344,        274062,        274774,
-        274912,        297850,        311123,        322101,        325209,
-        325212,        328283,        328748,        337268,        343737,
-        343819,        344008,        345727,        388044,        388207,
-        388615,        388668,        399230,        399491,        407058,
-        425804,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
       },
     },
     [2] = { -- (id=1041529) 
@@ -4666,13 +4431,14 @@ DBC = {
       pct = 0.100,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
-        130654,        132463,        162530,        191840,        191894,
-        198487,        198533,        227344,        274062,        274774,
-        274912,        297850,        311123,        322101,        325209,
-        325212,        328283,        328748,        337268,        343737,
-        343819,        344008,        345727,        388044,        388207,
-        388615,        388668,        399230,        399491,        407058,
-        425804,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
       },
     },
   },
@@ -4694,15 +4460,15 @@ DBC = {
       pvp_coefficient = 0.40000,
       pct = 0.150,
       affected_spells = {
-        322109,
+        322109,        322111,
       },
     },
     [2] = { -- (id=1028781) 
       type = 3, -- Dummy
-      base_value = 35,
-      scaled_value = 35,
+      base_value = 60,
+      scaled_value = 60,
       pvp_coefficient = 1.00000,
-      pct = 0.350,
+      pct = 0.600,
     },
   },
   -- Hardened Soles 
@@ -4718,20 +4484,6 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 107, -- Add Flat Modifier
       property = 7, -- Spell Critical Chance
-      ranks = { 2, 4, },
-      base_value = 5,
-      scaled_value = 5,
-      pvp_coefficient = 1.00000,
-      pct = 0.050,
-      affected_spells = {
-        100784,        205523,        228649,
-      },
-    },
-    [2] = { -- (id=1028864) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 15, -- Spell Critical Damage
-      ranks = { 4, 8, },
       base_value = 10,
       scaled_value = 10,
       pvp_coefficient = 1.00000,
@@ -4740,24 +4492,17 @@ DBC = {
         100784,        205523,        228649,
       },
     },
-  },
-  -- Resonant Fists 
-  [391400] = {
-    localName = "Resonant Fists",
-    tokenName = "resonant_fists",
-    school = 0x08,
-
-    ignores_armor = true, -- Nature
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1028892) 
-      type = 2, -- School Damage
-      base_value = 0,
-      scaled_value = 0,
-      ap_coefficient = 0.15000,
+    [2] = { -- (id=1028864) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 15, -- Spell Critical Damage
+      base_value = 18,
+      scaled_value = 18,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.180,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
     },
   },
   -- Jadefire Harmony 
@@ -4804,7 +4549,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.050,
       affected_spells = {
-        322101,
+        322101,        451968,
       },
     },
     [2] = { -- (id=1031442) 
@@ -4816,7 +4561,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.150,
       affected_spells = {
-        322101,
+        322101,        451968,
       },
     },
   },
@@ -4838,7 +4583,7 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = 0.500,
       affected_spells = {
-        322101,
+        322101,        451968,
       },
     },
   },
@@ -4855,23 +4600,23 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
       base_value = 0,
-      scaled_value = 12028,
+      scaled_value = 198949,
       pvp_coefficient = 0.50000,
       pct = 0.000,
     },
     [2] = { -- (id=1031559) 
       type = 3, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [3] = { -- (id=1031560) 
+      type = 3, -- Dummy
       base_value = 1,
       scaled_value = 1,
       pvp_coefficient = 1.00000,
       pct = 0.010,
-    },
-    [3] = { -- (id=1031560) 
-      type = 3, -- Dummy
-      base_value = 25,
-      scaled_value = 25,
-      pvp_coefficient = 1.00000,
-      pct = 0.250,
     },
   },
   -- Glory of the Dawn 
@@ -4888,8 +4633,8 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.50000,
-      pvp_coefficient = 0.72000,
+      ap_coefficient = 1.00000,
+      pvp_coefficient = 0.65000,
       pct = 0.000,
     },
     [2] = { -- (id=1031562) 
@@ -4907,48 +4652,38 @@ DBC = {
       pct = 0.010,
     },
   },
-  -- Open Palm Strikes 
-  [392970] = {
-    localName = "Open Palm Strikes",
-    tokenName = "open_palm_strikes",
+  -- Jade Ignition 
+  [392979] = {
+    localName = "Jade Ignition",
+    tokenName = "jade_ignition",
     school = 0x01,
 
     may_miss = true,
     may_crit = true,
 
-    [1] = { -- (id=1031581) 
+    [1] = { -- (id=1031594) 
       type = 6, -- Apply Aura
-      subtype = 285, -- Unknown
-      base_value = 0,
-      scaled_value = 0,
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 40,
+      scaled_value = 40,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.400,
     },
-    [2] = { -- (id=1031582) 
-      type = 3, -- Dummy
+    [2] = { -- (id=1031595) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+    },
+    [3] = { -- (id=1164132) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
       base_value = 5,
       scaled_value = 5,
       pvp_coefficient = 1.00000,
       pct = 0.050,
-    },
-    [3] = { -- (id=1031583) 
-      type = 3, -- Dummy
-      base_value = 1,
-      scaled_value = 1,
-      pvp_coefficient = 1.00000,
-      pct = 0.010,
-    },
-    [4] = { -- (id=1031584) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
-      pvp_coefficient = 1.00000,
-      pct = 0.150,
-      affected_spells = {
-        117418,
-      },
     },
   },
   -- Shadowboxing Treads 
@@ -4983,6 +4718,14 @@ DBC = {
       affected_spells = {
         100784,        205523,        228649,
       },
+    },
+    [3] = { -- (id=1155573) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 70,
+      scaled_value = 70,
+      pvp_coefficient = 1.00000,
+      pct = 0.700,
     },
   },
   -- Strike of the Windlord 
@@ -5040,10 +4783,10 @@ DBC = {
     [1] = { -- (id=1031605) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 4,
+      scaled_value = 4,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.040,
     },
   },
   -- Xuen's Battlegear 
@@ -5068,7 +4811,7 @@ DBC = {
       subtype = 4, -- Dummy
       base_value = 4000,
       scaled_value = 4000,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.50000,
       pct = 40.000,
     },
     [3] = { -- (id=1031620) 
@@ -5121,10 +4864,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 100,
-      scaled_value = 100,
-      pvp_coefficient = 0.50000,
-      pct = 1.000,
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
       affected_spells = {
         117952,
       },
@@ -5154,9 +4897,10 @@ DBC = {
 
     [1] = { -- (id=1031743) 
       type = 2, -- School Damage
+      subtype = 11, -- Add Target
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.65000,
+      ap_coefficient = 1.80000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5179,36 +4923,6 @@ DBC = {
       scaled_value = 5,
       pvp_coefficient = 1.00000,
       pct = 0.050,
-    },
-  },
-  -- Forbidden Technique 
-  [393098] = {
-    localName = "Forbidden Technique",
-    tokenName = "forbidden_technique",
-    school = 0x01,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1031818) 
-      type = 6, -- Apply Aura
-      subtype = 4, -- Dummy
-      base_value = 0,
-      scaled_value = 0,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
-    },
-    [2] = { -- (id=1031819) 
-      type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 20,
-      scaled_value = 20,
-      pvp_coefficient = 0.37500,
-      pct = 0.200,
-      affected_spells = {
-        322109,
-      },
     },
   },
   -- Tranquil Spirit 
@@ -5262,10 +4976,10 @@ DBC = {
     [1] = { -- (id=1032548) 
       type = 6, -- Apply Aura
       subtype = 49, -- Modify Dodge Percent
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.100,
     },
   },
   -- Pretense of Instability 
@@ -5298,10 +5012,11 @@ DBC = {
 
     [1] = { -- (id=1032621) 
       type = 2, -- School Damage
+      subtype = 6, -- Suppress Points Stacking
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 3.50000,
-      pvp_coefficient = 0.60000,
+      ap_coefficient = 1.61000,
+      pvp_coefficient = 1.00000,
       pct = 0.000,
     },
   },
@@ -5323,7 +5038,7 @@ DBC = {
       subtype = 3, -- Periodic Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.90000,
+      ap_coefficient = 0.99900,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5333,28 +5048,6 @@ DBC = {
       scaled_value = 45,
       pvp_coefficient = 1.00000,
       pct = 0.450,
-    },
-  },
-  -- Fatal Flying Guillotine 
-  [394923] = {
-    localName = "Fatal Flying Guillotine",
-    tokenName = "fatal_flying_guillotine",
-    school = 0x01,
-
-    may_miss = true,
-    may_crit = true,
-
-    [1] = { -- (id=1034977) 
-      type = 6, -- Apply Aura
-      subtype = 107, -- Add Flat Modifier
-      property = 17, -- Spell Targets
-      base_value = 4,
-      scaled_value = 4,
-      pvp_coefficient = 1.00000,
-      pct = 0.040,
-      affected_spells = {
-        322109,
-      },
     },
   },
   -- Kicks of Flowing Momentum 
@@ -5378,7 +5071,7 @@ DBC = {
       pvp_coefficient = 0.50000,
       pct = 0.400,
       affected_spells = {
-        107428,        185099,
+        107428,        185099,        392959,
       },
     },
   },
@@ -5416,37 +5109,39 @@ DBC = {
     [1] = { -- (id=1035870) 
       type = 6, -- Apply Aura
       subtype = 271, -- Modify Damage Taken Percent from Caster's Spells
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.060,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=1035871) 
       type = 6, -- Apply Aura
       subtype = 381, -- Modify Damage Taken Percent from Caster Pet
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.060,
     },
     [3] = { -- (id=1035872) 
       type = 6, -- Apply Aura
       subtype = 380, -- Modify Damage Taken Percent from Caster Guardian
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.060,
     },
   },
   -- Strike of the Windlord 
@@ -5464,7 +5159,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 3.32500,
+      ap_coefficient = 3.05900,
       pvp_coefficient = 0.70000,
       pct = 0.000,
     },
@@ -5484,7 +5179,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 2.00000,
+      ap_coefficient = 1.84000,
       pvp_coefficient = 0.70000,
       pct = 0.000,
     },
@@ -5508,14 +5203,14 @@ DBC = {
     },
     [2] = { -- (id=1054750) 
       type = 6, -- Apply Aura
-      subtype = 108, -- Add Percent Modifier
-      property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      subtype = 107, -- Add Flat Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -5,
+      scaled_value = -5,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = -0.050,
       affected_spells = {
-        100780,
+        100780,        331433,
       },
     },
   },
@@ -5625,7 +5320,7 @@ DBC = {
       type = 2, -- School Damage
       base_value = 0,
       scaled_value = 0,
-      ap_coefficient = 0.20000,
+      ap_coefficient = 0.22200,
       pvp_coefficient = 1.00000,
       pct = 0.000,
     },
@@ -5656,11 +5351,13 @@ DBC = {
         117418,        117952,        121253,        123586,        124081,
         132467,        148135,        148187,        158221,        185099,
         196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        325153,        327264,        330901,
-        330903,        330907,        330911,        337342,        345714,
-        345727,        388201,        388207,        388609,        388867,
-        391400,        392959,        393056,        393400,        393566,
-        393786,        395519,        395521,        405426,        418360,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
       },
     },
     [2] = { -- (id=1090596) 
@@ -5769,7 +5466,7 @@ DBC = {
       pct = 0.040,
       affected_spells = {
         107428,        117418,        152175,        158221,        185099,
-        392983,        395519,        395521,
+        392959,        392983,        395519,        395521,        451767,
       },
     },
   },
@@ -5859,28 +5556,3007 @@ DBC = {
       pct = 0.000,
     },
   },
+  -- Xuen's Guidance 
+  [442687] = {
+    localName = "Xuen's Guidance",
+    tokenName = "xuens_guidance",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138070) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1138071) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        100780,        331433,
+      },
+    },
+  },
+  -- Restore Balance 
+  [442719] = {
+    localName = "Restore Balance",
+    tokenName = "restore_balance",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138125) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Temple Training 
+  [442743] = {
+    localName = "Temple Training",
+    tokenName = "temple_training",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138177) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 6,
+      scaled_value = 6,
+      pvp_coefficient = 1.00000,
+      pct = 0.060,
+      affected_spells = {
+        116670,        124682,        325209,        358560,
+      },
+    },
+    [2] = { -- (id=1138178) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        107270,        117418,
+      },
+    },
+    [3] = { -- (id=1164522) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = 6,
+      scaled_value = 6,
+      pvp_coefficient = 1.00000,
+      pct = 0.060,
+      affected_spells = {
+        116670,        124682,        325209,        358560,
+      },
+    },
+  },
+  -- Niuzao's Protection 
+  [442747] = {
+    localName = "Niuzao's Protection",
+    tokenName = "niuzaos_protection",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138182) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- August Dynasty 
+  [442818] = {
+    localName = "August Dynasty",
+    tokenName = "august_dynasty",
+    school = 0x01,
+    cooldown = 8,
+    icd = 8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138311) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- August Dynasty 
+  [442850] = {
+    localName = "August Dynasty",
+    tokenName = "august_dynasty",
+    school = 0x01,
+    duration = 12,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138362) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+      affected_spells = {
+        107428,        185099,        392959,
+      },
+    },
+    [2] = { -- (id=1138363) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 50,
+      scaled_value = 50,
+      pvp_coefficient = 1.00000,
+      pct = 0.500,
+      affected_spells = {
+        116670,
+      },
+    },
+  },
+  -- Jade Sanctuary 
+  [443059] = {
+    localName = "Jade Sanctuary",
+    tokenName = "jade_sanctuary",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138704) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = -15,
+      scaled_value = -15,
+      pvp_coefficient = 1.00000,
+      pct = -0.150,
+      affected_spells = {
+        443028,
+      },
+    },
+    [2] = { -- (id=1138705) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 32, -- Spell Effect 4
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        443028,
+      },
+    },
+  },
+  -- Courage of the White Tiger 
+  [443087] = {
+    localName = "Courage of the White Tiger",
+    tokenName = "courage_of_the_white_tiger",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138752) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1138753) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Strength of the Black Ox 
+  [443110] = {
+    localName = "Strength of the Black Ox",
+    tokenName = "strength_of_the_black_ox",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138782) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+    [2] = { -- (id=1138783) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+    [3] = { -- (id=1162170) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Strength of the Black Ox 
+  [443112] = {
+    localName = "Strength of the Black Ox",
+    tokenName = "strength_of_the_black_ox",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138786) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 10, -- Spell Cast Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        124682,        325209,        358560,
+      },
+    },
+  },
+  -- Flight of the Red Crane 
+  [443255] = {
+    localName = "Flight of the Red Crane",
+    tokenName = "flight_of_the_red_crane",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139045) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [443294] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139104) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [443424] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    duration = 60,
+    max_stacks = 45,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139306) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Inner Compass 
+  [443571] = {
+    localName = "Inner Compass",
+    tokenName = "inner_compass",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139581) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Crane Stance 
+  [443572] = {
+    localName = "Crane Stance",
+    tokenName = "crane_stance",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139585) 
+      type = 6, -- Apply Aura
+      subtype = 193, -- Modify All Haste Percent
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Ox Stance 
+  [443574] = {
+    localName = "Ox Stance",
+    tokenName = "ox_stance",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139588) 
+      type = 6, -- Apply Aura
+      subtype = 471, -- Modify Versatility Percent
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Tiger Stance 
+  [443575] = {
+    localName = "Tiger Stance",
+    tokenName = "tiger_stance",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139589) 
+      type = 6, -- Apply Aura
+      subtype = 290, -- Modify Critical Strike Percent
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Serpent Stance 
+  [443576] = {
+    localName = "Serpent Stance",
+    tokenName = "serpent_stance",
+    school = 0x01,
+    duration = -1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139590) 
+      type = 6, -- Apply Aura
+      subtype = 318, -- Modify Mastery Percent
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Unity Within 
+  [443589] = {
+    localName = "Unity Within",
+    tokenName = "unity_within",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139615) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 200,
+      scaled_value = 200,
+      pvp_coefficient = 1.00000,
+      pct = 2.000,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [443616] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    duration = 8,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139673) 
+      type = 28, -- Summon
+      subtype = 1, -- Position is facing relative
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=1139674) 
+      type = 6, -- Apply Aura
+      subtype = 286, -- Modify Cooldown Recharge Rate Percent
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 1.00000,
+      pct = 1.500,
+      affected_spells = {
+        107428,        113656,        116680,        116849,        120086,
+        152175,        158221,        185099,        232055,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [3] = { -- (id=1139675) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 1.00000,
+      pct = 1.500,
+      affected_spells = {
+        115151,
+      },
+    },
+    [4] = { -- (id=1142268) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 1.00000,
+      pct = 1.500,
+      affected_spells = {
+        116849,
+      },
+    },
+    [5] = { -- (id=1155445) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [6] = { -- (id=1155446) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 19, -- Spell Tick Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [7] = { -- (id=1166053) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 150,
+      scaled_value = 150,
+      pvp_coefficient = 1.00000,
+      pct = 1.500,
+      affected_spells = {
+        116680,
+      },
+    },
+  },
+  -- Yu'lon's Knowledge 
+  [443625] = {
+    localName = "Yu'lon's Knowledge",
+    tokenName = "yulons_knowledge",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139686) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 1, -- Spell Duration
+      base_value = 4000,
+      scaled_value = 4000,
+      pvp_coefficient = 1.00000,
+      pct = 40.000,
+      affected_spells = {
+        116847,        196725,
+      },
+    },
+  },
+  -- Chi Wave 
+  [450380] = {
+    localName = "Chi Wave",
+    tokenName = "chi_wave",
+    school = 0x01,
+    duration = -1,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150250) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Chi Wave 
+  [450391] = {
+    localName = "Chi Wave",
+    tokenName = "chi_wave",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150261) 
+      type = 6, -- Apply Aura
+      subtype = 226, -- Periodic Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1154630) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        451084,
+      },
+    },
+  },
+  -- Chi Proficiency 
+  [450426] = {
+    localName = "Chi Proficiency",
+    tokenName = "chi_proficiency",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150317) 
+      type = 6, -- Apply Aura
+      subtype = 79, -- Modify Damage Done Percent
+      ranks = { 2, 4, },
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      school_mask = 0x7e,
+    },
+    [2] = { -- (id=1150318) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      ranks = { 2, 4, },
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      affected_spells = {
+        115175,        115310,        116670,        119611,        124682,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
+      },
+    },
+    [3] = { -- (id=1176892) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      ranks = { 2, 4, },
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      affected_spells = {
+        115175,        115310,        116670,        119611,        124682,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
+      },
+    },
+  },
+  -- Martial Instincts 
+  [450427] = {
+    localName = "Martial Instincts",
+    tokenName = "martial_instincts",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150320) 
+      type = 6, -- Apply Aura
+      subtype = 79, -- Modify Damage Done Percent
+      ranks = { 2, 4, },
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      school_mask = 0x1,
+    },
+    [2] = { -- (id=1150325) 
+      type = 6, -- Apply Aura
+      subtype = 229, -- Modify AoE Damage Taken Percent
+      ranks = { -2, -4, },
+      base_value = -4,
+      scaled_value = -4,
+      pvp_coefficient = 1.00000,
+      pct = -0.040,
+    },
+  },
+  -- Pressure Points 
+  [450432] = {
+    localName = "Pressure Points",
+    tokenName = "pressure_points",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150327) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+  },
+  -- Aspect of Harmony 
+  [450508] = {
+    localName = "Aspect of Harmony",
+    tokenName = "aspect_of_harmony",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150447) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1150448) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [3] = { -- (id=1150449) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 7,
+      scaled_value = 7,
+      pvp_coefficient = 1.00000,
+      pct = 0.070,
+    },
+    [4] = { -- (id=1150450) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+    },
+    [5] = { -- (id=1150722) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [6] = { -- (id=1151053) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+    [7] = { -- (id=1168114) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 0.50000,
+      pct = 1.000,
+    },
+    [8] = { -- (id=1168900) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 1.00000,
+      pct = 0.080,
+    },
+  },
+  -- Coalescence 
+  [450529] = {
+    localName = "Coalescence",
+    tokenName = "coalescence",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150502) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1153038) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 12, -- Spell Effect 2
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        450763,        450769,
+      },
+    },
+  },
+  -- Flurry Strikes 
+  [450615] = {
+    localName = "Flurry Strikes",
+    tokenName = "flurry_strikes",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+
+    [1] = { -- (id=1150629) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [2] = { -- (id=1151332) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 400,
+      scaled_value = 400,
+      pvp_coefficient = 1.00000,
+      pct = 4.000,
+    },
+    [3] = { -- (id=1167368) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [4] = { -- (id=1167369) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [5] = { -- (id=1167370) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 425,
+      scaled_value = 425,
+      pvp_coefficient = 1.00000,
+      pct = 4.250,
+    },
+  },
+  -- Summon White Tiger Statue 
+  [450639] = {
+    localName = "Summon White Tiger Statue",
+    tokenName = "summon_white_tiger_statue",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150674) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Aspect of Harmony 
+  [450711] = {
+    localName = "Aspect of Harmony",
+    tokenName = "aspect_of_harmony",
+    school = 0x01,
+    duration = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150783) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Fatal Touch 
+  [450832] = {
+    localName = "Fatal Touch",
+    tokenName = "fatal_touch",
+    school = 0x01,
+    duration = 30,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151001) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      affected_spells = {
+        100780,        100784,        107270,        113656,        115181,
+        117418,        117952,        121253,        123586,        124081,
+        132467,        148135,        148187,        158221,        185099,
+        196608,        196733,        205523,        228649,        261947,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
+      },
+    },
+    [2] = { -- (id=1151002) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      affected_spells = {
+        100780,        100784,        107270,        113656,        115181,
+        117418,        117952,        121253,        123586,        124081,
+        132467,        148135,        148187,        158221,        185099,
+        196608,        196733,        205523,        228649,        261947,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
+      },
+    },
+  },
+  -- Purified Spirit 
+  [450867] = {
+    localName = "Purified Spirit",
+    tokenName = "purified_spirit",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151062) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1168907) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+    },
+  },
+  -- Harmonic Gambit 
+  [450870] = {
+    localName = "Harmonic Gambit",
+    tokenName = "harmonic_gambit",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151065) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Manifestation 
+  [450875] = {
+    localName = "Manifestation",
+    tokenName = "manifestation",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151074) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 50,
+      scaled_value = 50,
+      pvp_coefficient = 1.00000,
+      pct = 0.500,
+      affected_spells = {
+        123986,        130654,        132463,        132466,        132467,
+        148135,        261682,        461404,
+      },
+    },
+  },
+  -- Balanced Stratagem 
+  [450889] = {
+    localName = "Balanced Stratagem",
+    tokenName = "balanced_stratagem",
+    school = 0x01,
+    cooldown = 0.5,
+    icd = 0.5,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151110) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Endless Draught 
+  [450892] = {
+    localName = "Endless Draught",
+    tokenName = "endless_draught",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151116) 
+      type = 6, -- Apply Aura
+      subtype = 411, -- Modify Cooldown Charge
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+      affected_spells = {
+        116680,
+      },
+    },
+    [2] = { -- (id=1153986) 
+      type = 6, -- Apply Aura
+      subtype = 411, -- Modify Cooldown Charge
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+      affected_spells = {
+        322507,
+      },
+    },
+  },
+  -- Path of Resurgence 
+  [450912] = {
+    localName = "Path of Resurgence",
+    tokenName = "path_of_resurgence",
+    school = 0x01,
+    cooldown = 3,
+    icd = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151151) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Way of a Thousand Strikes 
+  [450965] = {
+    localName = "Way of a Thousand Strikes",
+    tokenName = "way_of_a_thousand_strikes",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151234) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+    },
+  },
+  -- Pride of Pandaria 
+  [450979] = {
+    localName = "Pride of Pandaria",
+    tokenName = "pride_of_pandaria",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151259) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 7, -- Spell Critical Chance
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      affected_spells = {
+        450617,
+      },
+    },
+  },
+  -- High Impact 
+  [450982] = {
+    localName = "High Impact",
+    tokenName = "high_impact",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151262) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Lead from the Front 
+  [450985] = {
+    localName = "Lead from the Front",
+    tokenName = "lead_from_the_front",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151267) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+    },
+  },
+  -- Against All Odds 
+  [450986] = {
+    localName = "Against All Odds",
+    tokenName = "against_all_odds",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151268) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Veteran's Eye 
+  [450987] = {
+    localName = "Veteran's Eye",
+    tokenName = "veterans_eye",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151269) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- One Versus Many 
+  [450988] = {
+    localName = "One Versus Many",
+    tokenName = "one_versus_many",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151270) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [2] = { -- (id=1151622) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        117418,
+      },
+    },
+    [3] = { -- (id=1151623) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+      affected_spells = {
+        121253,
+      },
+    },
+  },
+  -- Efficient Training 
+  [450989] = {
+    localName = "Efficient Training",
+    tokenName = "efficient_training",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151271) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      affected_spells = {
+        100780,        115129,        117952,        121253,        331433,
+      },
+    },
+    [2] = { -- (id=1151635) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      affected_spells = {
+        100780,        115129,        117952,        121253,        331433,
+      },
+    },
+    [3] = { -- (id=1151637) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 50,
+      scaled_value = 50,
+      pvp_coefficient = 1.00000,
+      pct = 0.500,
+    },
+    [4] = { -- (id=1151638) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1000,
+      scaled_value = 1000,
+      pvp_coefficient = 1.00000,
+      pct = 10.000,
+    },
+    [5] = { -- (id=1151757) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+      affected_spells = {
+        101546,        107270,        322729,
+      },
+    },
+  },
+  -- Martial Precision 
+  [450990] = {
+    localName = "Martial Precision",
+    tokenName = "martial_precision",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151272) 
+      type = 6, -- Apply Aura
+      subtype = 280, -- Unknown
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Vigilant Watch 
+  [450993] = {
+    localName = "Vigilant Watch",
+    tokenName = "vigilant_watch",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151275) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 15, -- Spell Critical Damage
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+  },
+  -- Wisdom of the Wall 
+  [450994] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151276) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Clarity of Purpose 
+  [451017] = {
+    localName = "Clarity of Purpose",
+    tokenName = "clarity_of_purpose",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151321) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [2] = { -- (id=1151592) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Flurry Charge 
+  [451021] = {
+    localName = "Flurry Charge",
+    tokenName = "flurry_charge",
+    school = 0x08,
+    duration = 30,
+    max_stacks = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151328) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Overwhelming Force 
+  [451024] = {
+    localName = "Overwhelming Force",
+    tokenName = "overwhelming_force",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151334) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 1.00000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1153571) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+  },
+  -- Mantra of Tenacity 
+  [451029] = {
+    localName = "Mantra of Tenacity",
+    tokenName = "mantra_of_tenacity",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151343) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+    },
+  },
+  -- Mantra of Purity 
+  [451036] = {
+    localName = "Mantra of Purity",
+    tokenName = "mantra_of_purity",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151354) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        119582,
+      },
+    },
+    [2] = { -- (id=1151661) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [3] = { -- (id=1151790) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Against All Odds 
+  [451061] = {
+    localName = "Against All Odds",
+    tokenName = "against_all_odds",
+    school = 0x01,
+    duration = 6,
+    max_stacks = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151389) 
+      type = 6, -- Apply Aura
+      subtype = 137, -- Modify Total Stat Percent
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Veteran's Eye 
+  [451085] = {
+    localName = "Veteran's Eye",
+    tokenName = "veterans_eye",
+    school = 0x01,
+    duration = 10,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151429) 
+      type = 6, -- Apply Aura
+      subtype = 193, -- Modify All Haste Percent
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Vigilant Watch 
+  [451233] = {
+    localName = "Vigilant Watch",
+    tokenName = "vigilant_watch",
+    school = 0x01,
+    duration = 30,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151693) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        450617,
+      },
+    },
+  },
+  -- Wisdom of the Wall 
+  [451242] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151709) 
+      type = 6, -- Apply Aura
+      subtype = 49, -- Modify Dodge Percent
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1151714) 
+      type = 6, -- Apply Aura
+      subtype = 290, -- Modify Critical Strike Percent
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [3] = { -- (id=1151719) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Momentum Boost 
+  [451294] = {
+    localName = "Momentum Boost",
+    tokenName = "momentum_boost",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151789) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Momentum Boost 
+  [451297] = {
+    localName = "Momentum Boost",
+    tokenName = "momentum_boost",
+    school = 0x01,
+    duration = 10,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151795) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+      affected_spells = {
+        117418,
+      },
+    },
+  },
+  -- Momentum Boost 
+  [451298] = {
+    localName = "Momentum Boost",
+    tokenName = "momentum_boost",
+    school = 0x01,
+    duration = 8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151798) 
+      type = 6, -- Apply Aura
+      subtype = 342, -- Modify Ranged and Melee Auto Attack Speed Percent
+      base_value = 60,
+      scaled_value = 60,
+      pvp_coefficient = 1.00000,
+      pct = 0.600,
+    },
+  },
+  -- Chi Cocoon 
+  [451299] = {
+    localName = "Chi Cocoon",
+    tokenName = "chi_cocoon",
+    school = 0x08,
+    duration = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151799) 
+      type = 6, -- Apply Aura
+      subtype = 69, -- Absorb Damage
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+      school_mask = 0x7f,
+    },
+    [2] = { -- (id=1151800) 
+      type = 3, -- Dummy
+      base_value = 12,
+      scaled_value = 12,
+      pvp_coefficient = 1.00000,
+      pct = 0.120,
+    },
+  },
+  -- Acclamation 
+  [451432] = {
+    localName = "Acclamation",
+    tokenName = "acclamation",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152031) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Acclamation 
+  [451433] = {
+    localName = "Acclamation",
+    tokenName = "acclamation",
+    school = 0x01,
+    duration = 12,
+    max_stacks = 12,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152032) 
+      type = 6, -- Apply Aura
+      subtype = 270, -- Modify Damage Taken Percent from Caster
+      base_value = 3,
+      scaled_value = 3,
+      pvp_coefficient = 1.00000,
+      pct = 0.030,
+      school_mask = 0x7f,
+    },
+  },
+  -- Martial Mixture 
+  [451454] = {
+    localName = "Martial Mixture",
+    tokenName = "martial_mixture",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152065) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Martial Mixture 
+  [451457] = {
+    localName = "Martial Mixture",
+    tokenName = "martial_mixture",
+    school = 0x01,
+    duration = 15,
+    max_stacks = 30,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152068) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 0.40000,
+      pct = 0.080,
+      affected_spells = {
+        100780,        331433,
+      },
+    },
+  },
+  -- Ordered Elements 
+  [451462] = {
+    localName = "Ordered Elements",
+    tokenName = "ordered_elements",
+    school = 0x01,
+    duration = 7,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152076) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -1,
+      scaled_value = -1,
+      pvp_coefficient = 1.00000,
+      pct = -0.010,
+      affected_spells = {
+        100784,        101546,        107428,        113656,        116847,
+        120086,        185099,        196725,        205523,        228649,
+        232055,        322729,        392959,        392983,        395519,
+        395521,
+      },
+    },
+  },
+  -- Ordered Elements 
+  [451463] = {
+    localName = "Ordered Elements",
+    tokenName = "ordered_elements",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152077) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 33, -- Spell Effect 5
+      base_value = 1000,
+      scaled_value = 1000,
+      pvp_coefficient = 1.00000,
+      pct = 10.000,
+      affected_spells = {
+        137639,        221771,      },
+    },
+    [2] = { -- (id=1152481) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
+  -- Brawler's Intensity 
+  [451485] = {
+    localName = "Brawler's Intensity",
+    tokenName = "brawlers_intensity",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152113) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 11, -- Spell Cooldown
+      base_value = -1000,
+      scaled_value = -1000,
+      pvp_coefficient = 1.00000,
+      pct = -10.000,
+      affected_spells = {
+        107428,        185099,        392959,
+      },
+    },
+    [2] = { -- (id=1152114) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 12,
+      scaled_value = 12,
+      pvp_coefficient = 1.00000,
+      pct = 0.120,
+      affected_spells = {
+        100784,        205523,        228649,
+      },
+    },
+  },
+  -- Courageous Impulse 
+  [451495] = {
+    localName = "Courageous Impulse",
+    tokenName = "courageous_impulse",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152125) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 23, -- Spell Effect 3
+      base_value = 125,
+      scaled_value = 125,
+      pvp_coefficient = 0.60000,
+      pct = 1.250,
+      affected_spells = {
+        116768,
+      },
+    },
+  },
+  -- Energy Burst 
+  [451498] = {
+    localName = "Energy Burst",
+    tokenName = "energy_burst",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152128) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [2] = { -- (id=1152129) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Rushing Jade Wind 
+  [451505] = {
+    localName = "Rushing Jade Wind",
+    tokenName = "rushing_jade_wind",
+    school = 0x01,
+    cooldown = 2,
+    icd = 2,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152139) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Sequenced Strikes 
+  [451515] = {
+    localName = "Sequenced Strikes",
+    tokenName = "sequenced_strikes",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152152) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+  },
+  -- Revolving Whirl 
+  [451524] = {
+    localName = "Revolving Whirl",
+    tokenName = "revolving_whirl",
+    school = 0x01,
+    cooldown = 2,
+    icd = 2,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152168) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 1.00000,
+      pct = 1.000,
+    },
+    [2] = { -- (id=1159106) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 11, -- Spell Cooldown
+      base_value = -5000,
+      scaled_value = -5000,
+      pvp_coefficient = 1.00000,
+      pct = -50.000,
+      affected_spells = {
+        152175,        158221,        451767,
+      },
+    },
+  },
+  -- Knowledge of the Broken Temple 
+  [451529] = {
+    localName = "Knowledge of the Broken Temple",
+    tokenName = "knowledge_of_the_broken_temple",
+    school = 0x01,
+    cooldown = 3,
+    icd = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152176) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 0.75000,
+      pct = 0.040,
+    },
+    [2] = { -- (id=1152177) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+      affected_spells = {
+        152175,        158221,        451767,
+      },
+    },
+    [3] = { -- (id=1152740) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 37, -- Spell Max Stacks
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 0.50000,
+      pct = 0.040,
+      affected_spells = {
+        202090,
+      },
+    },
+    [4] = { -- (id=1152741) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 0.75000,
+      pct = 0.080,
+    },
+  },
+  -- Singularly Focused Jade 
+  [451573] = {
+    localName = "Singularly Focused Jade",
+    tokenName = "singularly_focused_jade",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152257) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -4,
+      scaled_value = -4,
+      pvp_coefficient = 1.00000,
+      pct = -0.040,
+      affected_spells = {
+        327104,        388193,
+      },
+    },
+    [2] = { -- (id=1152258) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 500,
+      scaled_value = 500,
+      pvp_coefficient = 1.00000,
+      pct = 5.000,
+      affected_spells = {
+        388207,
+      },
+    },
+    [3] = { -- (id=1152260) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 32, -- Spell Effect 4
+      base_value = -4,
+      scaled_value = -4,
+      pvp_coefficient = 1.00000,
+      pct = -0.040,
+      affected_spells = {
+        327104,        388193,
+      },
+    },
+    [4] = { -- (id=1152265) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Communion With Wind 
+  [451576] = {
+    localName = "Communion With Wind",
+    tokenName = "communion_with_wind",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152266) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 11, -- Spell Cooldown
+      base_value = -10000,
+      scaled_value = -10000,
+      pvp_coefficient = 1.00000,
+      pct = -100.000,
+      affected_spells = {
+        392983,        395519,        395521,
+      },
+    },
+    [2] = { -- (id=1152267) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 0.50000,
+      pct = 1.000,
+      affected_spells = {
+        392983,        395519,        395521,
+      },
+    },
+  },
+  -- Gale Force 
+  [451580] = {
+    localName = "Gale Force",
+    tokenName = "gale_force",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152274) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Gale Force 
+  [451582] = {
+    localName = "Gale Force",
+    tokenName = "gale_force",
+    school = 0x08,
+    duration = 10,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152277) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [2] = { -- (id=1152278) 
+      type = 3, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [3] = { -- (id=1152279) 
+      type = 3, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Whirling Dragon Punch 
+  [451767] = {
+    localName = "Whirling Dragon Punch",
+    tokenName = "whirling_dragon_punch",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+    tick_zero = true,
+
+    [1] = { -- (id=1152503) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 3.00000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Dual Threat 
+  [451823] = {
+    localName = "Dual Threat",
+    tokenName = "dual_threat",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152583) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      ranks = { 20, 30, },
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 1.00000,
+      pct = 0.200,
+    },
+  },
+  -- Dual Threat 
+  [451833] = {
+    localName = "Dual Threat",
+    tokenName = "dual_threat",
+    school = 0x01,
+    duration = 5,
+
+    may_miss = true,
+    may_crit = true,
+    pandemic = true,
+
+    [1] = { -- (id=1152594) 
+      type = 6, -- Apply Aura
+      subtype = 79, -- Modify Damage Done Percent
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      school_mask = 0x7f,
+    },
+  },
+  -- Dual Threat 
+  [451839] = {
+    localName = "Dual Threat",
+    tokenName = "dual_threat",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152602) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.24200,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Expel Harm 
+  [451968] = {
+    localName = "Expel Harm",
+    tokenName = "expel_harm",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1152790) 
+      type = 10, -- Direct Heal
+      base_value = 0,
+      scaled_value = 0,
+      sp_coefficient = 1.20000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1152791) 
+      type = 3, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Flurry of Xuen 
+  [452130] = {
+    localName = "Flurry of Xuen",
+    tokenName = "flurry_of_xuen",
+    school = 0x01,
+
+    frontal = true,
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1153059) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.20000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Flurry of Xuen 
+  [452137] = {
+    localName = "Flurry of Xuen",
+    tokenName = "flurry_of_xuen",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1153070) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+    [2] = { -- (id=1160527) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+  },
+  -- Wisdom of the Wall 
+  [452684] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154043) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 15, -- Spell Critical Damage
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+      affected_spells = {
+        100780,        100784,        101545,        101546,        101643,
+        103985,        107270,        107428,        109132,        113656,
+        115008,        115069,        115078,        115098,        115129,
+        115151,        115175,        115176,        115181,        115203,
+        115288,        115294,        115308,        115310,        115399,
+        115450,        115546,        115636,        116095,        116189,
+        116670,        116680,        116705,        116768,        116841,
+        116844,        116847,        116849,        117418,        117952,
+        117962,        119381,        119582,        119607,        119611,
+        120086,        120954,        121253,        121283,        122278,
+        122281,        122470,        122783,        123333,        123586,
+        123725,        123904,        123986,        123996,        124081,
+        124255,        124273,        124274,        124275,        124280,
+        124503,        124506,        124507,        124682,        130654,
+        132463,        132466,        132467,        132578,        137639,
+        148135,        148187,        152175,        158221,        162530,
+        163212,        163272,        178173,        185099,        191894,
+        195630,        196608,        196725,        196733,        197908,
+        198487,        198533,        205523,        209525,        212051,
+        215479,        218164,        219556,        221771,        227291,
+        227344,        228649,        232055,        261682,        261947,
+        261977,        273354,        274062,        274774,        274912,
+        275673,        278564,        280184,        288636,        297850,
+        310454,        311123,        322101,        322109,        322111,
+        322118,        322119,        322120,        322507,        322729,
+        324312,        324393,        325153,        325197,        325209,
+        325216,        325217,        326860,        327104,        327264,
+        328748,        330903,        330911,        331433,        337268,
+        337342,        337993,        343737,        343819,        345727,
+        347561,        358560,        386275,        387184,        387621,
+        387995,        387999,        388024,        388025,        388044,
+        388193,        388201,        388207,        388514,        388555,
+        388609,        388615,        388668,        388867,        392959,
+        392983,        393056,        393400,        393566,        393786,
+        395267,        395519,        395521,        399230,        399491,
+        407058,        418360,        425804,        428439,        434774,
+        443038,        443039,        443088,        443127,        443263,
+        443272,        443611,        443614,        448430,        449891,
+        450342,        451452,        451500,        451754,        451767,
+        451839,        451968,        452130,        453334,        457917,
+        460478,        461404,      },
+    },
+  },
+  -- Wisdom of the Wall 
+  [452685] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154044) 
+      type = 6, -- Apply Aura
+      subtype = 405, -- Modify Combat Rating Multiplier
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Wisdom of the Wall 
+  [452688] = {
+    localName = "Wisdom of the Wall",
+    tokenName = "wisdom_of_the_wall",
+    school = 0x01,
+    duration = 20,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1154047) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Monk Brewmaster 11.0 Class Set 2pc 
+  [453623] = {
+    localName = "Monk Brewmaster 11.0 Class Set 2pc",
+    tokenName = "monk_brewmaster_11.0_class_set_2pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155622) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 20,
+      scaled_value = 20,
+      pvp_coefficient = 0.50000,
+      pct = 0.200,
+      affected_spells = {
+        100784,        121253,        205523,        228649,
+      },
+    },
+    [2] = { -- (id=1162060) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 32, -- Spell Effect 4
+      base_value = -3,
+      scaled_value = -3,
+      pvp_coefficient = 0.50000,
+      pct = -0.030,
+      affected_spells = {
+        215479,
+      },
+    },
+  },
+  -- Monk Brewmaster 11.0 Class Set 4pc 
+  [453624] = {
+    localName = "Monk Brewmaster 11.0 Class Set 4pc",
+    tokenName = "monk_brewmaster_11.0_class_set_4pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155623) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 4pc 
+  [453625] = {
+    localName = "Monk Windwalker 11.0 Class Set 4pc",
+    tokenName = "monk_windwalker_11.0_class_set_4pc",
+    school = 0x01,
+    cooldown = 0.8,
+    icd = 0.8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155624) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+    [2] = { -- (id=1162918) 
+      type = 6, -- Apply Aura
+      subtype = 285, -- Unknown
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 2pc 
+  [453626] = {
+    localName = "Monk Windwalker 11.0 Class Set 2pc",
+    tokenName = "monk_windwalker_11.0_class_set_2pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1155625) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
+    },
+  },
+  -- August Blessing 
+  [454483] = {
+    localName = "August Blessing",
+    tokenName = "august_blessing",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157053) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 1.00000,
+      pct = 0.400,
+    },
+  },
+  -- One With the Wind 
+  [454484] = {
+    localName = "One With the Wind",
+    tokenName = "one_with_the_wind",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157059) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 10,
+      scaled_value = 10,
+      pvp_coefficient = 1.00000,
+      pct = 0.100,
+    },
+  },
+  -- Tiger Strikes 
+  [454485] = {
+    localName = "Tiger Strikes",
+    tokenName = "tiger_strikes",
+    school = 0x01,
+    duration = -1,
+    max_stacks = 1,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157060) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 0.50000,
+      pct = 0.050,
+      affected_spells = {
+        100784,        107428,        185099,        205523,        228649,
+        392959,
+      },
+    },
+  },
+  -- Tiger's Ferocity 
+  [454502] = {
+    localName = "Tiger's Ferocity",
+    tokenName = "tigers_ferocity",
+    school = 0x01,
+    duration = -1,
+    max_stacks = 6,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157096) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 0.50000,
+      pct = 0.250,
+      affected_spells = {
+        100780,        331433,
+      },
+    },
+  },
+  -- Monk Windwalker 11.0 Class Set 4pc 
+  [454505] = {
+    localName = "Monk Windwalker 11.0 Class Set 4pc",
+    tokenName = "monk_windwalker_11.0_class_set_4pc",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157099) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 15,
+      scaled_value = 15,
+      pvp_coefficient = 0.50000,
+      pct = 0.150,
+    },
+    [2] = { -- (id=1157100) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+  },
+  -- Memory of the Monastery 
+  [454969] = {
+    localName = "Memory of the Monastery",
+    tokenName = "memory_of_the_monastery",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157993) 
+      type = 6, -- Apply Aura
+      subtype = 218, -- Apply Percent Modifier
+      property = 3, -- Spell Effect 1
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+      affected_spells = {
+        137384,
+      },
+    },
+  },
+  -- Memory of the Monastery 
+  [454970] = {
+    localName = "Memory of the Monastery",
+    tokenName = "memory_of_the_monastery",
+    school = 0x01,
+    duration = 5,
+    max_stacks = 8,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1157994) 
+      type = 6, -- Apply Aura
+      subtype = 193, -- Modify All Haste Percent
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+  },
+  -- Strike At Dawn 
+  [455043] = {
+    localName = "Strike At Dawn",
+    tokenName = "strike_at_dawn",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158164) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Ox Stance 
+  [455068] = {
+    localName = "Ox Stance",
+    tokenName = "ox_stance",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158212) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 60,
+      scaled_value = 60,
+      pvp_coefficient = 1.00000,
+      pct = 0.600,
+    },
+    [2] = { -- (id=1158249) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 60,
+      scaled_value = 60,
+      pvp_coefficient = 1.00000,
+      pct = 0.600,
+    },
+  },
+  -- Ox Stance 
+  [455071] = {
+    localName = "Ox Stance",
+    tokenName = "ox_stance",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158229) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Black Ox Adept 
+  [455079] = {
+    localName = "Black Ox Adept",
+    tokenName = "black_ox_adept",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158241) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- Heightened Guard 
+  [455081] = {
+    localName = "Heightened Guard",
+    tokenName = "heightened_guard",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158247) 
+      type = 6, -- Apply Aura
+      subtype = 219, -- Apply Flat Modifier
+      property = 3, -- Spell Effect 1
+      base_value = -20,
+      scaled_value = -20,
+      pvp_coefficient = 1.00000,
+      pct = -0.200,
+      affected_spells = {
+        455068,
+      },
+    },
+  },
+  -- Elixir of Determination 
+  [455139] = {
+    localName = "Elixir of Determination",
+    tokenName = "elixir_of_determination",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1158360) 
+      type = 6, -- Apply Aura
+      subtype = 468, -- Trigger Spell Based on Health Percent
+      base_value = 40,
+      scaled_value = 40,
+      pvp_coefficient = 1.00000,
+      pct = 0.400,
+    },
+    [2] = { -- (id=1158361) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 30,
+      scaled_value = 30,
+      pvp_coefficient = 1.00000,
+      pct = 0.300,
+    },
+    [3] = { -- (id=1158362) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 1.00000,
+      pct = 0.080,
+    },
+  },
+  -- Flow of Battle 
+  [457257] = {
+    localName = "Flow of Battle",
+    tokenName = "flow_of_battle",
+    school = 0x01,
+    duration = 15,
+    max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1162132) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 0.50000,
+      pct = 0.010,
+      affected_spells = {
+        100780,        100784,        107270,        113656,        115181,
+        117418,        117952,        121253,        123586,        124081,
+        132467,        148135,        148187,        158221,        185099,
+        196608,        196733,        205523,        228649,        261947,
+        261977,        275673,        288636,        325153,        327264,
+        330903,        330911,        331433,        337342,        345727,
+        388201,        388207,        388609,        388867,        392959,
+        393056,        393400,        393566,        393786,        395519,
+        395521,        418360,        443038,        443088,        443127,
+        443263,        443611,        451767,        451839,        452130,
+        457917,
+      },
+    },
+  },
+  -- Flow of Battle 
+  [457271] = {
+    localName = "Flow of Battle",
+    tokenName = "flow_of_battle",
+    school = 0x01,
+    duration = 15,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1162153) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 14, -- Spell Resource Cost
+      base_value = -100,
+      scaled_value = -100,
+      pvp_coefficient = 0.50000,
+      pct = -1.000,
+      affected_spells = {
+        121253,
+      },
+    },
+  },
+  -- Jadefire Fists 
+  [457974] = {
+    localName = "Jadefire Fists",
+    tokenName = "jadefire_fists",
+    school = 0x08,
+
+    starts_combat = true,
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1163633) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 25,
+      scaled_value = 25,
+      pvp_coefficient = 1.00000,
+      pct = 0.250,
+    },
+  },
+  -- Power of the Thunder King 
+  [459809] = {
+    localName = "Power of the Thunder King",
+    tokenName = "power_of_the_thunder_king",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166886) 
+      type = 6, -- Apply Aura
+      subtype = 107, -- Add Flat Modifier
+      property = 17, -- Spell Targets
+      base_value = 4,
+      scaled_value = 4,
+      pvp_coefficient = 1.00000,
+      pct = 0.040,
+      affected_spells = {
+        117952,
+      },
+    },
+    [2] = { -- (id=1166887) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        117952,
+      },
+    },
+    [3] = { -- (id=1166888) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 19, -- Spell Tick Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        117952,
+      },
+    },
+  },
+  -- Darting Hurricane 
+  [459839] = {
+    localName = "Darting Hurricane",
+    tokenName = "darting_hurricane",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166943) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=1166968) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
   talentKeys = {
-    418359,    397768,    394923,    393516,    393400,
-    393357,    393098,    392994,    392993,    392985,
-    392983,    392982,    392970,    392958,    392910,
-    392900,    391412,    391383,    391330,    389942,
-    389579,    389578,    388856,    388854,    388849,
-    388848,    388811,    388809,    388686,    388674,
-    388505,    388193,    387638,    387625,    387276,
-    387230,    387184,    387046,    386965,    386949,
-    386941,    386276,    383994,    383785,    383707,
-    383700,    383698,    383697,    325201,    325177,
-    325153,    323999,    322510,    322507,    322120,
-    322113,    231602,    220357,    196740,    196736,
-    196730,    195300,    152175,    123986,    122783,
-    122470,    122281,    121817,    121253,    119582,
-    116847,    116645,    115399,    115181,    115098,
-    113656,    101545,
+    459839,    459809,    457974,    455139,    455081,
+    455079,    455068,    455043,    454969,    454484,
+    454483,    452137,    451823,    451580,    451576,
+    451573,    451529,    451524,    451515,    451505,
+    451498,    451495,    451485,    451463,    451454,
+    451432,    451294,    451036,    451029,    451024,
+    451017,    450994,    450993,    450990,    450989,
+    450988,    450987,    450986,    450985,    450982,
+    450979,    450965,    450912,    450892,    450889,
+    450875,    450870,    450867,    450639,    450615,
+    450529,    450508,    450432,    450427,    450426,
+    450391,    443625,    443589,    443571,    443294,
+    443255,    443110,    443087,    443059,    442818,
+    442747,    442743,    442719,    442687,    418359,
+    397768,    393516,    393400,    393357,    392994,
+    392993,    392985,    392983,    392982,    392979,
+    392958,    392910,    392900,    391412,    391383,
+    391330,    389942,    389579,    388856,    388849,
+    388848,    388811,    388809,    388674,    388505,
+    388193,    387638,    387625,    387276,    387230,
+    387184,    387046,    386965,    383994,    383785,
+    383707,    383700,    383698,    383697,    325201,
+    325177,    325153,    322507,    322120,    322113,
+    196740,    196736,    196730,    195300,    152175,
+    137639,    123986,    122783,    121817,    121253,
+    119582,    116847,    116645,    115399,    115181,
+    113656,
   },
 }
 
 -- ------------------------------------------------------------------------------
-DBC_VERSION = "10.2.7"
-DBC_BUILD = 55261
+DBC_VERSION = "11.0.2"
+DBC_BUILD = 55959
 -- ------------------------------------------------------------------------------
 

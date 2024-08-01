@@ -108,6 +108,7 @@
 455071 # Ox Stance (Buff)
 454970 # Memory of the Monastery (Buff)
 450832 # Fatal Touch (Buff)
+196742 # Whirling Dragon Punch (Buff)
 
 # Monk Class Tree
 
