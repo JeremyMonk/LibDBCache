@@ -134,9 +134,11 @@
 450986 # Against All Odds
 451061 # Against All Odds (Buff)
 450615 # Flurry Strikes
+450617 # Flurry Strikes Hit
 451021 # Flurry Charge (Buff)
 450989 # Efficient Training
 450982 # High Impact
+451039 # High Impact Hit
 450985 # Lead from the Front
 450990 # Martial Precision
 450988 # One Versus Many

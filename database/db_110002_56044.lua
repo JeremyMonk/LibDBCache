@@ -6436,6 +6436,24 @@ DBC = {
       pct = 4.250,
     },
   },
+  -- Flurry Strike 
+  [450617] = {
+    localName = "Flurry Strike",
+    tokenName = "flurry_strike",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150633) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.65000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Summon White Tiger Statue 
   [450639] = {
     localName = "Summon White Tiger Statue",
@@ -7068,6 +7086,24 @@ DBC = {
       scaled_value = 100,
       pvp_coefficient = 1.00000,
       pct = 1.000,
+    },
+  },
+  -- High Impact 
+  [451039] = {
+    localName = "High Impact",
+    tokenName = "high_impact",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151357) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.00000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Against All Odds 
