@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-07-31 - World of Warcraft 11.0.2.55789
+-- Database generated from DBCache on 2024-08-08 - World of Warcraft 11.0.2.56044
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.2", 55789 ) then 
+if not validVersion( "11.0.2", 56044 ) then 
   return
 end
 
@@ -1081,10 +1081,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.150,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
         117418,        117952,        121253,        123586,        124081,
@@ -1103,31 +1103,31 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.150,
       affected_spells = {
         100780,        100784,        107270,        113656,        115181,
-        117418,        117952,        121253,        123586,        124081,
-        132467,        148135,        148187,        158221,        185099,
-        196608,        196733,        205523,        228649,        261947,
-        261977,        275673,        288636,        325153,        327264,
-        330903,        330911,        331433,        337342,        345727,
-        388201,        388207,        388609,        388867,        392959,
-        393056,        393400,        393566,        393786,        395519,
-        395521,        418360,        443038,        443088,        443127,
-        443263,        443611,        451767,        451839,        452130,
-        457917,
+        117418,        117952,        121253,        123586,        123725,
+        124081,        132467,        148135,        148187,        158221,
+        185099,        196608,        196733,        205523,        228649,
+        261947,        261977,        275673,        288636,        325153,
+        327264,        330903,        330911,        331433,        337342,
+        345727,        388201,        388207,        388609,        388867,
+        392959,        393056,        393400,        393566,        393786,
+        395519,        395521,        418360,        443038,        443088,
+        443127,        443263,        443611,        451767,        451839,
+        452130,        457917,
       },
     },
     [3] = { -- (id=191109) 
       type = 6, -- Apply Aura
       subtype = 429, -- Modify Pet Damage Done Percent
-      base_value = 50,
-      scaled_value = 50,
+      base_value = 72,
+      scaled_value = 72,
       pvp_coefficient = 1.00000,
-      pct = 0.500,
+      pct = 0.720,
     },
     [4] = { -- (id=191110) 
       type = 6, -- Apply Aura
@@ -1306,10 +1306,10 @@ DBC = {
     [20] = { -- (id=743520) 
       type = 6, -- Apply Aura
       subtype = 531, -- Modify Guardian Damage Done Percent
-      base_value = 50,
-      scaled_value = 50,
+      base_value = 72,
+      scaled_value = 72,
       pvp_coefficient = 1.00000,
-      pct = 0.500,
+      pct = 0.720,
     },
     [21] = { -- (id=745150) 
       type = 6, -- Apply Aura
@@ -1683,10 +1683,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
-      base_value = 3,
-      scaled_value = 3,
+      base_value = -2,
+      scaled_value = -2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = -0.020,
     },
     [24] = { -- (id=1078912) 
       type = 6, -- Apply Aura
@@ -1847,22 +1847,22 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 16,
-      scaled_value = 16,
+      base_value = -20,
+      scaled_value = -20,
       pvp_coefficient = 1.00000,
-      pct = 0.160,
+      pct = -0.200,
       affected_spells = {
-        100780,        107428,        185099,        331433,        392959,
+        123986,        130654,        148135,        261682,        461404,
       },
     },
     [6] = { -- (id=260817) 
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 12,
-      scaled_value = 12,
+      base_value = 46,
+      scaled_value = 46,
       pvp_coefficient = 1.00000,
-      pct = 0.120,
+      pct = 0.460,
       affected_spells = {
         116847,        148187,
       },
@@ -1871,10 +1871,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 125,
-      scaled_value = 125,
+      base_value = 159,
+      scaled_value = 159,
       pvp_coefficient = 1.00000,
-      pct = 1.250,
+      pct = 1.590,
       affected_spells = {
         100780,        331433,
       },
@@ -1883,10 +1883,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 165,
-      scaled_value = 165,
+      base_value = 231,
+      scaled_value = 231,
       pvp_coefficient = 1.00000,
-      pct = 1.650,
+      pct = 2.310,
       affected_spells = {
         107270,
       },
@@ -1963,10 +1963,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 40,
-      scaled_value = 40,
+      base_value = 61,
+      scaled_value = 61,
       pvp_coefficient = 1.00000,
-      pct = 0.400,
+      pct = 0.610,
       affected_spells = {
         107428,        185099,        392959,
       },
@@ -2158,6 +2158,18 @@ DBC = {
         327104,        388193,
       },
     },
+    [32] = { -- (id=1176969) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 0, -- Spell Direct Amount
+      base_value = 80,
+      scaled_value = 80,
+      pvp_coefficient = 1.00000,
+      pct = 0.800,
+      affected_spells = {
+        132466,        132467,
+      },
+    },
   },
   -- Storm, Earth, and Fire 
   [137639] = {
@@ -2281,7 +2293,7 @@ DBC = {
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 2.80000,
-      pvp_coefficient = 1.40000,
+      pvp_coefficient = 1.70000,
       pct = 0.000,
     },
   },
@@ -3299,6 +3311,7 @@ DBC = {
     [1] = { -- (id=815341) 
       type = 6, -- Apply Aura
       subtype = 42, -- Proc Trigger Spell
+      property = 6, -- Suppress Points Stacking
       base_value = 200,
       scaled_value = 200,
       pvp_coefficient = 1.00000,
@@ -4191,10 +4204,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 20,
-      scaled_value = 20,
+      base_value = 30,
+      scaled_value = 30,
       pvp_coefficient = 1.00000,
-      pct = 0.200,
+      pct = 0.300,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -4226,10 +4239,10 @@ DBC = {
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
       ranks = { 10, 12, },
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.150,
       affected_spells = {
         107428,        185099,        392959,
       },
@@ -4261,10 +4274,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 25,
-      scaled_value = 25,
+      base_value = 40,
+      scaled_value = 40,
       pvp_coefficient = 1.00000,
-      pct = 0.250,
+      pct = 0.400,
       affected_spells = {
         100780,        331433,
       },
@@ -4453,10 +4466,10 @@ DBC = {
     },
     [2] = { -- (id=1028781) 
       type = 3, -- Dummy
-      base_value = 35,
-      scaled_value = 35,
+      base_value = 60,
+      scaled_value = 60,
       pvp_coefficient = 1.00000,
-      pct = 0.350,
+      pct = 0.600,
     },
   },
   -- Hardened Soles 
@@ -4472,10 +4485,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 107, -- Add Flat Modifier
       property = 7, -- Spell Critical Chance
-      base_value = 5,
-      scaled_value = 5,
+      base_value = 10,
+      scaled_value = 10,
       pvp_coefficient = 1.00000,
-      pct = 0.050,
+      pct = 0.100,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -4484,10 +4497,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 15, -- Spell Critical Damage
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 18,
+      scaled_value = 18,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.180,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -5605,10 +5618,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.060,
       affected_spells = {
         116670,        124682,        325209,        358560,
       },
@@ -5629,10 +5642,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 6,
+      scaled_value = 6,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.060,
       affected_spells = {
         116670,        124682,        325209,        358560,
       },
@@ -5898,10 +5911,10 @@ DBC = {
     [1] = { -- (id=1139581) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 3,
-      scaled_value = 3,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = 0.020,
     },
   },
   -- Crane Stance 
@@ -5917,10 +5930,10 @@ DBC = {
     [1] = { -- (id=1139585) 
       type = 6, -- Apply Aura
       subtype = 193, -- Modify All Haste Percent
-      base_value = 3,
-      scaled_value = 3,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = 0.020,
     },
   },
   -- Ox Stance 
@@ -5936,10 +5949,10 @@ DBC = {
     [1] = { -- (id=1139588) 
       type = 6, -- Apply Aura
       subtype = 471, -- Modify Versatility Percent
-      base_value = 3,
-      scaled_value = 3,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = 0.020,
     },
   },
   -- Tiger Stance 
@@ -5955,10 +5968,10 @@ DBC = {
     [1] = { -- (id=1139589) 
       type = 6, -- Apply Aura
       subtype = 290, -- Modify Critical Strike Percent
-      base_value = 3,
-      scaled_value = 3,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = 0.020,
     },
   },
   -- Serpent Stance 
@@ -5974,10 +5987,10 @@ DBC = {
     [1] = { -- (id=1139590) 
       type = 6, -- Apply Aura
       subtype = 318, -- Modify Mastery Percent
-      base_value = 3,
-      scaled_value = 3,
+      base_value = 2,
+      scaled_value = 2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = 0.020,
     },
   },
   -- Unity Within 
@@ -6200,6 +6213,27 @@ DBC = {
         443614,        448430,        451452,        451968,
       },
     },
+    [3] = { -- (id=1176892) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 22, -- Spell Periodic Amount
+      ranks = { 2, 4, },
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+      affected_spells = {
+        115175,        115310,        116670,        119611,        124682,
+        130654,        132463,        162530,        191894,        198487,
+        198533,        227344,        273354,        274062,        274774,
+        274912,        278564,        297850,        311123,        322101,
+        325209,        328748,        337268,        337993,        343737,
+        343819,        345727,        358560,        387995,        388044,
+        388207,        388514,        388615,        388668,        399230,
+        399491,        407058,        425804,        443039,        443272,
+        443614,        448430,        451452,        451968,
+      },
+    },
   },
   -- Martial Instincts 
   [450427] = {
@@ -6372,10 +6406,10 @@ DBC = {
     [2] = { -- (id=1151332) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 400,
-      scaled_value = 400,
+      base_value = 300,
+      scaled_value = 300,
       pvp_coefficient = 1.00000,
-      pct = 4.000,
+      pct = 3.000,
     },
     [3] = { -- (id=1167368) 
       type = 6, -- Apply Aura
@@ -6766,10 +6800,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.150,
       affected_spells = {
         117418,
       },
@@ -6778,10 +6812,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 30,
-      scaled_value = 30,
+      base_value = 35,
+      scaled_value = 35,
       pvp_coefficient = 1.00000,
-      pct = 0.300,
+      pct = 0.350,
       affected_spells = {
         121253,
       },
@@ -6800,10 +6834,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         100780,        115129,        117952,        121253,        331433,
       },
@@ -6812,10 +6846,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         100780,        115129,        117952,        121253,        331433,
       },
@@ -6840,10 +6874,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -6861,10 +6895,10 @@ DBC = {
     [1] = { -- (id=1151272) 
       type = 6, -- Apply Aura
       subtype = 280, -- Unknown
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 12,
+      scaled_value = 12,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.120,
     },
   },
   -- Vigilant Watch 
@@ -7286,7 +7320,7 @@ DBC = {
     tokenName = "martial_mixture",
     school = 0x01,
     duration = 15,
-    max_stacks = 12,
+    max_stacks = 30,
 
     may_miss = true,
     may_crit = true,
@@ -7295,10 +7329,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
-      pvp_coefficient = 1.00000,
-      pct = 0.100,
+      base_value = 8,
+      scaled_value = 8,
+      pvp_coefficient = 0.40000,
+      pct = 0.080,
       affected_spells = {
         100780,        331433,
       },
@@ -7384,10 +7418,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 12,
+      scaled_value = 12,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.120,
       affected_spells = {
         100784,        205523,        228649,
       },
@@ -7446,6 +7480,8 @@ DBC = {
     localName = "Rushing Jade Wind",
     tokenName = "rushing_jade_wind",
     school = 0x01,
+    cooldown = 2,
+    icd = 2,
 
     may_miss = true,
     may_crit = true,
@@ -7640,10 +7676,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 80,
-      scaled_value = 80,
-      pvp_coefficient = 1.00000,
-      pct = 0.800,
+      base_value = 100,
+      scaled_value = 100,
+      pvp_coefficient = 0.50000,
+      pct = 1.000,
       affected_spells = {
         392983,        395519,        395521,
       },
@@ -7935,7 +7971,7 @@ DBC = {
     localName = "Wisdom of the Wall",
     tokenName = "wisdom_of_the_wall",
     school = 0x01,
-    duration = 20,
+    duration = 40,
 
     may_miss = true,
     may_crit = true,
@@ -8172,10 +8208,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 218, -- Apply Percent Modifier
       property = 3, -- Spell Effect 1
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 25,
+      scaled_value = 25,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.250,
       affected_spells = {
         137384,
       },
@@ -8489,6 +8525,30 @@ DBC = {
       pct = 0.020,
     },
   },
+  -- Darting Hurricane 
+  [459841] = {
+    localName = "Darting Hurricane",
+    tokenName = "darting_hurricane",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166946) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 21, -- Spell Global Cooldown
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        100780,        331433,
+      },
+    },
+  },
   talentKeys = {
     459839,    459809,    457974,    455139,    455081,
     455079,    455068,    455043,    454969,    454484,
@@ -8522,6 +8582,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.2"
-DBC_BUILD = 55789
+DBC_BUILD = 56044
 -- ------------------------------------------------------------------------------
 

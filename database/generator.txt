@@ -109,6 +109,7 @@
 454970 # Memory of the Monastery (Buff)
 450832 # Fatal Touch (Buff)
 196742 # Whirling Dragon Punch (Buff)
+459841 # Darting Hurricane (Buff)
 
 # Monk Class Tree
 

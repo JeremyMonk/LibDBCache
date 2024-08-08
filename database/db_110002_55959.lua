@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-08-01 - World of Warcraft 11.0.2.55959
+-- Database generated from DBCache on 2024-08-08 - World of Warcraft 11.0.2.55959
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.2", 55959 ) then 
@@ -8522,6 +8522,30 @@ DBC = {
       scaled_value = 2,
       pvp_coefficient = 1.00000,
       pct = 0.020,
+    },
+  },
+  -- Darting Hurricane 
+  [459841] = {
+    localName = "Darting Hurricane",
+    tokenName = "darting_hurricane",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 3,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1166946) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 21, -- Spell Global Cooldown
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        100780,        331433,
+      },
     },
   },
   talentKeys = {
