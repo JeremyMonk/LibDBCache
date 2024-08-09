@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-08-08 - World of Warcraft 11.0.2.56044
+-- Database generated from DBCache on 2024-08-09 - World of Warcraft 11.0.2.56044
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.2", 56044 ) then 
@@ -7089,6 +7089,25 @@ DBC = {
     },
   },
   -- High Impact 
+  [451037] = {
+    localName = "High Impact",
+    tokenName = "high_impact",
+    school = 0x01,
+    duration = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151355) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- High Impact 
   [451039] = {
     localName = "High Impact",
     tokenName = "high_impact",
@@ -7202,6 +7221,25 @@ DBC = {
       scaled_value = 25,
       pvp_coefficient = 1.00000,
       pct = 0.250,
+    },
+  },
+  -- Flurry Strike 
+  [451250] = {
+    localName = "Flurry Strike",
+    tokenName = "flurry_strike",
+    school = 0x20,
+
+    ignores_armor = true, -- Shadow
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151723) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.60000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Momentum Boost 
@@ -8229,6 +8267,22 @@ DBC = {
       scaled_value = 5,
       pvp_coefficient = 1.00000,
       pct = 0.050,
+    },
+  },
+  -- Tiger's Ferocity 
+  [454508] = {
+    localName = "Tiger's Ferocity",
+    tokenName = "tigers_ferocity",
+    school = 0x01,
+
+    may_miss = true,
+
+    [1] = { -- (id=1157103) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Memory of the Monastery 

@@ -26,6 +26,7 @@
 454485 # Tiger Strikes (Windwalker T32 Set)
 454502 # Tiger's Ferocity (Windwalker T32 Set)
 454505 # T33 Windwalker AoE
+454508 # T33 Windwalker AoE Damage
 457257 # Flow of Battle (Brewmaster T32 Set)
 457271 # Flow of Battle Reset (Brewmaster T32 Set)
 
@@ -136,8 +137,10 @@
 450615 # Flurry Strikes
 450617 # Flurry Strikes Hit
 451021 # Flurry Charge (Buff)
+451250 # Flurry Strike (Wisdom proc)
 450989 # Efficient Training
 450982 # High Impact
+451037 # High Impact Debuff
 451039 # High Impact Hit
 450985 # Lead from the Front
 450990 # Martial Precision
