@@ -166,7 +166,9 @@
 443255 # Flight of the Red Crane
 443294 # Heart of the Jade Serpent
 443424 # Heart of the Jade Serpent (Stacking Buff)
-443616 # Heart of the Jade Serpent (Buff)
+456368 # Heart of the Jade Serpnet (Next SotWL Buff)
+443616 # Heart of the Jade Serpent (Celestial CDR Buff)
+443421 # Heart of the Jade Serpent (CDR Buff)
 443571 # Inner Compass
 443059 # Jade Sanctuary
 442747 # Niuzao's Protection
@@ -175,6 +177,7 @@
 443576 # Serpent Stance
 443110 # Strength of the Black Ox
 443112 # Strength of the Black Ox (Buff)
+443127 # Strength of the Black Ox (WW Damage)
 442743 # Temple Training
 443575 # Tiger Stance
 443589 # Unity Within

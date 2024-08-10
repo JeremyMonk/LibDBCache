@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-08-09 - World of Warcraft 11.0.0.55818
+-- Database generated from DBCache on 2024-08-10 - World of Warcraft 11.0.0.55818
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.0", 55818 ) then 
@@ -6136,6 +6136,25 @@ DBC = {
       },
     },
   },
+  -- Strength of the Black Ox 
+  [443127] = {
+    localName = "Strength of the Black Ox",
+    tokenName = "strength_of_the_black_ox",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138821) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.00000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Flight of the Red Crane 
   [443255] = {
     localName = "Flight of the Red Crane",
@@ -6170,6 +6189,96 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [443421] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    duration = 8,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139298) 
+      type = 28, -- Summon
+      subtype = 1, -- Position is facing relative
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=1139299) 
+      type = 6, -- Apply Aura
+      subtype = 286, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        107428,        113656,        116680,        116849,        120086,
+        152175,        158221,        185099,        232055,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [3] = { -- (id=1139300) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        115151,
+      },
+    },
+    [4] = { -- (id=1142269) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        116849,
+      },
+    },
+    [5] = { -- (id=1155443) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [6] = { -- (id=1155444) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 19, -- Spell Tick Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [7] = { -- (id=1166052) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        116680,
+      },
     },
   },
   -- Heart of the Jade Serpent 
@@ -8735,6 +8844,27 @@ DBC = {
       scaled_value = 20,
       pvp_coefficient = 1.00000,
       pct = 0.200,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [456368] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    duration = 120,
+    max_stacks = 2,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1160525) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
     },
   },
   -- Flow of Battle 
