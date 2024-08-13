@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-08-08 - World of Warcraft 11.0.2.55959
+-- Database generated from DBCache on 2024-08-13 - World of Warcraft 11.0.2.56110
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.2", 55959 ) then 
+if not validVersion( "11.0.2", 56110 ) then 
   return
 end
 
@@ -1651,10 +1651,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.200,
       affected_spells = {
         116670,
       },
@@ -1683,10 +1683,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 219, -- Apply Flat Modifier
       property = 3, -- Spell Effect 1
-      base_value = 3,
-      scaled_value = 3,
+      base_value = -2,
+      scaled_value = -2,
       pvp_coefficient = 1.00000,
-      pct = 0.030,
+      pct = -0.020,
     },
     [24] = { -- (id=1078912) 
       type = 6, -- Apply Aura
@@ -1883,10 +1883,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 165,
-      scaled_value = 165,
+      base_value = 231,
+      scaled_value = 231,
       pvp_coefficient = 1.00000,
-      pct = 1.650,
+      pct = 2.310,
       affected_spells = {
         107270,
       },
@@ -2293,7 +2293,7 @@ DBC = {
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 2.80000,
-      pvp_coefficient = 1.40000,
+      pvp_coefficient = 1.70000,
       pct = 0.000,
     },
   },
@@ -3311,6 +3311,7 @@ DBC = {
     [1] = { -- (id=815341) 
       type = 6, -- Apply Aura
       subtype = 42, -- Proc Trigger Spell
+      property = 6, -- Suppress Points Stacking
       base_value = 200,
       scaled_value = 200,
       pvp_coefficient = 1.00000,
@@ -4237,7 +4238,7 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      ranks = { 10, 12, },
+      ranks = { 15, 12, },
       base_value = 15,
       scaled_value = 15,
       pvp_coefficient = 1.00000,
@@ -5704,7 +5705,7 @@ DBC = {
       property = 0, -- Spell Direct Amount
       base_value = 30,
       scaled_value = 30,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.67000,
       pct = 0.300,
       affected_spells = {
         107428,        185099,        392959,
@@ -5841,6 +5842,25 @@ DBC = {
       },
     },
   },
+  -- Strength of the Black Ox 
+  [443127] = {
+    localName = "Strength of the Black Ox",
+    tokenName = "strength_of_the_black_ox",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1138821) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.00000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Flight of the Red Crane 
   [443255] = {
     localName = "Flight of the Red Crane",
@@ -5875,6 +5895,96 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [443421] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    duration = 8,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1139298) 
+      type = 28, -- Summon
+      subtype = 1, -- Position is facing relative
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
+    },
+    [2] = { -- (id=1139299) 
+      type = 6, -- Apply Aura
+      subtype = 286, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        107428,        113656,        116680,        116849,        120086,
+        152175,        158221,        185099,        232055,        392959,
+        392983,        395519,        395521,        451767,
+      },
+    },
+    [3] = { -- (id=1139300) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        115151,
+      },
+    },
+    [4] = { -- (id=1142269) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        116849,
+      },
+    },
+    [5] = { -- (id=1155443) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 1, -- Spell Duration
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [6] = { -- (id=1155444) 
+      type = 6, -- Apply Aura
+      subtype = 108, -- Add Percent Modifier
+      property = 19, -- Spell Tick Time
+      base_value = -50,
+      scaled_value = -50,
+      pvp_coefficient = 1.00000,
+      pct = -0.500,
+      affected_spells = {
+        113656,        120086,        232055,
+      },
+    },
+    [7] = { -- (id=1166052) 
+      type = 6, -- Apply Aura
+      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      base_value = 75,
+      scaled_value = 75,
+      pvp_coefficient = 1.00000,
+      pct = 0.750,
+      affected_spells = {
+        116680,
+      },
     },
   },
   -- Heart of the Jade Serpent 
@@ -6405,10 +6515,10 @@ DBC = {
     [2] = { -- (id=1151332) 
       type = 6, -- Apply Aura
       subtype = 4, -- Dummy
-      base_value = 400,
-      scaled_value = 400,
+      base_value = 300,
+      scaled_value = 300,
       pvp_coefficient = 1.00000,
-      pct = 4.000,
+      pct = 3.000,
     },
     [3] = { -- (id=1167368) 
       type = 6, -- Apply Aura
@@ -6433,6 +6543,24 @@ DBC = {
       scaled_value = 425,
       pvp_coefficient = 1.00000,
       pct = 4.250,
+    },
+  },
+  -- Flurry Strike 
+  [450617] = {
+    localName = "Flurry Strike",
+    tokenName = "flurry_strike",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1150633) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 0.65000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Summon White Tiger Statue 
@@ -6799,10 +6927,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 15,
+      scaled_value = 15,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.150,
       affected_spells = {
         117418,
       },
@@ -6811,10 +6939,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 30,
-      scaled_value = 30,
+      base_value = 35,
+      scaled_value = 35,
       pvp_coefficient = 1.00000,
-      pct = 0.300,
+      pct = 0.350,
       affected_spells = {
         121253,
       },
@@ -6833,10 +6961,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         100780,        115129,        117952,        121253,        331433,
       },
@@ -6845,10 +6973,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         100780,        115129,        117952,        121253,        331433,
       },
@@ -6873,10 +7001,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 15,
-      scaled_value = 15,
+      base_value = 20,
+      scaled_value = 20,
       pvp_coefficient = 1.00000,
-      pct = 0.150,
+      pct = 0.200,
       affected_spells = {
         101546,        107270,        322729,
       },
@@ -6894,10 +7022,10 @@ DBC = {
     [1] = { -- (id=1151272) 
       type = 6, -- Apply Aura
       subtype = 280, -- Unknown
-      base_value = 10,
-      scaled_value = 10,
+      base_value = 12,
+      scaled_value = 12,
       pvp_coefficient = 1.00000,
-      pct = 0.100,
+      pct = 0.120,
     },
   },
   -- Vigilant Watch 
@@ -7069,6 +7197,43 @@ DBC = {
       pct = 1.000,
     },
   },
+  -- High Impact 
+  [451037] = {
+    localName = "High Impact",
+    tokenName = "high_impact",
+    school = 0x01,
+    duration = 10,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151355) 
+      type = 6, -- Apply Aura
+      subtype = 42, -- Proc Trigger Spell
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
+  -- High Impact 
+  [451039] = {
+    localName = "High Impact",
+    tokenName = "high_impact",
+    school = 0x01,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151357) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.00000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Against All Odds 
   [451061] = {
     localName = "Against All Odds",
@@ -7165,6 +7330,25 @@ DBC = {
       scaled_value = 25,
       pvp_coefficient = 1.00000,
       pct = 0.250,
+    },
+  },
+  -- Flurry Strike 
+  [451250] = {
+    localName = "Flurry Strike",
+    tokenName = "flurry_strike",
+    school = 0x20,
+
+    ignores_armor = true, -- Shadow
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1151723) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      ap_coefficient = 1.60000,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Momentum Boost 
@@ -7970,7 +8154,7 @@ DBC = {
     localName = "Wisdom of the Wall",
     tokenName = "wisdom_of_the_wall",
     school = 0x01,
-    duration = 20,
+    duration = 40,
 
     may_miss = true,
     may_crit = true,
@@ -8194,6 +8378,22 @@ DBC = {
       pct = 0.050,
     },
   },
+  -- Tiger's Ferocity 
+  [454508] = {
+    localName = "Tiger's Ferocity",
+    tokenName = "tigers_ferocity",
+    school = 0x01,
+
+    may_miss = true,
+
+    [1] = { -- (id=1157103) 
+      type = 2, -- School Damage
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+  },
   -- Memory of the Monastery 
   [454969] = {
     localName = "Memory of the Monastery",
@@ -8373,6 +8573,29 @@ DBC = {
       scaled_value = 8,
       pvp_coefficient = 1.00000,
       pct = 0.080,
+    },
+  },
+  -- Heart of the Jade Serpent 
+  [456368] = {
+    localName = "Heart of the Jade Serpent",
+    tokenName = "heart_of_the_jade_serpent",
+    school = 0x08,
+    cooldown = 2,
+    icd = 2,
+    duration = 120,
+    max_stacks = 2,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1160525) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 1,
+      scaled_value = 1,
+      pvp_coefficient = 1.00000,
+      pct = 0.010,
     },
   },
   -- Flow of Battle 
@@ -8581,6 +8804,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.2"
-DBC_BUILD = 55959
+DBC_BUILD = 56110
 -- ------------------------------------------------------------------------------
 
