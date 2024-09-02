@@ -32,6 +32,7 @@
 
 # Monk Spells
 
+115078 # Paralysis
 137025 # Windwalker Monk
 137024 # Mistweaver Monk
 137023 # Brewmaster Monk
