@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-09-02 - World of Warcraft 11.0.2.56421
+-- Database generated from DBCache on 2024-09-03 - World of Warcraft 11.0.2.56421
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.2", 56421 ) then 
@@ -401,6 +401,25 @@ DBC = {
       scaled_value = 7,
       pvp_coefficient = 1.00000,
       pct = 0.070,
+    },
+  },
+  -- Expel Harm 
+  [115129] = {
+    localName = "Expel Harm",
+    tokenName = "expel_harm",
+    school = 0x08,
+
+    ignores_armor = true, -- Nature
+    may_miss = true,
+
+    [1] = { -- (id=128814) 
+      type = 2, -- School Damage
+      subtype = 11, -- Add Target
+      property = 17, -- Combat Reach to AOE
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 0.50000,
+      pct = 0.000,
     },
   },
   -- Breath of Fire 
@@ -876,43 +895,6 @@ DBC = {
       pvp_coefficient = 1.00000,
       pct = -0.050,
       school_mask = 0x7f,
-    },
-  },
-  -- Chi Burst 
-  [123986] = {
-    localName = "Chi Burst",
-    tokenName = "chi_burst",
-    school = 0x08,
-    gcd = 1.5,
-    cooldown = 30,
-    duration = 1,
-
-    ignores_armor = true, -- Nature
-    may_crit = true,
-    delay_auto_attack = true,
-
-    [1] = { -- (id=156697) 
-      type = 179, -- Create Area Trigger
-      subtype = 1, -- Position is facing relative
-      base_value = 5,
-      scaled_value = 5,
-      pvp_coefficient = 1.00000,
-      pct = 0.050,
-    },
-    [2] = { -- (id=201318) 
-      type = 179, -- Create Area Trigger
-      subtype = 1, -- Position is facing relative
-      base_value = 0,
-      scaled_value = 0,
-      pvp_coefficient = 1.00000,
-      pct = 0.000,
-    },
-    [3] = { -- (id=739870) 
-      type = 3, -- Dummy
-      base_value = 2,
-      scaled_value = 2,
-      pvp_coefficient = 1.00000,
-      pct = 0.020,
     },
   },
   -- Touch of Karma 
@@ -8821,6 +8803,42 @@ DBC = {
       },
     },
   },
+  -- Chi Burst 
+  [461404] = {
+    localName = "Chi Burst",
+    tokenName = "chi_burst",
+    school = 0x08,
+    gcd = 1.5,
+    duration = 1,
+
+    ignores_armor = true, -- Nature
+    may_crit = true,
+    delay_auto_attack = true,
+
+    [1] = { -- (id=1169823) 
+      type = 179, -- Create Area Trigger
+      subtype = 1, -- Position is facing relative
+      base_value = 5,
+      scaled_value = 5,
+      pvp_coefficient = 1.00000,
+      pct = 0.050,
+    },
+    [2] = { -- (id=1169824) 
+      type = 179, -- Create Area Trigger
+      subtype = 1, -- Position is facing relative
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
+    },
+    [3] = { -- (id=1169825) 
+      type = 3, -- Dummy
+      base_value = 2,
+      scaled_value = 2,
+      pvp_coefficient = 1.00000,
+      pct = 0.020,
+    },
+  },
   talentKeys = {
     459839,    459809,    457974,    455139,    455081,
     455079,    455068,    455043,    454969,    454484,
@@ -8846,9 +8864,8 @@ DBC = {
     383707,    383700,    383698,    383697,    325201,
     325177,    325153,    322507,    322120,    322113,
     196740,    196736,    196730,    195300,    152175,
-    137639,    123986,    122783,    121817,    121253,
-    119582,    116847,    116645,    115399,    115181,
-    113656,
+    137639,    122783,    121817,    121253,    119582,
+    116847,    116645,    115399,    115181,    113656,
   },
 }
 

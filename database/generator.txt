@@ -32,6 +32,8 @@
 
 # Monk Spells
 
+322101 # Expel Harm
+115129 # Expel Harm (Damage)
 115078 # Paralysis
 137025 # Windwalker Monk
 137024 # Mistweaver Monk
@@ -58,7 +60,7 @@
 395521 # Strike of the Windlord OH
 148187 # Rushing Jade Wind (tick)
 395414 # Jadefire Brand (damage)
-123986 # Chi Burst
+461404 # Chi Burst
 148135 # Chi Burst
 115098 # Chi Wave
 132467 # Chi Wave
@@ -272,7 +274,6 @@
 116847 # Rushing Jade Wind (Tick)
 388207 # Jadefire Stomp
 100780 # Tiger Palm
-322101 # Expel Harm
 117952 # Crackling Jade Lightning
 322109 # Touch of Death
 117418 # Fists of Fury
