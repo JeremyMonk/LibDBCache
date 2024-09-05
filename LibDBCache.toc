@@ -8,6 +8,5 @@
 ## Dependencies: WeakAuras
 definitions.lua
 main.lua
-database/db_110002_56110.lua
 database/db_110002_56313.lua
 database/db_110002_56421.lua
