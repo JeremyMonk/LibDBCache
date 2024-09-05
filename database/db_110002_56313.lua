@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-09-03 - World of Warcraft 11.0.2.56313
+-- Database generated from DBCache on 2024-09-05 - World of Warcraft 11.0.2.56313
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.2", 56313 ) then 
@@ -25,6 +25,8 @@ DBC = {
       scaled_value = 1,
       pvp_coefficient = 1.00000,
       pct = 0.010,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=18194) 
       type = 137, -- Energize Power Percent
@@ -240,6 +242,8 @@ DBC = {
       ap_coefficient = 0.10000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Rising Sun Kick 
@@ -445,6 +449,8 @@ DBC = {
       ap_coefficient = 0.53280,
       pvp_coefficient = 1.35000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Black Ox Brew 
@@ -580,6 +586,8 @@ DBC = {
       ap_coefficient = 1.15000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=155264) 
       type = 64, -- Trigger Spell
@@ -587,6 +595,8 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Crackling Jade Lightning 
@@ -678,6 +688,8 @@ DBC = {
       ap_coefficient = 0.99900,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [3] = { -- (id=283420) 
       type = 6, -- Apply Aura
@@ -686,6 +698,8 @@ DBC = {
       scaled_value = -20,
       pvp_coefficient = 1.00000,
       pct = -0.200,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [4] = { -- (id=335940) 
       type = 3, -- Dummy
@@ -701,6 +715,8 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [6] = { -- (id=814937) 
       type = 3, -- Dummy
@@ -853,6 +869,8 @@ DBC = {
       ap_coefficient = 0.08789,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=155942) 
       type = 6, -- Apply Aura
@@ -862,6 +880,8 @@ DBC = {
       ap_coefficient = 0.14742,
       pvp_coefficient = 1.00000,
       pct = -0.700,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Breath of Fire 
@@ -2332,6 +2352,8 @@ DBC = {
       ap_coefficient = 0.13300,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Whirling Dragon Punch 
@@ -2381,6 +2403,8 @@ DBC = {
       ap_coefficient = 1.61000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Rising Sun Kick 
@@ -2475,6 +2499,8 @@ DBC = {
       ap_coefficient = 0.72727,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=288837) 
       type = 6, -- Apply Aura
@@ -2483,6 +2509,8 @@ DBC = {
       scaled_value = -50,
       pvp_coefficient = 1.00000,
       pct = -0.500,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [3] = { -- (id=335941) 
       type = 6, -- Apply Aura
@@ -2491,6 +2519,8 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Blackout Combo 
@@ -3264,6 +3294,8 @@ DBC = {
       ap_coefficient = 2.86380,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=815255) 
       type = 6, -- Apply Aura
@@ -3272,6 +3304,8 @@ DBC = {
       scaled_value = -100,
       pvp_coefficient = 1.00000,
       pct = -1.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [3] = { -- (id=815256) 
       type = 6, -- Apply Aura
@@ -3281,6 +3315,8 @@ DBC = {
       scaled_value = -100,
       pvp_coefficient = 1.00000,
       pct = -1.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [4] = { -- (id=1024392) 
       type = 6, -- Apply Aura
@@ -3911,6 +3947,8 @@ DBC = {
       ap_coefficient = 0.20000,
       pvp_coefficient = 1.35000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Staggering Strikes 
@@ -3997,6 +4035,8 @@ DBC = {
       scaled_value = 5,
       pvp_coefficient = 1.00000,
       pct = 0.050,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=1023716) 
       type = 6, -- Apply Aura
@@ -4061,6 +4101,8 @@ DBC = {
       ap_coefficient = 0.40000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=1023732) 
       type = 10, -- Direct Heal
@@ -4070,6 +4112,8 @@ DBC = {
       sp_coefficient = 0.91000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Quick Sip 
@@ -4320,6 +4364,8 @@ DBC = {
       ap_coefficient = 0.50000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Save Them All 
@@ -4775,6 +4821,8 @@ DBC = {
       scaled_value = -50,
       pvp_coefficient = 1.00000,
       pct = -0.500,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [3] = { -- (id=1031602) 
       type = 64, -- Trigger Spell
@@ -4923,6 +4971,8 @@ DBC = {
       ap_coefficient = 1.80000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Chi Energy 
@@ -5061,6 +5111,8 @@ DBC = {
       ap_coefficient = 0.99900,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=1032927) 
       type = 3, -- Dummy
@@ -5182,6 +5234,8 @@ DBC = {
       ap_coefficient = 3.05900,
       pvp_coefficient = 0.70000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Strike of the Windlord 
@@ -5202,6 +5256,8 @@ DBC = {
       ap_coefficient = 1.84000,
       pvp_coefficient = 0.70000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Inner Peace 
@@ -5251,6 +5307,8 @@ DBC = {
       scaled_value = 0,
       pvp_coefficient = 0.50000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=1073205) 
       type = 3, -- Dummy
@@ -5277,6 +5335,8 @@ DBC = {
       ap_coefficient = 0.83000,
       pvp_coefficient = 0.50000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Press the Advantage 
@@ -5878,6 +5938,8 @@ DBC = {
       ap_coefficient = 1.00000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Flight of the Red Crane 
@@ -6427,6 +6489,8 @@ DBC = {
       scaled_value = 15,
       pvp_coefficient = 1.00000,
       pct = 0.150,
+      area_of_effect = true,
+      max_targets = -1,
     },
     [2] = { -- (id=1150448) 
       type = 6, -- Apply Aura
@@ -7252,6 +7316,8 @@ DBC = {
       ap_coefficient = 1.00000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Against All Odds 
@@ -7369,6 +7435,8 @@ DBC = {
       ap_coefficient = 1.60000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Momentum Boost 
@@ -8060,6 +8128,8 @@ DBC = {
       ap_coefficient = 0.20000,
       pvp_coefficient = 1.00000,
       pct = 0.000,
+      area_of_effect = true,
+      max_targets = -1,
     },
   },
   -- Flurry of Xuen 
