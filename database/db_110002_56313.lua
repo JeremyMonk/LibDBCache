@@ -1,5 +1,5 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-09-05 - World of Warcraft 11.0.2.56313
+-- Database generated from DBCache on 2024-09-09 - World of Warcraft 11.0.2.56313
 -- ------------------------------------------------------------------------------
 
 if not validVersion( "11.0.2", 56313 ) then 
@@ -8871,6 +8871,26 @@ DBC = {
       affected_spells = {
         100780,        331433,
       },
+    },
+  },
+  -- Chi Burst 
+  [460490] = {
+    localName = "Chi Burst",
+    tokenName = "chi_burst",
+    school = 0x01,
+    duration = 30,
+    max_stacks = 2,
+
+    may_miss = true,
+    may_crit = true,
+
+    [1] = { -- (id=1168213) 
+      type = 6, -- Apply Aura
+      subtype = 4, -- Dummy
+      base_value = 0,
+      scaled_value = 0,
+      pvp_coefficient = 1.00000,
+      pct = 0.000,
     },
   },
   -- Chi Burst 

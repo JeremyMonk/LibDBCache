@@ -114,6 +114,7 @@
 450832 # Fatal Touch (Buff)
 196742 # Whirling Dragon Punch (Buff)
 459841 # Darting Hurricane (Buff)
+460490 # Chi Burst (Buff)
 
 # Monk Class Tree
 
