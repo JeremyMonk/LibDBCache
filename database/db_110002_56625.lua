@@ -1,8 +1,8 @@
 -- ------------------------------------------------------------------------------
--- Database generated from DBCache on 2024-09-17 - World of Warcraft 11.0.2.56421
+-- Database generated from DBCache on 2024-09-17 - World of Warcraft 11.0.2.56625
 -- ------------------------------------------------------------------------------
 
-if not validVersion( "11.0.2", 56421 ) then 
+if not validVersion( "11.0.2", 56625 ) then 
   return
 end
 
@@ -1470,10 +1470,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.030,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
         130654,        132463,        162530,        191894,        198487,
@@ -1490,10 +1490,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 22, -- Spell Periodic Amount
-      base_value = 0,
-      scaled_value = 0,
+      base_value = 3,
+      scaled_value = 3,
       pvp_coefficient = 1.00000,
-      pct = 0.000,
+      pct = 0.030,
       affected_spells = {
         115175,        115310,        116670,        119611,        124682,
         130654,        132463,        162530,        191894,        198487,
@@ -1590,10 +1590,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 79,
-      scaled_value = 79,
-      pvp_coefficient = 0.62000,
-      pct = 0.790,
+      base_value = 106,
+      scaled_value = 106,
+      pvp_coefficient = 0.44700,
+      pct = 1.060,
       affected_spells = {
         107428,        185099,        392959,
       },
@@ -1614,10 +1614,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 0, -- Spell Direct Amount
-      base_value = 245,
-      scaled_value = 245,
-      pvp_coefficient = 0.34300,
-      pct = 2.450,
+      base_value = 297,
+      scaled_value = 297,
+      pvp_coefficient = 0.32500,
+      pct = 2.970,
       affected_spells = {
         100780,        331433,
       },
@@ -6012,7 +6012,7 @@ DBC = {
     },
     [3] = { -- (id=1139300) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 75,
       scaled_value = 75,
       pvp_coefficient = 1.00000,
@@ -6023,7 +6023,7 @@ DBC = {
     },
     [4] = { -- (id=1142269) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 75,
       scaled_value = 75,
       pvp_coefficient = 1.00000,
@@ -6058,7 +6058,7 @@ DBC = {
     },
     [7] = { -- (id=1166052) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 75,
       scaled_value = 75,
       pvp_coefficient = 1.00000,
@@ -6235,7 +6235,7 @@ DBC = {
     },
     [3] = { -- (id=1139675) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 150,
       scaled_value = 150,
       pvp_coefficient = 1.00000,
@@ -6246,7 +6246,7 @@ DBC = {
     },
     [4] = { -- (id=1142268) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 150,
       scaled_value = 150,
       pvp_coefficient = 1.00000,
@@ -6281,7 +6281,7 @@ DBC = {
     },
     [7] = { -- (id=1166053) 
       type = 6, -- Apply Aura
-      subtype = 148, -- Modify Cooldown Recharge Rate Percent
+      subtype = 148, -- Modify Charge Cooldown Recharge Rate Percent
       base_value = 150,
       scaled_value = 150,
       pvp_coefficient = 1.00000,
@@ -6798,7 +6798,7 @@ DBC = {
       property = 0, -- Spell Direct Amount
       base_value = 50,
       scaled_value = 50,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.50000,
       pct = 0.500,
       affected_spells = {
         123986,        130654,        132463,        132466,        132467,
@@ -7433,7 +7433,7 @@ DBC = {
       base_value = 0,
       scaled_value = 0,
       ap_coefficient = 1.60000,
-      pvp_coefficient = 1.00000,
+      pvp_coefficient = 0.50000,
       pct = 0.000,
       area_of_effect = true,
       max_targets = -1,
@@ -7949,7 +7949,7 @@ DBC = {
       property = 0, -- Spell Direct Amount
       base_value = 100,
       scaled_value = 100,
-      pvp_coefficient = 0.50000,
+      pvp_coefficient = 1.00000,
       pct = 1.000,
       affected_spells = {
         392983,        395519,        395521,
@@ -8852,10 +8852,10 @@ DBC = {
       type = 6, -- Apply Aura
       subtype = 108, -- Add Percent Modifier
       property = 21, -- Spell Global Cooldown
-      base_value = -50,
-      scaled_value = -50,
+      base_value = -25,
+      scaled_value = -25,
       pvp_coefficient = 1.00000,
-      pct = -0.500,
+      pct = -0.250,
       affected_spells = {
         100780,        331433,
       },
@@ -8961,6 +8961,6 @@ DBC = {
 
 -- ------------------------------------------------------------------------------
 DBC_VERSION = "11.0.2"
-DBC_BUILD = 56421
+DBC_BUILD = 56625
 -- ------------------------------------------------------------------------------
 
