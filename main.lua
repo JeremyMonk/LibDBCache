@@ -18,7 +18,7 @@ local tonumber = tonumber
 local GetTime = GetTime
 
 -- Versioning
-LibDBCache.Version = 3.4
+LibDBCache.Version = 3.5
 
 -- ------------------------------------------------------------------------------
 
@@ -98,7 +98,6 @@ function LibDBCache:find_spell( spellID, rank )
             effectN = function( n )
                 return {
                     base_value = 0,
-                    scaled_value = 0,
                     pvp_coefficient = 1,
                     ap_coefficient = 0,
                     sp_coefficient = 0,
@@ -179,7 +178,6 @@ function LibDBCache:find_spell( spellID, rank )
             base_value = effect.base_value,
             affected_spells = effect.affected_spells,
             base_value = effect.base_value,
-            scaled_value = effect.scaled_value,
             ranks = effect.ranks,
             pvp_coefficient = effect.pvp_coefficient,
             ap_coefficient = effect.ap_coefficient,
@@ -197,7 +195,6 @@ function LibDBCache:find_spell( spellID, rank )
                 
                 if effect.ranks[ rank ] then
                     effect.base_value   = effect.ranks[ rank ]
-                    effect.scaled_value = effect.ranks[ rank ]
                 end
             end
             
@@ -207,7 +204,6 @@ function LibDBCache:find_spell( spellID, rank )
             if PVP_ENABLED then
                 if pvp_coefficient ~= 1 then
                     effect.base_value = base_value * pvp_coefficient
-                    effect.scaled_value = effect.scaled_value * pvp_coefficient
                     
                     if effect.ap_coefficient then
                         effect.ap_coefficient = effect.ap_coefficient * pvp_coefficient
